@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lady Bug" nameDescription="a lady bug" race="undead" experience="4716" speed="250" manacost="0">
+	<health now="655" max="655" />
+	<look type="697" corpse="18161"/>
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag runonhealth="60" />
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="30" />
+		<attack name="poison" interval="2000" chance="15" length="8" spread="3" min="-30" max="-65">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30" />
+	<voices interval="5000" chance="10">
+		<voice sentence="Nee pah!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="40" chance="85000" /><!-- gold coin -->
+		<item id="2679" countmax="3" chance="6600"/><!-- cherry -->
+	</loot>
+</monster>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hand of Cursed Fate" nameDescription="a hand of cursed fate" race="undead" experience="28350" speed="250" manacost="0">
+	<health now="10500" max="10500"/>
+	<look type="230" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="3100"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="80"/>
+		<attack name="manadrain" interval="2000" chance="30" range="7" min="-60" max="-70">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="12" range="1" target="1"/>
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="speed" interval="3000" chance="12" speedchange="380" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="invisible" interval="4000" chance="30" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="50" min="100" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="35" speedchange="370" duration="30000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="2148" countmax="90" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="60" chance="15000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="5000"/><!-- platinum coin -->
+		<item id="2146" countmax="4" chance="3000"/><!-- small sapphires -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+		<item id="6500" chance="1500"/><!-- demonic essence -->
+		<item id="2171" chance="1350"/><!-- platinum amulet-->
+		<item id="2476" chance="1200"/><!-- knight armor -->
+		<item id="2487" chance="750"/><!-- crown armor -->
+		<item id="2492" chance="300"/><!-- dragon scale mail -->
+			</inside>
+		</item>
+	</loot>
+</monster>

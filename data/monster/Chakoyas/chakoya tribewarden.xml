@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chakoya Tribewarden" nameDescription="a chakoya tribewarden" race="undead" experience="2700" speed="270" manacost="305">
+	<health now="250" max="250"/>
+	<look type="249" corpse="18161"/>
+			<script>
+
+</script>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="25"/>
+		<attack name="water whip" interval="2000" chance="10" min="-20" max="-45"/>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+
+	<voices interval="2000" chance="5">
+		<voice sentence="Quisavu tukavi!"/>
+		<voice sentence="Si siyoqua jamjam!"/>
+		<voice sentence="Achuq! jinuma!"/>
+		<voice sentence="Si ji jusipa!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="29" chance="20000"/><!-- gold coin -->
+		<item id="2666" chance="22500"/><!-- meat -->
+		<item id="2667" countmax="2" chance="10000"/><!-- fish -->
+		<item id="2398" chance="4000"/><!-- mace-->
+		<item id="7381" chance="900"/><!-- mammoth whopper (470)-->
+		<item id="7441" chance="400"/><!-- ice cube -->
+		<item id="7159" chance="500"/><!-- green perch -->
+		<item id="2669" chance="400"/><!-- northern pike -->
+		<item id="7158" chance="350"/><!-- rainbow trout -->
+	</loot>
+</monster>

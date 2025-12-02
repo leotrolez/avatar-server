@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cyclops Drone" nameDescription="a cyclops drone" race="undead" experience="4260" speed="220" manacost="525">
+	<health now="600" max="600"/>
+	<look type="280" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1750" skill="60" attack="45"/>
+		<attack name="physical" interval="1000" chance="30" range="7" min="-76" max="-94">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="50"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Fee! Fie! Foe! Fum!"/>
+		<voice sentence="Luttl pest!"/>
+		<voice sentence="Me makking you pulp!"/>
+		<voice sentence="Humy tasy! Hum hum!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="49" chance="50000"/><!-- gold coin -->
+		<item id="2671" countmax="4" chance="45000"/><!-- ham -->
+		<item id="2666" countmax="3" chance="40000"/><!-- meat -->
+		<item id="2513" chance="900"/><!-- battle shield -->
+		<item id="5898" chance="1100"/><!-- cyclops eye -->
+		<item id="2394" chance="1100"/><!-- morning star -->
+		<item id="2490" chance="900"/><!-- dark helmet-->
+		<item id="10574" chance="1200"/><!-- cyclops toe -->
+		<item id="2129" chance="200"/><!-- wolf tooth chain -->
+		<item id="2381" chance="300"/><!-- halberd -->
+		<item id="2489" chance="250"/><!-- dark armor -->	
+		<item id="7452" chance="150"/><!-- spiked squelcher -->
+	</loot>
+</monster>

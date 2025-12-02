@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Draken Warmaster" nameDescription="a draken warmaster" race="undead" experience="43139" speed="320" manacost="0">
+	<health now="13150" max="13150"/>
+	<look type="334" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="90"/>
+		<attack name="fire" interval="4000" chance="20" length="6" spread="3" min="-240" max="-350">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="5000" chance="10" min="510" max="600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Attack aggrezzively! Dezztroy zze intruderzz!"/>
+		<voice sentence="Hizzzzz!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="47000" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
+		<item id="7368" countmin="2" countmax="4" chance="3000"/><!-- assassin star -->
+		<item id="2528" chance="935" /><!-- tower shield -->
+		<item id="11323" chance="1125" /><!-- zaoan halberd -->
+		<item id="2666" chance="30300" /><!-- meat -->
+		<item id="11303" chance="730" /><!-- zaoan shoes -->
+		<item id="2147" countmax="5" chance="725" /><!-- small ruby -->
+		<item id="11305" chance="590" /><!-- drakinata -->
+		<item id="11304" chance="540"/><!-- zaoan legs -->
+		<item id="11301" chance="510"/><!-- zaoan armor -->
+	</loot>
+</monster>

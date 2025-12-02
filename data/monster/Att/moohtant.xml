@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Moohtant" nameDescription="a moohtant" race="undead" experience="600000" speed="460" manacost="0">
+	<health now="100000" max="100000"/>
+	<look type="591" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="50"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="100" attack="100"/>
+		<attack name="fire lightning" interval="2000" chance="60" min="-570" max="-675"/>
+		<attack name="fire thunderbolt" interval="4000" chance="45" min="-375" max="-490"/>
+		<attack name="fire thunderstorm" interval="3000" chance="45" min="-360" max="-470"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="3000" chance="25" min="650" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12686" chance="4000"/><!-- fire stone -->
+		<item id="18099" chance="40000"/><!-- fire rune 1 -->
+		<item id="18104" chance="4000"/><!-- fire rune 2 -->
+		<item id="18109" chance="400"/><!-- fire rune 3 -->
+		<item id="18130" chance="200"/><!-- fire rune 4 -->
+		<item id="18121" chance="4000"/><!-- energy rune 1 -->
+		<item id="18122" chance="1000"/><!-- energy rune 2 -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="2" chance="97500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="65500"/><!-- fire mushroom -->
+		<item id="2492" chance="18800"/><!-- dragon scale mail -->
+		<item id="2177" chance="9200"/><!-- life crystal -->
+		<item id="13305" chance="3000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="7" chance="8200"/>  <!-- small diamond -->
+		<item id="13893" chance="2000"/>  <!-- blindage amulet -->
+		<item id="12946" chance="1000"/>  <!-- bender scroll -->
+		<item id="12792" chance="1000"/>  <!-- bender scroll -->
+		<item id="12806" chance="1000"/>  <!-- bender scroll -->
+		<item id="2470" chance="1800"/>  <!-- bender scroll -->
+		<item id="13432" chance="1000"/>  <!-- bender scroll -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+		<item id="2209" chance="10000"/>  <!-- club ring -->
+		<item id="2169" chance="10000"/>  <!-- time ring -->
+	</loot>
+</monster>

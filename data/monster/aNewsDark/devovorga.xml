@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Devovorga" nameDescription="a devovorga" race="undead" experience="15000000" speed="400" manacost="0">
+	<health now="1000000" max="1000000"/>
+	<look type="365" corpse="18161"/>
+	<targetchange interval="4000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="110"/>
+		<attack name="air force" interval="1500" chance="100" min="-360" max="-420"/>
+		<attack name="air deflection" interval="5000" chance="15" min="-445" max="-525"/>
+		<attack name="air tempest" interval="4000" chance="40" min="-165" max="-245"/>
+		<attack name="air windblast" interval="4000" chance="45" min="-680" max="-795"/>
+		<attack name="air jail" interval="3000" chance="45" min="0" max="0"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="1000" chance="30" min="600" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="checkFrost" interval="1000" chance="100"/>
+	</defenses>
+	<loot>
+		<item id="12689" countmax="2" chance="25000"/><!-- air stone -->
+		<item id="18127" chance="400"/><!-- metal rune 1 -->
+		<item id="18128" chance="40"/><!-- metal rune 2 -->
+		<item id="2160" countmax="20" chance="57500"/><!-- gold coin -->
+		<item id="2177" chance="98000"/><!-- life crystal -->
+		<item id="12929" chance="30000"/><!-- goldensilver shield -->
+		<item id="12869" chance="30000"/><!-- umbral fire sword -->
+		<item id="13305" chance="30000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="70" chance="14200"/>  <!-- small diamond -->
+		<item id="12946" chance="15000"/>  <!-- bender scroll -->
+		<item id="12792" chance="15000"/>  <!-- bender scroll -->
+		<item id="2514" chance="24000"/>  <!-- bender scroll -->
+		<item id="2498" chance="24000"/>  <!-- bender scroll -->
+		<item id="12785" chance="15000"/>  <!-- bender scroll -->
+		<item id="12782" chance="15000"/>  <!-- bender scroll -->
+		<item id="12806" chance="15000"/>  <!-- bender scroll -->
+		<item id="2470" chance="54000"/>  <!-- bender scroll -->
+		<item id="13432" chance="15000"/>  <!-- bender scroll -->
+		<item id="17860" chance="15"/><!-- legendary sword -->
+		<item id="17861" chance="15"/><!-- legendary crossbow -->
+		<item id="17862" chance="15"/><!-- legendary club -->
+		<item id="17863" chance="15"/><!-- legendary axe -->
+		<item id="13401" chance="15"/><!-- moon helmet -->
+		<item id="13402" chance="15"/><!-- moon chest -->
+		<item id="13403" chance="15"/><!-- moon legs -->
+		<item id="13404" chance="15"/><!-- moon boots -->
+		<item id="2214" chance="100000"/>  <!-- ring of healing -->
+		<item id="2169" chance="60000"/>  <!-- time ring -->
+		<item id="12649" chance="1000"/><!-- undead power blade -->
+		<item id="8901" chance="1000"/> <!-- spellbook -->
+	</loot>
+</monster>

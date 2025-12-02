@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cockroach" nameDescription="a cockroach" race="undead" experience="945" speed="100" manacost="0">
+	<health now="75" max="75"/>
+	<look type="284" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="8" defense="11"/>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="14"/>
+	</attacks>
+	<loot>
+		<item id="10609" countmax="13" chance="50000"/><!-- lump of dirty -->
+	</loot>
+</monster>

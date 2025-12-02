@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Medreth" nameDescription="the medreth" race="undead" experience="686170" speed="570" manacost="0">
+	<health now="250500" max="250500"/>
+	<look type="351" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1800" skill="120" attack="120"/>
+		<attack name="death" interval="3000" chance="40" target="1" range="5" min="-755" max="-900">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="4000" chance="40" length="4" spread="3" radius="2" min="-910" max="-1110">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="3000" chance="50" length="3" spread="2" min="-940" max="-1220">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="25" defense="55">
+		<defense name="healing" interval="1100" chance="25" min="500" max="1280">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="EMBRACE MY GIFTS!" yell="1"/>
+		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
+	</voices>
+
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="90" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="63750"/><!-- gold coin -->
+		<item id="6500" countmax="10" chance="35000"/><!-- demonic essence -->
+		<item id="5944" countmax="5" chance="70000"/><!-- soul orb -->
+		<item id="2796" chance="8000"/><!-- green mushroom -->
+		<item id="11302" chance="4500"/><!-- zaoan helmet -->
+		<item id="11304" chance="6850"/><!-- zaoan legs -->
+		<item id="11301" chance="8800"/><!-- zaoan armor -->
+		<item id="2177" chance="5200"/><!-- life crystal -->	
+		<item id="2498" chance="3200"/><!-- royal helmet -->
+		<item id="2146" chance="23000"/><!-- small sapphire -->
+		<item id="12649" chance="700"/><!-- undead power blade -->
+		<item id="2479" chance="11500"/><!-- strange helmet -->
+		<item id="2528" chance="10000"/><!-- tower shield -->
+		<item id="7402" chance="6700"/><!-- dragon slayer -->
+		<item id="2414" chance="3700"/><!-- dragon lance -->
+		<item id="2195" chance="3000"/><!-- boots of haste -->
+	</loot>
+</monster>

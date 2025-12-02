@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Medusa" nameDescription="a medusa" race="undead" experience="17000" speed="240" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="330" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="275"/>
+	</flags>
+	<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="70" poison="920"/>
+		<attack name="earth" interval="1000" chance="17" length="8" spread="3" min="-250" max="-350">
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="25" range="7" min="-120" max="-200"> 
+			<attribute key="shootEffect" value="earth"/>
+			<attribute key="areaeffect" value="carniphila"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="10" radius="5" target="0" duration="12000" speedchange="-400">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="30" range="7" duration="5000" speedchange="-400">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="1000" chance="18" min="1" max="400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="You will ssuch a fine ssstatue!"/>
+		<voice sentence="There isss no chhhanccce of esscape"/>
+		<voice sentence="Are you tired or why are you moving thhat sslow"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="80" chance="46000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="46000"/><!-- gold coin -->
+		<item id="2476" chance="500"/><!-- knight armor -->
+		<item id="2152" countmax="2" chance="31000"/><!-- platinum coin -->
+		<item id="2149" countmax="3" chance="2000"/><!-- small emerald -->
+		<item id="2143" chance="2150"/><!-- white pearl -->
+			<item id="2536" chance="400"/><!-- medusa shield -->
+			<item id="7884" chance="350"/><!-- terra mantle -->
+			<item id="7413" chance="310"/><!-- titan axe -->	
+			<item id="7885" chance="250"/><!-- terra legs -->
+	</loot>
+</monster>

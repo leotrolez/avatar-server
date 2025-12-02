@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Golgordan" nameDescription="golgordan" race="undead" experience="93600" speed="390" manacost="0">
+	<health now="200000" max="200000"/>
+	<look type="12" head="108" body="100" legs="105" feet="114" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="7000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2500" skill="170" attack="185"/>
+		<attack name="fire" interval="2000" chance="40" radius="7" target="1" min="-450" max="-620">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="40" length="6" spread="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>	
+		<attack name="death" interval="2000" chance="25" length="6" spread="0" min="-690" max="-970">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>		
+		<attack name="death" interval="2000" chance="35" target="1" min="-450" max="-980">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="30" length="6" spread="0" min="-450" max="-1000">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="48" defense="54"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Latrivan your fool" yell="1"/>
+	</voices>
+		<loot>
+    <item id="2148" countmax="100" chance="53650" /><!-- gold coin -->
+    <item id="2148" countmax="100" chance="53650" /><!-- gold coin -->
+    <item id="2148" countmax="57" chance="53650" /><!-- gold coin -->
+    <item id="2432" chance="11250" /><!-- fire axe -->
+    <item id="1988" chance="100000"><!-- bag -->
+        <inside>
+            <item id="2387" chance="25225" /><!-- double axe -->
+            <item id="2393" chance="8025" /><!-- giant sword -->
+            <item id="2462" chance="3725" /><!-- devil helmet -->
+            <item id="2396" chance="9100" /><!-- ice rapier -->
+            <item id="7365" countmax="6" chance="4275" /><!-- onyx arrow -->
+            <item id="2436" chance="2650" /><!-- skull staff -->
+            <item id="2520" chance="8025" /><!-- demon shield -->
+            <item id="2171" chance="1575" /><!-- platinum amulet -->
+            <item id="2195" chance="2650" /><!-- boots of haste -->
+            <item id="7368" countmax="8" chance="1575" /><!-- assassin star -->
+        </inside>
+    </item>
+</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>

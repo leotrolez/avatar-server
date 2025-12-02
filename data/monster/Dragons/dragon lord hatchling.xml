@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dragon Lord Hatchling" nameDescription="a dragon lord hatchling" race="undead" experience="15180" speed="200" manacost="0">
+	<health now="3550" max="3550"/>
+	<look type="272" corpse="18161"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="80"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="65" attack="60"/>
+		<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-70" max="-90">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="15" range="7" min="-60" max="-120">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="17" range="7" radius="4" target="1" min="-80" max="-200">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="38">
+		<defense name="healing" interval="1000" chance="13" min="26" max="48">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="50">
+		<voice sentence="Fchu?" yell="0"/>
+		<voice sentence="Rooawwrr"/>
+	</voices>
+	<loot>
+		<item id="12686" chance="10"/><!-- fire stone -->
+		<item id="18099" chance="100"/><!-- fire rune 1 -->
+		<item id="18104" chance="10"/><!-- fire rune 2 -->
+		<item id="18109" chance="1"/><!-- fire rune 3 -->
+		<item id="2148" countmax="42" chance="50500"/><!-- gold coin -->
+		<item id="2148" countmax="64" chance="50500"/><!-- gold coin -->
+		<item id="2672" countmax="4" chance="25000"/><!-- dragon ham -->
+		<item id="12657" chance="40"/>  <!-- dragonhunter robe -->
+		<item id="2146" countmax="3" chance="900"/><!-- small sapphire -->
+		<item id="2457" chance="2700"/><!-- steel helmet -->
+		<item id="2392" chance="280"/><!-- fire sword -->
+		<item id="2516" chance="250"/><!-- dragon shield -->
+		<item id="7402" chance="220"/><!-- dragon slayer -->
+		<item id="2647" chance="2300"/><!-- plate legs -->
+		<item id="2413" chance="2350"/><!-- broadsword -->
+		<item id="12755" chance="140"/><!-- firely armor -->
+		<item id="12926" chance="40"/>  <!-- dragonbone shield -->
+	</loot>
+</monster>

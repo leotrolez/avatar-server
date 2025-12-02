@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Necromancer" nameDescription="a necromancer" race="undead" experience="7426" speed="200" manacost="0">
+	<health now="1500" max="1500"/>
+	<look type="9" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="40" poison="90"/>
+
+		<attack name="lifedrain" interval="2000" chance="45" range="5" min="-120" max="-160">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+
+		<attack name="poison" interval="3500" chance="15" range="7" min="-120" max="-200">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="1000" chance="25" min="42" max="68">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<summons maxSummons="2">
+		<summon name="Ghoul" interval="1000" chance="17" max="2"/>
+	</summons>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="Your corpse will be mine!"/>
+		<voice sentence="Taste the sweetness of death!"/>
+	</voices>
+
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="60" chance="28250"/><!-- gold coin -->
+		<item id="2148" countmax="30" chance="28250"/><!-- gold coin -->
+		<item id="2483" chance="2200"/><!-- scale armor -->
+		<item id="2796" chance="3000"/><!-- green mushroom -->
+		<item id="2423" chance="800"/><!-- clerical mace (170)-->
+		<item id="2663" chance="400"/><!-- mystic turban (3k)-->
+		<item id="2436" chance="400"/><!-- skull staff (1,8k)-->
+		<item id="7456" chance="240"/><!-- noble axe (3k)-->
+		<item id="8901" chance="90"/><!-- foldbook of warding (6k)-->
+		<item id="2195" chance="80"/><!-- boots of haste (13,2)-->
+	</loot>
+</monster>

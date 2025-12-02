@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bloody Alchemist" nameDescription="a bloody alchemist" race="undead" experience="7290" speed="215" manacost="0">
+	<health now="1350" max="1350"/>
+	<look addons="2" type="130" head="38" legs="132" body="75" feet="18" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="80"/>
+	</flags>
+
+	<attacks>
+		<attack name="physical" interval="2000" chance="100" range="5" min="-55" max="-115">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="23" range="7" min="-50" max="-90">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="10" range="7" min="-90" max="-130">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="Mass Blood" interval="12000" chance="30" min="-180" max="-230">
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="8" defense="10"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="My mixes are fucking!"/>
+		<voice sentence="Save the major!"/>
+		<voice sentence="All to more blood."/>
+		<voice sentence="Your blood sounds great."/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="30750"/><!-- gold coin -->
+		<item id="2544" countmax="2" chance="3000"/><!-- ancient stone -->
+		<item id="2461" chance="12500"/><!-- leather helmet -->
+		<item id="2147" chance="200"/><!-- small ruby -->
+		<item id="8867" chance="80"/><!-- bloody robe -->
+	</loot>
+</monster>

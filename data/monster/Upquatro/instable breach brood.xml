@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Instable Breach Brood" nameDescription="an instable breach brood" race="undead" experience="0" speed="370" manacost="0">
+	<health now="32000" max="32000"/>
+	<look type="935"/>
+	<targetchange interval="20000" chance="35"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100"/>
+		<attack name="energy" interval="2000" chance="80" range="6" min="-430" max="-595">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="1000" chance="30" min="400" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+</monster>

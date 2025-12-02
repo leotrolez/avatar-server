@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Flaming Rarod" nameDescription="the flaming rarod" race="undead" experience="2823000" speed="500" manacost="0" lootPercent="true">
+	<health now="1350000" max="1350000"/>
+	<look type="484" head="95" body="94" legs="114" feet="79" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>	
+	<script>
+		<event name="Rarod_kill"/>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="1000" skill="115" attack="115"/>
+		<attack name="earth arena" interval="9000" chance="100"/>
+		<attack name="fire meteor" interval="7327" chance="75" min="-340" max="-420"/>
+		<attack name="fire wrath" interval="10000" chance="35" target="1"/>
+		<attack name="fire whip" interval="2237" chance="95" min="-200" max="-300"/>
+		<attack name="fire wave" interval="2753" chance="85" min="-480" max="-600"/>
+		<attack name="fire cannon" interval="5257" chance="75" min="-150" max="-250"/>
+		<attack name="fire striker" interval="10237" chance="75" min="-150" max="-250"/>
+		<attack name="fire explosion" interval="4421" chance="30" min="-150" max="-250"/>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="14" min="900" max="2200">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	
+	<voices interval="5000" chance="10">
+		<voice sentence="LET THE HELL CONSUME YOU!"/>
+		<voice sentence="NEVER CHALLENGE THE RARODS!"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="2160" countmax="3" chance="100"/><!-- crystal coin -->
+	</loot>
+</monster>

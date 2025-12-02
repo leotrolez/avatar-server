@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primate" nameDescription="a primate" race="undead" experience="25584" speed="300">
+	<health now="6800" max="6800"/>
+	<look type="153" body="58" feet="97" head="59" legs="38" addons="3" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="57"/>
+		<attack name="earth punch" interval="4000" chance="40" min="-70" max="-125"/>
+		<attack name="earth rock" interval="4000" chance="40" min="-90" max="-110"/>
+	</attacks>
+	<defenses armor="35" defense="35"/>
+	<voices interval="4000" chance="16">
+		<voice sentence="Hehehe!"/>
+		<voice sentence="Raahhh!"/>
+		<voice sentence="You are one of THEM! Die!"/>
+		<voice sentence="Wanna buy roses??"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="10"/><!-- earth stone -->
+		<item id="18102" chance="100"/><!-- earth rune 1 -->
+		<item id="18107" chance="10"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="80" chance="83000"/><!-- plat coin -->
+		<item id="2152" countmax="3" chance="15000"/><!-- plat coin -->
+		<item id="2237" chance="7800"/><!-- dirty cape -->
+		<item id="2690" chance="20000"/><!-- roll -->
+		<item id="2789" countmax="3" chance="6000"/><!-- brown mushroom -->
+		<item id="7884" chance="600"/><!-- terra mantle -->
+		<item id="7885" chance="600"/><!-- terra legs -->
+		<item id="10605" countmax="3" chance="1120"/><!-- bundle of cursed straw -->
+		<item id="2477" chance="600"/><!-- knight legs -->
+		<item id="2391" chance="2200"/><!-- war hammer -->
+		<item id="2409" chance="3800"/><!-- serpent sword -->
+		<item id="7388" chance="800"/><!-- vile axe -->
+		<item id="2452" chance="600"/><!-- heavy mace -->
+		<item id="2507" chance="300"/><!-- primate legs -->
+	</loot>
+</monster>

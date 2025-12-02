@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mouth of Hell" nameDescription="a mouth of hell" race="undead" experience="1000000" speed="600" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="1109" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="145" attack="145"/>
+		<attack name="earth lavaball" interval="3000" chance="90" min="-790" max="-875"/>
+		<attack name="earth cataclysm" interval="5000" chance="40" min="-1550" max="-1875"/>
+	</attacks>
+	<defenses armor="45" defense="55">
+		<defense name="healing" interval="2000" chance="15" min="800" max="1200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="8000"/><!-- earth stone -->
+		<item id="18102" chance="60000"/><!-- earth rune 1 -->
+		<item id="18107" chance="6000"/><!-- earth rune 2 -->
+		<item id="18112" chance="600"/><!-- earth rune 3 -->
+		<item id="18133" chance="300"/><!-- earth rune 4 -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="1" chance="77500"/><!-- gold coin -->
+		<item id="2147" countmax="45" chance="70000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="10" chance="70000"/><!-- giant pearl 2000gp ea -->
+		<item id="12929" chance="2000"/><!-- goldensilver shield -->
+		<item id="12869" chance="2000"/><!-- umbral fire sword -->
+		<item id="13305" chance="2000"/><!-- umbral fire robe -->
+		<item id="7402" chance="30700"/><!-- dragon slayer -->
+		<item id="2492" chance="15000"/><!-- dragon scale mail -->
+		<item id="12855" chance="5200"/>  <!-- lava axe -->
+		<item id="2414" chance="15700"/><!-- dragon lance -->
+		<item id="2195" chance="15000"/><!-- boots of haste -->
+		<item id="2153" chance="80000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="100"/><!-- armas novas -->
+		<item id="12864" chance="100"/><!-- armas novas -->
+		<item id="12861" chance="100"/><!-- armas novas -->
+		<item id="13296" chance="100"/><!-- armas novas -->
+		<item id="13086" chance="100"/><!-- armas novas -->
+		<item id="10219" chance="200"/><!-- sacred amulet -->
+		<item id="12872" chance="1000"/><!-- boomerang -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+	</loot>
+</monster>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giantess" nameDescription="a frost giantess" race="undead" experience="14620" speed="195" manacost="490">
+	<health now="2950" max="2950"/>
+	<look type="265" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="75" attack="75"/>
+		<attack name="ice" interval="2000" chance="10" range="6" radius="4" target="1" min="-130" max="-200">
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="healing" interval="1000" chance="25" min="100" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="So you think you are cool?"/>
+		<voice sentence="I hope it is not too cold for you! HeHeHe."/>
+		<voice sentence="Freeze!"/>
+	</voices>
+	<loot>
+		<item id="12688" chance="10"/><!-- water stone -->
+		<item id="18100" chance="100"/><!-- water rune 1 -->
+		<item id="18105" chance="10"/><!-- water rune 2 -->
+		<item id="18110" chance="1"/><!-- water rune 3 -->
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="2148" countmax="90" chance="80300"/><!-- gold coin -->
+		<item id="7441" chance="1200"/><!-- ice cube -->
+		<item id="2796" countmax="23" chance="50550"/><!-- green mushroom -->
+		<item id="2195" chance="110"/><!-- boots of haste -->
+		<item id="2663" chance="350"/><!-- mystic turban -->
+		<item id="7896" chance="200"/><!-- glacier kilt -->
+		<item id="7459" chance="800"/><!-- ear muffs -->
+	</loot>
+</monster>

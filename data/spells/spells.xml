@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+
+    <instant name="Fire Whip" words="fire whip" lvl="1" mana="2" direction="1" aggressive="1" exhaustion="800" script="fire/whip.lua">
+		<vocation id="1"/>
+	</instant>
+	
+    <instant name="Fire Recover" words="fire recover" lvl="5" mana="4" aggressive="0" exhaustion="800" groups="2, 1000" needlearn="0" script="fire/recover.lua">
+		<vocation id="1"/>
+	</instant>
+	
+    <instant name="Fire URecover" words="fire urecover" lvl="5" mana="12" aggressive="0" exhaustion="800" groups="2, 3000" needlearn="0" script="fire/urecover.lua">
+		<vocation id="1"/>
+	</instant>
+	
+	<instant name="Fire Kick" words="fire Kick" lvl="8" mana="8" aggressive="1" needtarget="1" exhaustion="800" needlearn="0" script="fire/kick.lua">
+		<vocation id="1"/>
+	</instant>
+	
+	<instant name="Fire Wave" words="fire wave" lvl="8" mana="8" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="fire/wave.lua">
+		<vocation id="6"/>
+	</instant>
+	
+	<instant name="Fire Skyfall" words="fire skyfall" lvl="12" mana="12" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/skyfall.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Jump" words="fire jump" lvl="16" mana="16" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/jump.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Blast" words="fire blast" lvl="16" mana="16" aggressive="1" needtarget="1" exhaustion="800" needlearn="0" script="fire/blast.lua">
+		<vocation id="6"/>
+	</instant>
+
+	<instant name="Fire Impulse" words="fire impulse" lvl="20" mana="20" aggressive="1" direction="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/impulse.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Bolt" words="fire bolt" lvl="25" mana="25" aggressive="1" needtarget="1" exhaustion="800" range="5" needlearn="0" script="fire/bolt.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Res" words="fire res" lvl="30" mana="30" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="fire/res.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Star" words="fire star" lvl="36" mana="35" aggressive="1" exhaustion="800" needlearn="0" script="fire/star.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Cannon" words="fire cannon" lvl="42" mana="40" direction="1" aggressive="1" exhaustion="200" needlearn="0" script="fire/cannon.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Wrath" words="fire wrath" lvl="46" mana="45" needtarget="1" aggressive="1" exhaustion="800" needlearn="0" script="fire/wrath.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Focus" words="fire focus" lvl="50" mana="50" aggressive="1" exhaustion="800" needlearn="0" script="fire/focus.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Lightning" words="fire lightning" lvl="55" mana="55" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="fire/lightning.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Bomb" words="fire bomb" lvl="60" mana="60" aggressive="1" needtarget="1" exhaustion="800" range="5" needlearn="0" script="fire/bomb.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Clock" words="fire clock" lvl="65" mana="65" aggressive="1" exhaustion="800" needlearn="0" script="fire/clock.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Thunderbolt" words="fire thunderbolt" lvl="70" mana="60" aggressive="1" needtarget="1" exhaustion="800" range="4" needlearn="0" script="fire/thunderbolt.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Meteor" words="fire meteor" lvl="80" mana="75" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/meteor.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Striker" words="fire striker" lvl="90" mana="80" aggressive="1" exhaustion="800" needlearn="0" script="fire/striker.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Overload" words="fire overload" lvl="100" mana="85" aggressive="1" needtarget="1" range="4" exhaustion="800" needlearn="0" script="fire/overload.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Explosion" words="fire explosion" lvl="110" mana="90" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/explosion.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Voltage" words="fire voltage" lvl="130" mana="95" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="fire/voltage.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Thunderstorm" words="fire thunderstorm" lvl="150" mana="100" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="fire/thunderstorm.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Discharge" words="fire discharge" lvl="200" mana="125" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="fire/discharge.lua">
+		<vocation id="1"/>
+	</instant>
+
+	<instant name="Fire Conflagration" words="fire conflagration" lvl="250" mana="150" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="fire/conflagration.lua">
+		<vocation id="1"/>
+	</instant>
+	
+	<instant name="Water Whip" words="water whip" lvl="1" mana="2" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/whip.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Recover" words="water recover" lvl="5" mana="4" aggressive="0" exhaustion="800" groups="2, 1000" needlearn="0" script="water/recover.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water URecover" words="water urecover" lvl="5" mana="12" aggressive="0" exhaustion="800" groups="2, 3000" needlearn="0" script="water/urecover.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Explosion" words="water explosion" lvl="8" mana="8" aggressive="1" needtarget="1" exhaustion="800" range="5" needlearn="0" script="water/explosion.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Heal" words="water Heal" lvl="12" mana="12" aggressive="0" exhaustion="200" groups="2, 1000" needlearn="0" script="water/heal.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water SHeal" words="water sheal" lvl="12" mana="12" aggressive="0" exhaustion="200" groups="2, 1000" needlearn="0" script="water/sheal.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Jump" words="water jump" lvl="16" mana="16" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="water/jump.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Wave" words="water wave" lvl="16" mana="16" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/wave.lua">
+		<vocation id="6"/>
+	</instant>
+
+	<instant name="Water IceSpikes" words="water iceSpikes" lvl="20" mana="20" direction="1" exhaustion="800" needlearn="0" script="water/iceSpikes.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Res" words="water res" lvl="25" mana="25" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/res.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Shards" words="water shards" lvl="30" mana="30" aggressive="1" exhaustion="800" needlearn="0" script="water/shards.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Surf" words="water surf" lvl="36" mana="35" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="water/surf.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Cannon" words="water cannon" lvl="42" mana="40" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/cannon.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Regen" words="water regen" lvl="46" mana="45" aggressive="0" exhaustion="800" needlearn="0" script="water/regen.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water SRegen" words="water sregen" lvl="46" mana="45" aggressive="0" exhaustion="800" needlearn="0" script="water/sregen.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water MRegen" words="water mregen" lvl="46" mana="45" aggressive="0" exhaustion="800" groups="2, 1000" needlearn="0" script="water/mregen.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water BloodControl" words="water bloodcontrol" lvl="50" aggressive="1" mana="50" needtarget="1" exhaustion="800" needlearn="0" script="water/bloodControl.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Punch" words="water punch" lvl="55" aggressive="1" mana="40" needtarget="1" exhaustion="800" needlearn="0" script="water/punch.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Dragon" words="water dragon" lvl="60" mana="60" aggressive="1" exhaustion="800" needlearn="0" script="water/dragon.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Rain" words="water rain" lvl="65" mana="65" aggressive="1" exhaustion="800" needlearn="0" script="water/rain.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Bubbles" words="water bubbles" lvl="70" mana="70" aggressive="1" needtarget="1" range="4" exhaustion="800" needlearn="0" script="water/bubbles.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Protect" words="water protect" lvl="80" aggressive="1" selftarget="1" mana="75" exhaustion="800" needlearn="0" script="water/protect.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water IceBolt" words="water icebolt" lvl="90" mana="80" aggressive="1" needtarget="1" range="4" exhaustion="800" needlearn="0" script="water/icebolt.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Flow" words="water flow" lvl="100" aggressive="1" selftarget="1" mana="85" exhaustion="800" needlearn="0" script="water/flow.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water IceGolem" words="water icegolem" lvl="110" mana="90" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/iceGolem.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Tsunami" words="water tsunami" lvl="130" mana="95" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/tsunami.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Clock" words="water clock" lvl="150" mana="100" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="water/clock.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water Blizzard" words="water blizzard" lvl="200" mana="125" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="water/blizzard.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Water BloodBending" words="water bloodbending" lvl="250" mana="150" needtarget="1" range="3" aggressive="1" exhaustion="800" needlearn="0" script="water/bloodBending.lua">
+		<vocation id="2"/>
+	</instant>
+
+	<instant name="Air Whip" words="air whip" lvl="1" mana="2" direction="1" aggressive="1" exhaustion="800" script="air/whip.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Ball" words="air ball" lvl="1" mana="2" aggressive="1" needtarget="1" exhaustion="800" range="7" needlearn="0" script="air/ball.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Recover" words="air recover" lvl="5" mana="4" aggressive="0" exhaustion="800" groups="2, 1000" needlearn="0" script="air/recover.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air URecover" words="air urecover" lvl="5" mana="12" aggressive="0" exhaustion="800" groups="2, 3000" needlearn="0" script="air/urecover.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Burst" words="air burst" lvl="8" mana="8" aggressive="1" exhaustion="800" needlearn="0" script="air/burst.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Run" words="air run" lvl="12" mana="12" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="air/run.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Jump" words="air jump" lvl="16" mana="16" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="air/jump.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Force" words="air force" lvl="20" mana="20" aggressive="1" needtarget="1" exhaustion="800" range="6" needlearn="0" script="air/force.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Gust" words="air gust" lvl="25" mana="25" exhaustion="800" aggressive="1" direction="1" needlearn="0" script="air/gust.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Gale" words="air gale" lvl="30" mana="30" exhaustion="200" aggressive="1" direction="1" needlearn="0" script="air/gale.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Icywind" words="air icywind" lvl="30" mana="30" exhaustion="800" aggressive="1" direction="1" needlearn="0" script="air/icywind.lua">
+		<vocation id="6"/>
+	</instant>
+
+	<instant name="Air Boost" words="air boost" lvl="36" mana="35" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/boost.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Fan" words="air fan" lvl="42" mana="40" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="air/fan.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Wings" words="air wings" lvl="46" mana="45" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="air/wings.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Suffocation" words="air suffocation" lvl="50" mana="50" needtarget="1" aggressive="1" exhaustion="800" range="6" needlearn="0" script="air/suffocation.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Jail" words="air jail" lvl="50" mana="50" needtarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/jail.lua">
+		<vocation id="6"/>
+	</instant>
+
+	<instant name="Air Hurricane" words="air hurricane" lvl="55" mana="55" exhaustion="800" aggressive="1" direction="1" needlearn="0" script="air/hurricane.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Tempest" words="air tempest" lvl="60" mana="60" aggressive="1" exhaustion="800" needlearn="0" script="air/tempest.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Windblast" words="air windblast" lvl="65" mana="65" aggressive="1" exhaustion="800" needlearn="0" script="air/windblast.lua">
+		<vocation id="3"/>
+	</instant>
+	
+	<instant name="Air Tornado" words="air tornado" lvl="70" mana="70" aggressive="1" needtarget="1" exhaustion="800" needlearn="0" script="air/tornado.lua">
+		<vocation id="3"/>
+	</instant>
+	<instant name="Air Barrier" words="air barrier" lvl="80" mana="75" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/barrier.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Trap" words="air trap" lvl="90" mana="60" aggresive="1" exhaustion="800" needlearn="0" script="air/trap.lua">
+		<vocation id="3"/>
+	</instant>
+	
+	<instant name="Air Doom" words="air doom" lvl="100" mana="85" aggresive="1" exhaustion="800" needlearn="0" script="air/doom.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Bomb" words="air bomb" lvl="110" mana="90" aggressive="1" needtarget="1" range="5" exhaustion="800" needlearn="0" script="air/bomb.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Windstorm" words="air windstorm" lvl="130" mana="95" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/windstorm.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Stormcall" words="air stormcall" lvl="150" mana="100" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/stormcall.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Vortex" words="air vortex" lvl="200" mana="125" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/vortex.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Air Deflection" words="air deflection" lvl="250" mana="150" selftarget="1" aggressive="1" exhaustion="800" needlearn="0" script="air/deflection.lua">
+		<vocation id="3"/>
+	</instant>
+
+	<instant name="Earth Whip" words="earth whip" lvl="1" mana="2" direction="1" aggressive="1" exhaustion="800" script="earth/whip.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Crush" words="earth crush" lvl="1" mana="2" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="earth/crush.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Recover" words="earth recover" lvl="5" mana="4" aggressive="0" exhaustion="800" groups="2, 1000" needlearn="0" script="earth/recover.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth URecover" words="earth urecover" lvl="5" mana="12" aggressive="0" exhaustion="800" groups="2, 3000" needlearn="0" script="earth/urecover.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Punch" words="earth punch" lvl="8" mana="8" aggressive="1" needtarget="1" exhaustion="1000" needlearn="0" script="earth/punch.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Rock" words="earth rock" lvl="12" mana="12" aggressive="1" needtarget="1" exhaustion="800" range="5" needlearn="0" script="earth/rock.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Jump" words="earth jump" lvl="16" mana="16" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/jump.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Pull" words="earth pull" lvl="20" mana="20" aggressive="1" needtarget="1" exhaustion="800" range="6" needlearn="0" script="earth/pull.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Growth" words="earth growth" lvl="25" mana="25" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="earth/growth.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Collapse" words="earth collapse" lvl="30" mana="30" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/collapse.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Track" words="earth track" lvl="36" mana="35" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/track.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Petrify" words="earth petrify" lvl="42" mana="40" aggressive="1" needtarget="1" exhaustion="800" needlearn="0" script="earth/petrify.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Fury" words="earth fury" lvl="46" mana="45" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="earth/fury.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Control" words="earth control" lvl="50" mana="50" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="earth/control.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Leech" words="earth leech" lvl="55" mana="35" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/leech.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Smash" words="earth smash" lvl="60" mana="60" aggressive="1" needtarget="1" range="4" exhaustion="800" needlearn="0" script="earth/smash.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Ingrain" words="earth ingrain" lvl="65" mana="65" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/ingrain.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Fists" words="earth fists" lvl="70" mana="70" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="earth/fists.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Arena" words="earth arena" lvl="80" mana="75" aggressive="1" exhaustion="800" needlearn="0" script="earth/arena.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Curse" words="earth curse" lvl="90" mana="80" aggressive="1" needtarget="1" range="4" exhaustion="800" needlearn="0" script="earth/curse.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Quake" words="earth quake" lvl="100" mana="85" aggressive="1" exhaustion="800" needlearn="0" script="earth/quake.lua">
+		<vocation id="4"/>
+	</instant>
+	
+	<instant name="Earth Cataclysm" words="earth cataclysm" lvl="110" mana="90" aggressive="1" needtarget="1" range="5" exhaustion="800" needlearn="0" script="earth/cataclysm.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Aura" words="earth aura" lvl="130" mana="95" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/aura.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Armor" words="earth armor" lvl="150" mana="100" aggressive="1" selftarget="1" exhaustion="800" needlearn="0" script="earth/armor.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Lavaball" words="earth lavaball" lvl="200" mana="125" aggressive="1" needtarget="1" range="4"  exhaustion="800" needlearn="0" script="earth/lavaball.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<instant name="Earth Metalwall" words="earth metalwall" lvl="250" mana="150" direction="1" aggressive="1" exhaustion="800" needlearn="0" script="earth/metalwall.lua">
+		<vocation id="4"/>
+	</instant>
+
+	<rune name="Elemental Wall" id="18146" allowfaruse="1" charges="1" lvl="50" exhaustion="800" groups="3,2000" range="7" blocktype="all" script="runes/elemental wall.lua"/>
+
+	<instant name="HealSupp" words="HealSupp" script="monster/massHeal.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="Mass Blood" words="monster mass blood" script="monster/massBlood.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="Regen Monster" words="monster regen" script="monster/regen.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="Inferno_monsters" words="Inferno_monsters" script="monster/inferno.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="Water IceBeam Man" words="water iceBeam Man" lvl="30" mana="10" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/iceBeam man.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="Water Whip Man" words="water whip man" lvl="1" mana="1" aggressive="1" direction="1" exhaustion="800" needlearn="0" script="water/whip man.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="checkFrost" words="checkFrost" script="monster/checkFrost.lua">
+		<vocation id="6"/>
+	</instant>
+	<instant name="checkSand" words="checkSand" script="monster/checkSand.lua">
+		<vocation id="6"/>
+	</instant>
+</spells>

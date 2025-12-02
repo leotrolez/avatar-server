@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hydra" nameDescription="a hydra" race="undead" experience="20076" speed="260" manacost="0">
+	<health now="4600" max="4600"/>
+	<look type="121" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="60"/>
+		<attack name="speed" interval="1000" chance="23" range="7" radius="4" target="1" speedchange="-600" duration="15000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="30" length="8" spread="3" min="-220" max="-290">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="30" length="8" spread="3" min="-140" max="-210">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="25" min="100" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="FCHHHHH"/>
+		<voice sentence="HISSSS"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="90" chance="62000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="44000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="15000"/><!-- gold coin -->
+		<item id="2666" countmax="4" chance="37500"/><!-- meat -->
+		<item id="2671" countmax="4" chance="25000"/><!-- ham -->
+		<item id="11196" countmax="2" chance="5600"/><!-- hydra leather -->
+		<item id="2177" chance="200"/><!-- life crystal -->
+		<item id="2146" chance="700"/><!-- small sapphire -->
+		<item id="4850" chance="200"/><!-- hydra egg -->
+		<item id="2475" chance="800"/><!-- warrior helmet -->
+		<item id="2476" chance="800"/><!-- knight armor -->
+		<item id="2536" chance="800"/><!-- medusa shield -->
+		<item id="2498" chance="280"/><!-- royal helmet -->
+		<item id="2195" chance="200"/><!-- boots of haste -->
+		<item id="12870" chance="90"/><!-- savage sword -->
+		<item id="2477" chance="800"/><!-- knight legs -->
+		<item id="2414" chance="420"/><!-- dragon lance -->
+		<item id="2430" chance="700"/><!-- knight axe -->
+	</loot>
+</monster>

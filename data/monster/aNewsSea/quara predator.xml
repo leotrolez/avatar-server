@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Quara Predator" nameDescription="a quara predator" race="undead" experience="130000" speed="450" manacost="0">
+	<health now="22880" max="22880"/>
+	<look type="20" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="90"/>
+		<attack name="water bubbles" interval="7000" chance="75" min="-90" max="-130"/>
+		<attack name="water wave" interval="4000" chance="75" min="-300" max="-400"/>
+		<attack name="water punch" interval="6000" chance="100" min="-50" max="-100"/>
+	</attacks>
+	<defenses armor="80" defense="80"/>
+	<loot>
+		<item id="12688" chance="40"/><!-- water stone -->
+		<item id="18100" chance="4000"/><!-- water rune 1 -->
+		<item id="18105" chance="40"/><!-- water rune 2 -->
+		<item id="18110" chance="4"/><!-- water rune 3 -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="15500"/><!-- gold coin -->
+		<item id="2147" countmax="75" chance="2000"/><!-- small rubbie 250gp ea -->
+		<item id="2145" countmax="15" chance="800"/>  <!-- small diamond -->
+		<item id="13852" chance="8"/><!-- helmet -->
+		<item id="11117" chance="8"/><!-- boots -->
+		<item id="13914" chance="8"/><!-- legs -->
+		<item id="12781" chance="8"/><!-- shield -->
+		<item id="13751" chance="20"/>  <!-- seaking boots -->		
+		<item id="7888" chance="30"/> <!-- glacier amulet -->
+	</loot>
+</monster>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frazzlemaw" nameDescription="a frazzlemaw" race="undead" experience="34920" speed="320" manacost="0">
+	<health now="9600" max="9600"/>
+	<look type="582" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="95" attack="75"/>
+		<attack name="air icywind" interval="2000" chance="20" />
+		<attack name="physical" interval="2000" chance="10" length="5" spread="0" target="1" min="-150" max="-220">
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="15" radius="2" target="1" min="-100" max="-200">
+			<attribute key="shootEffect" value="largerock"/>
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="30">
+		<defense name="healing" interval="2000" chance="15" min="250" max="425">
+			<attribute key="areaEffect" value="greenspark"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="35500"/><!-- gold coin -->
+		<item id="2789" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="10522" chance="140"/><!-- crown backpack -->
+		<item id="12959" chance="30"/><!-- windy kilt -->
+		<item id="13339" chance="30"/><!-- windy amulet -->
+	</loot>
+</monster>

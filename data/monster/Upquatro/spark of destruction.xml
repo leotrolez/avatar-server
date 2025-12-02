@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spark of Destruction" nameDescription="an spark of destruction" race="undead" experience="0" speed="500" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="936"/>
+	<targetchange interval="20000" chance="75"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="140" attack="140"/>
+		<attack name="fire lightning" interval="6000" chance="80" min="-1470" max="-1685"/>
+		<attack name="fire thunderbolt" interval="3000" chance="60" min="-1370" max="-1485"/>
+		<attack name="energy" interval="2000" chance="80" range="6" min="-1210" max="-1315">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="2000" chance="50" min="800" max="1200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+</monster>

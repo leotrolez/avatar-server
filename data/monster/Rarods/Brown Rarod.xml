@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brown Rarod" nameDescription="an brown Rarod" race="undead" experience="1000000" speed="300" manacost="0" lootPercent="true">
+	<health now="350000" max="350000"/>
+	<look type="484" head="19" body="96" legs="21" feet="81" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1550" skill="135" attack="135"/>
+
+		<attack name="energy" interval="1000" chance="11" length="8" spread="0" min="-550" max="-1019">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="13" radius="5" target="1" min="-460" max="-920">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="5" radius="7" target="0" min="0" max="-790">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="11" min="900" max="2200">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	
+	<voices interval="5000" chance="0">
+		<voice sentence="I'll sacrifice yours souls to seven!"/>
+		<voice sentence="I'm bad news for you mortals!"/>
+		<voice sentence="No man can defeat me!"/>
+		<voice sentence="Your puny skills are no match for me."/>
+		<voice sentence="I smell your fear."/>
+		<voice sentence="Delicious!"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="10503" chance="100"/><!-- surprise present -->
+	</loot>
+</monster>

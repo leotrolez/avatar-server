@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tremorak" nameDescription="Tremorak" race="undead" experience="10000000" speed="600" manacost="0">
+	<health now="1000000" max="1000000"/>
+	<look type="285" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="10000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="100" attack="140"/>
+		<attack name="earth quake" interval="7000" chance="40" min="-210" max="-340"/>
+		<attack name="earth crush" interval="4000" chance="75" min="-390" max="-535"/>
+		<attack name="earth punch" interval="4300" chance="75" min="-290" max="-435"/>
+		<attack name="earth rock" interval="4700" chance="75" min="-490" max="-655"/>
+		<attack name="earth cataclysm" interval="10700" range="5" chance="50" min="-790" max="-955"/>
+		<attack name="earth aura" interval="13124" range="3" chance="50" min="-40" max="-100"/>
+		<attack name="speed" interval="3000" chance="40" range="7" duration="3000" speedchange="-400">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="1000" chance="30" min="600" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="1">
+		<summon name="Split Tremorak" interval="5000" chance="50" max="3"/>
+	</summons>
+	<loot>
+		<item id="2160" countmax="20" chance="57500"/><!-- gold coin -->
+		<item id="2177" chance="92000"/><!-- life crystal -->
+		<item id="12929" chance="20000"/><!-- goldensilver shield -->
+		<item id="12869" chance="20000"/><!-- umbral fire sword -->
+		<item id="13305" chance="20000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="70" chance="8200"/>  <!-- small diamond -->
+		<item id="12946" chance="10000"/>  <!-- bender scroll -->
+		<item id="12792" chance="10000"/>  <!-- bender scroll -->
+		<item id="2514" chance="18000"/>  <!-- bender scroll -->
+		<item id="2498" chance="18000"/>  <!-- bender scroll -->
+		<item id="12785" chance="10000"/>  <!-- bender scroll -->
+		<item id="12782" chance="10000"/>  <!-- bender scroll -->
+		<item id="12806" chance="10000"/>  <!-- bender scroll -->
+		<item id="2470" chance="38000"/>  <!-- bender scroll -->
+		<item id="13432" chance="10000"/>  <!-- bender scroll -->
+		<item id="17860" chance="10"/><!-- legendary sword -->
+		<item id="17861" chance="10"/><!-- legendary crossbow -->
+		<item id="17862" chance="10"/><!-- legendary club -->
+		<item id="17863" chance="10"/><!-- legendary axe -->
+		<item id="13401" chance="10"/><!-- moon helmet -->
+		<item id="13402" chance="10"/><!-- moon chest -->
+		<item id="13403" chance="10"/><!-- moon legs -->
+		<item id="13404" chance="10"/><!-- moon boots -->
+		<item id="2214" chance="100000"/>  <!-- ring of healing -->
+		<item id="2169" chance="30000"/>  <!-- time ring -->
+	</loot>
+</monster>

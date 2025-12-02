@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Alchemist" tp="1" species="magic"  nameDescription="a Alchemist" race="undead" experience="702000" speed="500" manacost="0">
+    <health now="300000" max="300000"/>
+    <look type="133" head="0" body="94" legs="94" feet="81" addons="1" corpse="18161"/>
+    <script>
+
+</script>
+    <targetchange interval="5000" chance="25"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="30"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="250"/>
+    </flags>
+    <voices interval="2000" chance="70">
+      <voice sentence="Your energy is mine."/>
+      <voice sentence="Now your life has come to the end, hahahaha!"/>
+    </voices>
+  </monster>

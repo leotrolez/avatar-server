@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Fury" nameDescription="a dark fury" race="undead" experience="930000" speed="400" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="359" corpse="18161"/>
+	<targetchange interval="4000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>		
+		<attack name="death" interval="1500" chance="100" target="1" range="5" min="-665" max="-795">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="4000" chance="100" radius="3" min="-795" max="-875">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="5000" chance="70" length="5" spread="0" min="-865" max="-985">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="10823" chance="20" length="5" spread="0" min="-1165" max="-1385">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="30"/>
+</monster>

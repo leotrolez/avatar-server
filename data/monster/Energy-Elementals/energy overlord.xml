@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Energy Overlord" nameDescription="an energy overlord" race="undead" experience="126400" speed="370" manacost="0">
+	<health now="32000" max="32000"/>
+	<look type="290" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="20000" chance="15"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="80" attack="75"/>
+		<attack name="energy" interval="2000" chance="70" range="7" min="-400" max="-595">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="1000" chance="20" min="90" max="120">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="18121" chance="40"/><!-- energy rune 1 -->
+		<item id="18122" chance="10"/><!-- energy rune 2 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2377" chance="4400"/><!-- two handed sword -->
+		<item id="2510" chance="4000"/><!-- plate shield -->
+		<item id="2513" chance="4500"/><!-- battle shield -->
+		<item id="2153" chance="1600"/><!-- violet gem 10000gp ea -->
+		<item id="2438" chance="8800"/><!-- epee -->
+		<item id="2645" chance="8300"/><!-- steel boots -->
+		<item id="9690" countmax="2" chance="500"/><!-- gear wheel -->
+		<item id="7403" chance="700"/><!-- berserker -->
+		<item id="7422" chance="600"/><!-- jade hammer -->
+		<item id="7428" chance="500"/><!-- bonebreaker -->
+		<item id="2177" chance="250"/><!-- life crystal -->
+	</loot>
+</monster>

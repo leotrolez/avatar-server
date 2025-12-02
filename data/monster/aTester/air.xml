@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<monster name="Air Test" nameDescription="an air test" race="blood" experience="0" speed="215" manacost="420">
+	<health now="999999" max="999999"/>
+	<look type="900" head="114" addons="3" body="20" legs="22" feet="2" corpse="6080"/>
+	<targetchange interval="50000" chance="1"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="18"/>
+	</flags>
+	<attacks>
+		<attack name="Air Barrier" interval="13000" chance="100" min="-15" max="-95"/>
+		<attack name="Air Tornado" interval="14000" chance="100" min="-15" max="-95"/>
+		<attack name="Air Tempest" interval="15000" chance="100" min="-15" max="-95"/>
+		<attack name="Air Deflection" interval="16000" chance="100" min="-15" max="-95"/>
+	</attacks>
+	<defenses armor="10" defense="13"/>
+	<voices interval="50000" chance="0">
+	</voices>
+	<loot>
+	</loot>
+</monster>

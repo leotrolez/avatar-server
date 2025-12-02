@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Swamp Rarod" nameDescription="the swamp rarod" race="undead" experience="2823000" speed="300" manacost="0" lootPercent="true">
+	<health now="1350000" max="1350000"/>
+	<look type="484" head="20" body="42" legs="55" feet="85" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+		<event name="Rarod_kill"/>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="115" attack="115"/>
+		<attack name="earth pull" interval="2000" chance="85" target="1" range="6" min="-240" max="-300"/>
+		<attack name="earth rock" interval="2500" chance="85" target="1" range="6" min="-230" max="-290"/>
+		<attack name="earth punch" interval="1800" chance="85" min="-350" max="-450"/>
+		<attack name="earth smash" interval="6000" chance="55" min="-250" max="-350"/>
+		<attack name="earth arena" interval="9000" chance="100"/>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="14" min="900" max="2200">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	
+	<voices interval="5000" chance="10">
+		<voice sentence="LET THE SWAMP IMPRISON YOU!"/>
+		<voice sentence="NEVER CHALLENGE THE RARODS!"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="2160" countmax="3" chance="100"/><!-- crystal coin -->
+	</loot>
+</monster>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lava Golem" nameDescription="a lava golem" race="undead" experience="600000" speed="480" manacost="0">
+	<health now="100000" max="100000"/>
+	<look type="560" corpse="18161"/>
+	<targetchange interval="2000" chance="50"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="100" attack="110"/>
+		<attack name="fire bomb" interval="3000" chance="25" min="-540" max="-680"/>
+		<attack name="fire star" interval="3000" chance="50" min="-155" max="-195"/>
+		<attack name="fire blast" interval="2000" chance="65" min="-125" max="-155"/>
+		<attack name="fire meteor" interval="7000" chance="40" min="-235" max="-385"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="2000" chance="25" min="600" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12686" chance="4000"/><!-- fire stone -->
+		<item id="18099" chance="24000"/><!-- fire rune 1 -->
+		<item id="18104" chance="2400"/><!-- fire rune 2 -->
+		<item id="18109" chance="240"/><!-- fire rune 3 -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="2" chance="57500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="65500"/><!-- fire mushroom -->
+		<item id="2492" chance="3800"/><!-- dragon scale mail -->
+		<item id="2177" chance="9200"/><!-- life crystal -->
+		<item id="12929" chance="2000"/><!-- goldensilver shield -->
+		<item id="12869" chance="2000"/><!-- umbral fire sword -->
+		<item id="13305" chance="2000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="7" chance="8200"/>  <!-- small diamond -->
+		<item id="12946" chance="1000"/>  <!-- bender scroll -->
+		<item id="12792" chance="1000"/>  <!-- bender scroll -->
+		<item id="2514" chance="1800"/>  <!-- bender scroll -->
+		<item id="2498" chance="1800"/>  <!-- bender scroll -->
+		<item id="12785" chance="1000"/>  <!-- bender scroll -->
+		<item id="12782" chance="1000"/>  <!-- bender scroll -->
+		<item id="12806" chance="1000"/>  <!-- bender scroll -->
+		<item id="2470" chance="3800"/>  <!-- bender scroll -->
+		<item id="13432" chance="1000"/>  <!-- bender scroll -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+		<item id="2207" chance="10000"/>  <!-- sword ring -->
+		<item id="2169" chance="10000"/>  <!-- time ring -->
+	</loot>
+</monster>

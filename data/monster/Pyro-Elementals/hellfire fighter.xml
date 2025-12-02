@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellfire Fighter" nameDescription="a hellfire fighter" race="undead" experience="12654" speed="260" manacost="0">
+	<health now="3800" max="3800"/>
+	<look type="243" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="120" attack="80"/>
+		<attack name="fire" interval="2000" chance="40" range="5" length="8" spread="3" min="-700" max="-1115">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<loot>
+		<item id="2148" countmax="85" chance="61000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="61000"/><!-- gold coin -->
+		<item id="2392" chance="1400"/><!-- fire sword -->
+		<item id="7894" chance="350"/><!-- magma legs -->
+		<item id="7899" chance="500"/><!-- magma coat -->
+		<item id="2432" chance="400"/><!-- fire axe -->
+		<item id="2136" chance="100"/><!-- demonbone amulet -->
+	</loot>
+</monster>

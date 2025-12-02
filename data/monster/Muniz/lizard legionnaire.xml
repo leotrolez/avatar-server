@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Legionnaire" nameDescription="a lizard legionnaire" race="undead" experience="10720" speed="230" manacost="0">
+	<health now="2400" max="2400"/>
+	<look type="338" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="40"/>
+		<attack name="physical" interval="2213" chance="80" range="5" target="1" min="-50" max="-130">
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+		<attack name="physical" interval="3913" chance="75" range="7" target="1" min="-50" max="-120">
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+		<attack name="physical" interval="4653" chance="75" range="7" target="1" min="-50" max="-150">
+			<attribute key="shootEffect" value="royalspear"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tssss!"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="44000" /><!-- gold coin -->
+		<item id="2148" countmax="65" chance="54000" /><!-- gold coin -->
+		<item id="11334" chance="1040" /><!-- legionnaire flags -->
+		<item id="5881" countmax="3" chance="680" /><!-- lizard scale -->
+		<item id="11323" chance="560" /><!-- zaoan halberd -->
+		<item id="11335" chance="1240" /><!-- broken halberd -->
+		<item id="5876" chance="970" /><!-- lizard leather -->
+		<item id="11305" chance="510" /><!-- drakinata -->
+		<item id="11206" chance="330" /><!-- red lantern -->
+		<item id="11245" chance="950" /><!-- bunch of ripe rice -->
+		<item id="2145" countmax="2" chance="900" /><!-- small diamond -->
+		<item id="11303" chance="360" /><!-- zaoan shoes -->
+		<item id="11301" chance="70"/><!-- zaoan armor -->
+	</loot>
+</monster>

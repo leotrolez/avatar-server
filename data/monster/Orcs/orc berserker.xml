@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Berserker" nameDescription="a orc berserker" race="undead" experience="4725" speed="250" manacost="590">
+	<health now="750" max="750"/>
+	<look type="8" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="50"/>
+	</attacks>
+
+	<defenses armor="15" defense="12">
+		<defense name="speed" interval="1000" chance="15" speedchange="290" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="KRAK ORRRRRRK!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="50" chance="35000"/><!-- gold coin -->
+		<item id="12435" countmax="4" chance="19500"/><!-- monster item -->
+		<item id="12409" countmax="2" chance="700"/><!-- monster item -->
+		<item id="2419" chance="7500"/><!-- scimitar -->
+		<item id="2666" countmax="2" chance="9000"/><!-- meat -->
+		<item id="2463" chance="1200"/><!-- plate armor -->
+		<item id="2647" chance="1200"/><!-- plate legs -->		
+		<item id="2490" chance="1400"/><!-- dark helmet -->
+		<item id="2377" chance="2000"/><!-- two-handed sword -->
+		<item id="2434" chance="400"/><!-- dragon hammer -->
+		<item id="2497" chance="350"/><!-- crusader helmet -->
+		<item id="7891" chance="30"/><!-- magma boots -->
+	</loot>
+</monster>

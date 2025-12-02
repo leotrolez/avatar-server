@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zero" nameDescription="a zero" race="undead" experience="110780" speed="290" manacost="0">
+	<health now="17000" max="17000"/>
+	<look type="459" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1600" skill="100" attack="60"/>
+        <attack name="water icespikes" interval="3000" chance="35" min="-100" max="-194"/>
+        
+		<attack name="physical" interval="2000" chance="28" range="7" radius="4" target="1" min="-180" max="-280">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+
+		<attack name="physical" interval="3000" chance="22" length="7" spread="3" min="-100" max="-260">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+
+		<attack name="speed" interval="4000" chance="25" range="7" target="1" speedchange="-300" duration="50000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+
+		<attack name="ice" interval="3000" chance="25" range="5" radius="4" min="-200" max="-320">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="22" defense="45">
+		<defense name="healing" interval="5000" chance="23" min="700" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+
+	<voices interval="5000" chance="10">
+		<voice sentence="YOU WILL FREEZE!" yell="1"/>
+		<voice sentence="ZCHHHHH!" yell="1"/>
+		<voice sentence="I am so cool" yell="1"/>
+		<voice sentence="Chill out!." yell="1"/>
+	</voices>
+	
+	<loot>
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="12688" chance="20"/><!-- water stone -->
+		<item id="18100" chance="200"/><!-- water rune 1 -->
+		<item id="18105" chance="20"/><!-- water rune 2 -->
+		<item id="18110" chance="2"/><!-- water rune 3 -->
+		<item id="2148" countmax="95" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="50000"/><!-- gold coin -->
+		<item id="2672" countmax="5" chance="11500"/><!-- dragon ham -->
+		<item id="2146" chance="1000"/><!-- small sapphire -->
+		<item id="7441" chance="2500"/><!-- ice cube -->
+		<item id="7290" chance="1000"/><!-- shard -->
+		<item id="2492" chance="450"/><!-- dragon scale mail -->
+		<item id="11118" chance="300"/><!-- dragon scale boots -->
+		<item id="2498" chance="700"/><!-- royal helmet -->
+		<item id="2528" chance="800"/><!-- tower shield -->
+	</loot>
+</monster>

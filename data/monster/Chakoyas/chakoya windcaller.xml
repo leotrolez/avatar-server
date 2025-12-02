@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chakoya Windcaller" nameDescription="a chakoya windcaller" race="undead" experience="3150" speed="270" manacost="305">
+	<health now="350" max="350"/>
+	<look type="260" corpse="18161"/>
+			<script>
+
+</script>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="water whip" interval="2000" chance="10" min="-30" max="-55"/>
+		<attack name="melee" interval="2000" skill="22" attack="23"/>
+		<attack name="energy" interval="1000" chance="20" range="7" min="-15" max="-45">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="18" length="3" spread="2" min="-15" max="-40">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+
+	<voices interval="2000" chance="5">
+		<voice sentence="Mupi! Si siyoqua jinuma!"/>
+		<voice sentence="Siqsiq ji jusipa!"/>
+		<voice sentence="Jagura taluka taqua!"/>
+		<voice sentence="Quatu nguraka!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="29" chance="20000"/><!-- gold coin -->
+		<item id="2666" chance="22500"/><!-- meat -->
+		<item id="2667" countmax="2" chance="10000"/><!-- fish -->
+		<item id="2398" chance="4000"/><!-- mace-->
+		<item id="7381" chance="900"/><!-- mammoth whopper (470)-->
+		<item id="7441" chance="400"/><!-- ice cube -->
+		<item id="7159" chance="500"/><!-- green perch -->
+		<item id="2669" chance="400"/><!-- northern pike -->
+		<item id="7158" chance="350"/><!-- rainbow trout -->
+	</loot>
+</monster>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tunnel Tyrant" nameDescription="an tunnel tyrant" race="undead" experience="206600" speed="400" manacost="0">
+	<health now="38600" max="38600"/>
+	<look type="976" corpse="18161"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="125" attack="125" poison="90"/>
+		<attack name="poison" interval="2000" chance="80" range="7" min="-710" max="-820">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="70">
+		<defense name="healing" interval="1000" chance="10" min="700" max="1280">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>		
+		<item id="12687" chance="35"/><!-- earth stone -->
+		<item id="18102" chance="350"/><!-- earth rune 1 -->
+		<item id="18107" chance="35"/><!-- earth rune 2 -->
+		<item id="18112" chance="4"/><!-- earth rune 3 -->
+		<item id="2148" countmax="90" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="63750"/><!-- gold coin -->
+		<item id="2147" countmax="30" chance="5000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="5" chance="3500"/><!-- giant pearl 2000gp ea -->
+		<item id="2153" chance="8000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="15"/><!-- armas novas -->
+		<item id="12864" chance="15"/><!-- armas novas -->
+		<item id="12861" chance="15"/><!-- armas novas -->
+		<item id="13296" chance="15"/><!-- armas novas -->
+		<item id="13086" chance="15"/><!-- armas novas -->
+		<item id="2209" chance="500"/>  <!-- club ring -->
+		<item id="2169" chance="500"/>  <!-- time ring -->
+		<item id="2492" chance="800"/><!-- dragon scale mail -->
+		<item id="2177" chance="1500"/><!-- life crystal -->
+		<item id="12929" chance="800"/><!-- goldensilver shield -->
+		<item id="12869" chance="800"/><!-- umbral fire sword -->
+		<item id="13305" chance="800"/><!-- umbral fire robe -->
+		<item id="17860" chance="1"/><!-- legendary sword -->
+		<item id="17861" chance="1"/><!-- legendary crossbow -->
+		<item id="17862" chance="1"/><!-- legendary club -->
+		<item id="17863" chance="1"/><!-- legendary axe -->
+	</loot>
+</monster>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Water Buffalo" nameDescription="water buffalo" race="undead" experience="5600" speed="490" manacost="0">
+	<health now="1600" max="1600"/>
+	<look type="755" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="80"/>
+		<attack name="poison" interval="2000" chance="50" range="7" radius="6" target="0" min="-65" max="-240">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="poison" interval="1000" chance="30" range="7" min="-60" max="-140">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="20" range="7" radius="6" target="0" min="-75" max="-150">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="healing" interval="1000" chance="25" min="70" max="120">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="10">
+		<voice sentence="Gnorrr!"/>
+		<voice sentence="Gnarrr!"/>
+		<voice sentence="snort"/>
+		<voice sentence="Noorrr!"/>
+		<voice sentence="Bellow!"/>
+		<voice sentence="Baaah"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="17" chance="30000"/>
+		<item id="2666" countmax="4" chance="880"/> <!-- Meat -->
+		<item id="2671" countmax="3" chance="880"/> <!-- Ham -->
+	</loot>
+</monster>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- novo formato AVATAR, monstro com dificuldade facil, lv 1 -->
+<monster name="Rotworm" nameDescription="a rotworm" race="undead" experience="625" speed="176" manacost="305">
+	<health now="65" max="65"/>
+	<look type="26" corpse="18161"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="19"/>
+	</attacks>
+	<defenses armor="8" defense="11"/>
+<script>
+
+</script>
+	<loot>
+		<item id="2148" countmax="20" chance="40000"/><!-- gold coin -->
+		<item id="10609" countmax="3" chance="60000"/><!-- lump of dirty -->
+		<item id="2666" countmax="5" chance="50000"/><!-- meat -->
+		<item id="2671" countmax="3" chance="50000"/><!-- ham -->
+	</loot>
+</monster>

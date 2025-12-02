@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hideous Fungus" nameDescription="a hideous fungus" race="undead" experience="57908" speed="360" manacost="0">
+	<health now="16200" max="16200"/>
+	<look type="566" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" min="-260" max="-380"/>
+		<attack name="earth" interval="3000" chance="55" range="7" min="-270" max="-390">
+			<attribute key="shootEffect" value="smallearth"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="40" target="0" length="5" spread="0" min="-135" max="-185">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="40" target="0" radius="3" range="7" min="-140" max="-220">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="30">
+		<defense name="healing" interval="2000" chance="50" min="200" max="350">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Munch munch munch!"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="20"/><!-- earth stone -->
+		<item id="18102" chance="200"/><!-- earth rune 1 -->
+		<item id="18107" chance="20"/><!-- earth rune 2 -->
+		<item id="18112" chance="2"/><!-- earth rune 3 -->
+		<item id="2148" countmax="87" chance="57500"/><!-- gold coin -->
+		<item id="2148" countmax="68" chance="47500"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="25500"/><!-- gold coin -->
+		<item id="2795" countmax="8" chance="15500"/><!-- fire mushroom -->
+		<item id="2498" chance="370"/>  <!-- royal helmet -->
+		<item id="2177" chance="600"/><!-- life crystal -->
+		<item id="2145" countmax="7" chance="700"/>  <!-- small diamond -->
+		<item id="13898" chance="20"/>
+		<item id="13858" chance="20"/>
+		<item id="13895" chance="30"/>
+		<item id="13859" chance="30"/>
+		<item id="13900" chance="30"/>
+	</loot>
+</monster>

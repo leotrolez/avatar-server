@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sea Serpent" nameDescription="a sea serpent" race="undead" experience="21301" speed="300" manacost="0">
+	<health now="5000" max="5000"/>
+	<look type="275" corpse="18161"/>
+	<targetchange interval="7000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1300" skill="55" attack="65"/>
+		<attack name="water icespikes" interval="6000" chance="55" min="-80" max="-230"/>
+		<attack name="water whip" interval="1000" chance="30" min="-55" max="-90"/>
+
+		<attack name="ice" interval="5000" chance="50" length="9" spread="3" min="-120" max="-300">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+
+		<attack name="drown" interval="3500" chance="39" radius="4" target="1" min="-115" max="-220">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="22" defense="30">
+		<defense name="healing" interval="2000" chance="25" min="10" max="15">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="3000" chance="20">
+		<voice sentence="CHHHRRRR" yell="1"/>
+		<voice sentence="HISSSS" yell="1"/>
+	</voices>
+
+	<loot>
+		<item id="12688" chance="10"/><!-- water stone -->
+		<item id="18100" chance="100"/><!-- water rune 1 -->
+		<item id="18105" chance="10"/><!-- water rune 2 -->
+		<item id="18110" chance="1"/><!-- water rune 3 -->
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="2148" countmax="90" chance="51000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="42000"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="35000"/><!-- dragon ham -->
+		<item id="2647" chance="1350"/><!-- plate legs -->
+		<item id="10583" chance="900"/><!-- sea serpent scale -->
+		<item id="2146" countmax="2" chance="800"/><!-- small saphire -->
+		<item id="2409" chance="600"/><!-- serpent sword -->
+		<item id="2491" chance="320"/><!-- crown helmet -->
+		<item id="7896" chance="160"/><!-- glacier kilt -->
+		<item id="7897" chance="160"/><!-- glacier robe -->
+		<item id="7902" chance="160"/><!-- glacier mask -->
+		<item id="2498" chance="110"/><!-- royal helmet -->
+	</loot>
+</monster>

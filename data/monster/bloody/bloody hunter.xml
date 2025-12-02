@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bloody Hunter" nameDescription="a bloody hunter" race="undead" experience="5652" speed="215" manacost="0">
+	<health now="785" max="785"/>
+	<look addons="2" type="129" head="76" legs="132" body="75" feet="0" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="60"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="35" attack="20"/>
+		<attack name="physical" interval="2000" chance="10" range="5" min="-70" max="-110">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+
+	</attacks>
+	<defenses armor="8" defense="10"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Guess who we're hunting, haha!"/>
+		<voice sentence="You have a lot of bloody, its mine!"/>
+		<voice sentence="Bullseye!"/>
+		<voice sentence="You'll make a nice trophy!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="30750"/><!-- gold coin -->
+		<item id="2544" countmax="2" chance="3000"/><!-- ancient stone -->
+		<item id="2461" chance="12500"/><!-- leather helmet -->
+		<item id="2147" chance="200"/><!-- small ruby -->
+		<item id="8867" chance="40"/><!-- bloody robe -->
+	</loot>
+</monster>

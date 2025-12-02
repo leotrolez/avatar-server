@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death Wing" nameDescription="a death wing" race="undead" experience="1000000" speed="800" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="1112" corpse="18161"/>
+	<targetchange interval="4000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="145" attack="145"/>
+		<attack name="air fan" interval="4000" chance="60" min="-240" max="-310"/>
+		<attack name="air force" interval="2000" chance="70" min="-660" max="-820"/>
+		<attack name="air windblast" interval="4000" chance="45" min="-680" max="-795"/>
+	</attacks>
+	<defenses armor="75" defense="75">
+	</defenses>
+	<loot>
+		<item id="12689" chance="8000"/><!-- air stone -->
+		<item id="18101" chance="60000"/><!-- air rune 1 -->
+		<item id="18106" chance="6000"/><!-- air rune 2 -->
+		<item id="18111" chance="600"/><!-- air rune 3 -->
+		<item id="18132" chance="300"/><!-- air rune 4 -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="1" chance="77500"/><!-- gold coin -->
+		<item id="2147" countmax="45" chance="70000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="10" chance="70000"/><!-- giant pearl 2000gp ea -->
+		<item id="12929" chance="2000"/><!-- goldensilver shield -->
+		<item id="12869" chance="2000"/><!-- umbral fire sword -->
+		<item id="13305" chance="2000"/><!-- umbral fire robe -->
+		<item id="7402" chance="30700"/><!-- dragon slayer -->
+		<item id="2492" chance="15000"/><!-- dragon scale mail -->
+		<item id="12855" chance="5200"/>  <!-- lava axe -->
+		<item id="2414" chance="15700"/><!-- dragon lance -->
+		<item id="2195" chance="15000"/><!-- boots of haste -->
+		<item id="2153" chance="80000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="100"/><!-- armas novas -->
+		<item id="12864" chance="100"/><!-- armas novas -->
+		<item id="12861" chance="100"/><!-- armas novas -->
+		<item id="13296" chance="100"/><!-- armas novas -->
+		<item id="13086" chance="100"/><!-- armas novas -->
+		<item id="10219" chance="200"/><!-- sacred amulet -->
+		<item id="12872" chance="1000"/><!-- boomerang -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+	</loot>
+</monster>

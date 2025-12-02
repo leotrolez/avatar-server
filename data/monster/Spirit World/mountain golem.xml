@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mountain Golem" nameDescription="a mountain golem" race="undead" experience="19150" speed="180" manacost="590">
+	<health now="13030" max="13030"/>
+	<look type="482" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="110"/>
+		<attack name="earth punch" interval="3000" chance="30" min="-290" max="-320"/>
+		<attack name="Earth Smash" interval="2500" chance="20" min="-425" max="-650"/>
+	</attacks>
+	<defenses armor="20" defense="30"/>
+	<immunities>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="3" chance="90000"/><!-- plat coin -->
+		<item id="1294" countmax="4" chance="8250"/><!-- small stone -->
+		<item id="2509" chance="9750"/><!-- steel shield -->
+		<item id="2050" chance="7250"/><!-- torch -->
+		<item id="2483" chance="3250"/><!-- scale armor -->
+		<item id="12880" chance="250"/><!-- spiked armor -->
+		<item id="2391" chance="3006"/><!-- war hammer -->
+		<item id="2409" chance="4000"/><!-- serpent sword -->
+		<item id="7388" chance="2000"/><!-- vile axe -->
+		<item id="2452" chance="800"/><!-- heavy mace -->
+		<item id="9735" chance="200"/><!-- blessed elmo -->
+		<item id="11422" chance="1000"/><!-- stoned elmo -->
+		<item id="12795" chance="1000"/><!-- stoned axe -->
+		<item id="10549" countmax="12" chance="4500"/><!-- ancient stone -->
+		<item id="5880" countmax="3" chance="8500"/><!-- iron ore -->
+		<item id="11367" countmax="5" chance="9300"/><!-- undead heart -->
+		<item id="2156" chance="1050"/><!-- red gem -->
+	</loot>
+</monster>

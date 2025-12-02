@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Breach Brood" nameDescription="an breach brood" race="undead" experience="162400" speed="400" manacost="0">
+	<health now="34000" max="34000"/>
+	<look type="935" corpse="18161"/>
+	<targetchange interval="20000" chance="35"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100"/>
+		<attack name="energy" interval="2000" chance="80" range="6" min="-430" max="-595">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="1000" chance="30" min="400" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="18121" chance="40"/><!-- energy rune 1 -->
+		<item id="18122" chance="10"/><!-- energy rune 2 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2377" chance="8400"/><!-- two handed sword -->
+		<item id="2510" chance="8000"/><!-- plate shield -->
+		<item id="2513" chance="8500"/><!-- battle shield -->
+		<item id="2153" chance="3600"/><!-- violet gem 10000gp ea -->
+		<item id="2438" chance="11800"/><!-- epee -->
+		<item id="2645" chance="12300"/><!-- steel boots -->
+		<item id="9690" countmax="5" chance="500"/><!-- gear wheel -->
+		<item id="7403" chance="1700"/><!-- berserker -->
+		<item id="7422" chance="1600"/><!-- jade hammer -->
+		<item id="7428" chance="1500"/><!-- bonebreaker -->
+		<item id="2177" chance="550"/><!-- life crystal -->
+		<item id="12871" chance="50"/><!-- espada -->
+	</loot>
+</monster>

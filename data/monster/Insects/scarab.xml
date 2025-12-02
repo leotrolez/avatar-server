@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- balanceada -->
+<monster name="Scarab" nameDescription="a scarab" race="undead" experience="3600" speed="170" manacost="395">
+	<health now="400" max="400"/>
+	<look type="83" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="80"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="65" attack="35" poison="25"/>
+	</attacks>
+	<defenses armor="12" defense="15">
+		<defense name="speed" interval="1000" chance="5" speedchange="250" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="55" chance="36000"/><!-- gold coin -->
+		<item id="2439" chance="300"/><!-- daramanian mace -->
+		<item id="2666" countmax="2" chance="30500"/><!-- meat -->
+		<item id="2159" countmax="2" chance="2000"/><!-- scarab coin -->
+		<item id="2149" chance="350"/><!-- small emerald -->
+		<item id="5922" chance="1000"/><!-- holy orchid -->
+		<item id="2150" countmax="2" chance="500"/><!-- small amethyst -->
+	</loot>
+</monster>

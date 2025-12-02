@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Huge Troll" nameDescription="a huge troll" race="undead" experience="60000" speed="300" manacost="0">
+	<health now="14000" max="14000"/>
+	<look type="436" body="85" legs="114" feet="94" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="110"/>
+		<attack name="poison" interval="1000" chance="11" length="8" spread="3" min="-320" max="-669">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+		<attack name="poison" interval="2000" chance="30" radius="6" target="0" min="-150" max="-210">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="11" min="30" max="120">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	
+	<voices interval="5000" chance="0">
+		<voice sentence="ROOAAAAR!"/>
+		<voice sentence="Well, you again?"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="2152" countmax="40" chance="99"/><!-- plat coin -->
+		<item id="2148" countmax="10" chance="80"/><!-- small emerald -->
+		<item id="12859" chance="2"/><!-- huge basher -->
+		<item id="2179" chance="7"/><!-- golden ring -->
+		<item id="13344" chance="2"/><!-- shredder -->
+		<item id="12919" chance="2"/><!-- templar shield -->
+		<item id="2475" chance="16"/><!-- warrior helmet -->
+		<item id="2645" chance="2"/><!-- steel boots (12, 5k)-->
+		<item id="2391" chance="16"/><!-- war hammer -->
+		<item id="2452" chance="5"/><!-- heavy mace -->
+		<item id="2547" countmax="12" chance="70"/><!-- power bolt -->
+		<item id="12785" chance="2"/><!-- templar legs -->
+		<item id="12813" chance="2"/><!-- templar armor -->
+		<item id="12899" chance="2"/><!-- templar helmet -->
+		<item id="2393" chance="6"/><!-- giant sword (11k)-->
+	</loot>
+</monster>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Slick Water Elemental" nameDescription="a slick water elemental" race="undead" experience="2880" speed="450" manacost="0">
+	<health now="320" max="320"/>
+	<look type="286" head="95" body="95" legs="95" feet="95" addons="3" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="35" attack="30"/>
+        <attack name="water wave" interval="2000" chance="14" min="-11" max="-47"/>
+        <attack name="water icespikes" interval="4000" chance="25" min="-21" max="-44"/>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FOR THE WATER BENDERS!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="60" chance="50000"/><!-- gold coin -->
+		<item id="2667" countmax="7" chance="50000"/><!-- fish -->
+	</loot>
+</monster>

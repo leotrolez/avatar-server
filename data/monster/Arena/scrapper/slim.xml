@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Slim" nameDescription="slim" race="undead" experience="5535" speed="200" manacost="0">
+	<health now="1025" max="1025"/>
+	<look type="101" corpse="18161"/>
+	<script>
+
+</script>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="50"/>
+		<attack name="physical" interval="3049" chance="40" min="-10" max="-50">
+			<attribute key="areaEffect" value="blackSpark"/>
+		</attack>
+	</attacks>
+	<defenses armor="36" defense="38"/>
+	<voices interval="2000" chance="5">
+		<voice sentence="Zhroozzzzs."/>
+	</voices>
+</monster>

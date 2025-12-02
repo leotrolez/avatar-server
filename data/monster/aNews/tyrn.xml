@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tyrn" nameDescription="a tyrn" race="undead" experience="4455126" speed="600" manacost="0">
+	<health now="1903900" max="1903900"/>
+	<look type="739" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="170" attack="170"/>
+		<attack name="fire lightning" interval="4000" chance="90" radius="3" min="-1910" max="-2575"/>
+		<attack name="air ball" interval="3000" chance="75" range="5" min="-575" max="-850"/>
+		<attack name="air force" interval="6000" chance="75" range="5" min="-475" max="-635"/>
+		<attack name="air gust" interval="7500" chance="75" range="4" min="-375" max="-515"/>
+		<attack name="air windstorm" interval="12137" chance="75" range="4" min="-150" max="-245"/>
+		<attack name="air stormcall" interval="13137" chance="65" range="4" min="-150" max="-245"/>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="healing" interval="1100" chance="40" min="420" max="810">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="GRRR!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+	</voices>
+	<loot>
+		<item id="12689" chance="6000"/><!-- air stone -->
+		<item id="18101" chance="60000"/><!-- air rune 1 -->
+		<item id="18106" chance="6000"/><!-- air rune 2 -->
+		<item id="18111" chance="600"/><!-- air rune 3 -->
+		<item id="18132" chance="300"/><!-- air rune 4 -->
+		<item id="18121" chance="6000"/><!-- energy rune 1 -->
+		<item id="18122" chance="1500"/><!-- energy rune 2 -->
+		<item id="2148" countmax="80" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="15" chance="100000"/><!-- gold coin -->
+		<item id="10582" countmax="5" chance="95050"/><!-- wyrm scale-->
+		<item id="11223" countmax="3" chance="94050"/><!-- essence of a bad dream-->
+		<item id="2145" countmax="3" chance="65000"/><!-- small diamonds-->
+		<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+			<item id="11355" chance="14000"/><!-- wyrmhunter robe -->
+			<item id="2424" chance="30000"/><!-- silver mace -->
+			<item id="8871" chance="40000"/><!-- focus cape -->
+			<item id="7430" chance="30000"/><!-- dragonbone staff -->
+			<item id="2475"  chance="70000"/><!-- warrior helmet -->		
+			<item id="2430" chance="70000"/><!-- knight axe -->
+			<item id="2476" chance="70000"/><!-- knight armor -->
+			<item id="8855" chance="10000"/><!-- composite hornbow -->
+			<item id="2177" chance="30020"/><!-- life crystal -->	
+			<item id="2146" chance="10300"/><!-- small sapphire -->
+			<item id="12929" chance="2000"/><!-- goldensilver shield -->
+			<item id="12869" chance="2000"/><!-- umbral fire sword -->
+			<item id="13305" chance="2000"/><!-- umbral fire robe -->
+			<item id="7402" chance="30700"/><!-- dragon slayer -->
+			<item id="2492" chance="15000"/><!-- dragon scale mail -->
+			<item id="12855" chance="5200"/>  <!-- lava axe -->
+			<item id="2414" chance="15700"/><!-- dragon lance -->
+			<item id="2195" chance="15000"/><!-- boots of haste -->
+		<item id="17860" chance="10"/><!-- legendary sword -->
+		<item id="17861" chance="10"/><!-- legendary crossbow -->
+		<item id="17862" chance="10"/><!-- legendary club -->
+		<item id="17863" chance="10"/><!-- legendary axe -->
+		<item id="13401" chance="10"/><!-- moon helmet -->
+		<item id="13402" chance="10"/><!-- moon chest -->
+		<item id="13403" chance="10"/><!-- moon legs -->
+		<item id="13404" chance="10"/><!-- moon boots -->
+		<item id="18063" chance="15"/>
+		<item id="18065" chance="15"/>
+		<item id="18067" chance="15"/>
+		<item id="18069" chance="15"/>
+		</inside>
+		</item>
+	</loot>
+</monster>

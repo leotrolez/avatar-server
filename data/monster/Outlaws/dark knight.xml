@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Knight" nameDescription="a dark knight" race="undead" experience="18689" speed="450" manacost="0">
+	<health now="4800" max="4800"/>
+	<look type="433" head="95" body="95" legs="95" feet="95" addons="3" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="75" attack="63"/>
+		<attack name="physical" interval="3000" chance="30" range="7" min="-100" max="-410">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+		<attack name="melee" interval="3000" chance="25" range="7" radius="3" target="0" min="-150" max="-200">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="IM THE DARK KNIGHT MOTHAFUCKERS!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="40000"/><!-- platinum coin -->
+		<item id="2152" countmax="2" chance="2000"/><!-- platinum coin -->
+		<item id="12409" countmax="2" chance="1600"/><!-- broken elmo -->
+		<item id="2381" chance="1000"/><!-- halberd -->
+		<item id="2463" chance="1200"/><!-- plate armor -->
+		<item id="2377" chance="2000"/><!-- two handed sword -->
+		<item id="2789" countmax="2" chance="5000"/><!-- brown mushroom -->
+		<item id="2391" chance="1100"/><!-- war hammer -->
+		<item id="2452" chance="700"/><!-- heavy mace -->
+		<item id="2475"  chance="500"/><!-- warrior helmet -->		
+		<item id="2430" chance="500"/><!-- knight axe -->
+		<item id="2476" chance="500"/><!-- knight armor -->
+		<item id="2489" chance="900"/><!-- dark armor -->
+		<item id="2490" chance="900"/><!-- dark helmet -->
+		<item id="2387" chance="1200"/><!-- double axe -->
+		<item id="2477" chance="500"/><!-- knight legs -->
+		<item id="2414" chance="370"/><!-- dragon lance -->
+		<item id="2195" chance="250"/><!-- boots of haste -->
+	</loot>
+</monster>

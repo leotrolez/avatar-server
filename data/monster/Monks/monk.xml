@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- balanceado -->
+<monster name="Monk" nameDescription="a monk" race="undead" experience="3726" speed="215" manacost="420">
+	<health now="460" max="460"/>
+	<look type="57" head="114" body="20" legs="22" feet="2" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="18"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="55" attack="41"/>
+		<attack name="Air Burst" interval="4000" chance="35" min="-45" max="-75"/>
+		<attack name="Air Ball" interval="2000" chance="35" min="-55" max="-65"/>
+	</attacks>
+	<defenses armor="10" defense="13"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="I am a mad man seeking revenge!"/>
+		<voice sentence="MAAAAAAAAAAAAAAAAAAAAAAD!"/>
+		<voice sentence="YOOOOOOOOOOOOOOOOOOOOOOOOOOU, STAY HERE!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="50" chance="50250"/><!-- gold coin -->
+		<item id="2666" countmax="5" chance="36500"/><!-- meat -->
+		<item id="2386" chance="1800"/><!-- axe -->
+		<item id="2476" chance="200"/><!-- knight armor -->
+ 		<item id="2489" chance="928"/><!-- dark armor -->
+ 		<item id="2490" chance="1200"/><!-- dark helmet -->
+ 		<item id="2436" chance="120"/><!-- skull staff -->
+		<item id="2398" chance="7500"/><!-- mace -->
+		<item id="2458" chance="2500"/><!-- chain helmet -->
+		<item id="2465" chance="1200"/><!-- brass armor -->
+		<item id="2509" chance="1250"/><!-- steel shield -->
+		<item id="2459" chance="300"/><!-- iron helmet -->
+	</loot>
+</monster>

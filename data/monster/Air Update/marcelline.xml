@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Marcelline" nameDescription="a marcelline" race="undead" experience="17180" speed="220" manacost="0">
+	<health now="3800" max="3800"/>
+	<look type="312" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="50"/>
+		<attack name="lifedrain" interval="2000" chance="20" range="1" min="-100" max="-250">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="8" range="7" min="-30" max="-150">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="7" range="7" min="-30" max="-170">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="17" defense="23"/>
+	<voices interval="4000" chance="100">
+		<voice sentence="Kneel before your Mistress!"/>
+		<voice sentence="Dead is the new alive."/>
+		<voice sentence="Come, let me kiss you, darling. Oh wait, I meant kill."/>
+		<voice sentence="Enjoy the pain - I know you love it."/>
+	</voices>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="20" chance="50111"/><!-- gold coin -->
+		<item id="2144" chance="1120"/><!-- black pearl -->
+		<item id="5894" countmax="3" chance="6000"/><!-- bat wing -->
+		<item id="10602" countmax="1" chance="1000"/><!-- vampire teeth -->
+		<item id="2383" chance="1222"/><!-- spike sword -->
+		<item id="2479" chance="2140"/><!-- strange helmet -->
+		<item id="2534" chance="300"/><!-- vampire shield -->	
+		<item id="12789" chance="300"/><!-- vampire helmet -->	
+		<item id="2195" chance="200"/><!-- boots of haste -->
+		<item id="7411" chance="300"/><!-- ornamented axe -->
+		<item id="12409" countmax="2" chance="1600"/><!-- broken elmo -->
+		<item id="2381" chance="1000"/><!-- halberd -->
+		<item id="2477" chance="400"/><!-- knight legs -->
+		<item id="2414" chance="270"/><!-- dragon lance -->
+		<item id="2475"  chance="400"/><!-- warrior helmet -->		
+		<item id="2430" chance="400"/><!-- knight axe -->
+		<item id="2476" chance="400"/><!-- knight armor -->
+	</loot>
+</monster>

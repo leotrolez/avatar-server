@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rotworm Queen" nameDescription="a rotworm queen" race="undead" experience="12699" speed="265" manacost="0">
+	<health now="4150" max="4150"/>
+	<look type="295" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+			<flag attackable="1"/>
+			<flag hostile="1"/>
+			<flag illusionable="0"/>
+			<flag convinceable="0"/>
+			<flag pushable="0"/>
+			<flag canpushitems="1"/>
+			<flag canpushcreatures="0"/>
+			<flag targetdistance="1"/>
+			<flag staticattack="90"/>
+			<flag runonhealth="0"/>
+		</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-38" max="-68"/>
+		<attack name="earth growth" interval="6000" chance="100" min="-5" max="-10"/>
+	</attacks>
+	<defenses armor="50" defense="50"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="FCHHHHH"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="80" chance="72000"/><!-- gold coin -->
+		<item id="2148" countmax="60" chance="64000"/><!-- gold coin -->
+		<item id="10609" countmax="5" chance="60000"/><!-- lump of dirty -->
+		<item id="2666" countmax="4" chance="57500"/><!-- meat -->
+		<item id="2671" countmax="4" chance="45000"/><!-- ham -->
+		<item id="2475" chance="400"/><!-- warrior helmet -->
+		<item id="2476" chance="400"/><!-- knight armor -->
+		<item id="2177" chance="300"/><!-- life crystal -->
+	</loot>
+</monster>

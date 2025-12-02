@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Snake God Essence" nameDescription="snake god essence" race="undead" experience="46800" speed="430" manacost="0">
+	<health now="20000" max="20000" />
+	<look type="356" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="80" />
+		<attack name="lifedrain" interval="2000" chance="40" length="8" spread="0" max="-150">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="earth" interval="2000" chance="50" radius="6" min="-130" max="-190">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+		<attack name="speed" interval="1000" chance="60" range="7" speedchange="-850" duration="5000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="70">
+		<defense name="healing" interval="1000" chance="25" min="250" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="10">
+		<voice sentence="AHHH ZHE POWER..." yell="1" />
+		<voice sentence="ZHE TIME OF ZHE SNAKE HAZ COME!" yell="1" />
+	</voices>
+	<loot>
+		<item id="12687" chance="20"/><!-- earth stone -->
+		<item id="18102" chance="200"/><!-- earth rune 1 -->
+		<item id="18107" chance="20"/><!-- earth rune 2 -->
+		<item id="18112" chance="2"/><!-- earth rune 3 -->
+		<item id="2148" countmax="90" chance="94300"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="20300"/><!-- gold coin -->
+		<item id="2796" countmax="23" chance="50550"/><!-- green mushroom -->
+		<item id="2195" chance="190"/><!-- boots of haste -->
+		<item id="2528" chance="1000"/><!-- tower shield -->
+		<item id="12934" chance="170"/><!-- strange boots of haste -->
+		<item id="2498" chance="250"/><!-- rh -->
+	</loot>
+</monster>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frozen Rarod" nameDescription="an frozen rarod" race="undead" experience="1053000" speed="400" manacost="0" lootPercent="true">
+	<health now="450000" max="450000"/>
+	<look type="484" head="8" body="9" legs="48" feet="93" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+		<event name="Rarods_Quest"/>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="1000" skill="135" attack="135"/>
+		<attack name="water whip" interval="2000" chance="95" min="-370" max="-420"/>
+		<attack name="water wave" interval="2000" chance="85" min="-560" max="-710"/>
+		<attack name="water icespikes" interval="6000" chance="95" min="-460" max="-580"/>
+		<!-- <attack name="water rain" interval="8000" chance="75" min="-320" max="-390"/> -->
+		<attack name="water icebolt" interval="5000" chance="30" min="-600" max="-800"/>
+		<attack name="earth arena" interval="9000" chance="100"/>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="11" min="900" max="2200">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	
+	<voices interval="5000" chance="10">
+		<voice sentence="NOW YOU ARE HERE FOREVER!"/>
+		<voice sentence="LET THE BLIZZARD FREEZE YOU!"/>
+		<voice sentence="NEVER CHALLENGE THE RARODS!"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+					<item id="2472" chance="22"/><!-- magic plate armor -->
+		<item id="2514" chance="25"/><!-- mastermind shield -->
+		<item id="2152" countmax="70" chance="100"/><!-- platinum coin -->
+		<item id="2171" chance="32"/><!-- platinum amulet -->
+		<item id="7382" chance="25"/><!-- demonrage sword -->
+		<item id="2470" chance="25"/><!-- golden legs -->
+	</loot>
+</monster>

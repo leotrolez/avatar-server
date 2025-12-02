@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Warlock" nameDescription="a warlock" race="undead" experience="27655" speed="220" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="130" head="19" body="71" legs="128" feet="128" addons="1" corpse="18161"/>
+	<targetchange interval="5000" chance="30"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="800"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="1500" chance="70" range="7" min="-185" max="-235">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+
+		<attack name="fire bomb" interval="5000" chance="20" range="7" min="-185" max="-285"/>
+	</attacks>
+	<defenses armor="25" defense="30">
+		<defense name="healing" interval="1000" chance="15" min="60" max="100">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="10000" chance="25" duration="2000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learn the secret of our magic! YOUR death!"/>
+		<voice sentence="Even a rat is a better mage than you."/>
+		<voice sentence="We don't like intruders!"/>
+	</voices>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="80" chance="36500"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="36500"/><!-- gold coin -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+		<item id="2436" chance="3000"/><!-- skull staff -->
+		<item id="2656" chance="2000"/><!-- blue robe -->
+		<item id="7368" countmax="4" chance="1200"/><!-- assassin star -->
+		<item id="2466" chance="375"/><!-- golden armor -->	
+			</inside>
+		</item>
+	</loot>
+</monster>

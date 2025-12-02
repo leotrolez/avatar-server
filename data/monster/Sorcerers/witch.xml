@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Witch" nameDescription="a witch" race="undead" experience="4860" speed="190" manacost="0">
+	<health now="900" max="900"/>
+	<look type="54" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="30"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="20" attack="20"/>
+
+		<attack name="fire" interval="1000" chance="24" range="7" min="-30" max="-175">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+
+		<attack name="physical" interval="1000" chance="10" range="7" radius="3" target="1" min="-20" max="-45">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+
+		<attack name="lifedrain" interval="2000" chance="35" length="8" spread="3" min="-130" max="-250">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+
+	</attacks>
+	<defenses armor="8" defense="12"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="your energy is mine!"/>
+		<voice sentence="Avadaquedavra!"/>
+	</voices>
+		<summons maxSummons="2">
+		<summon name="chicken" interval="1000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item id="2148" countmax="10" chance="13000"/><!-- gold coin -->
+		<item id="12408" countmax="2" chance="3750"/><!-- monster item -->
+		<item id="2643" chance="7000"/><!-- leather boots -->
+		<item id="2696" chance="8750"/><!-- cheese -->
+		<item id="2651" chance="3500"/><!-- coat -->
+		<item id="2195" chance="40"/><!-- boots of haste -->
+	</loot>
+</monster>

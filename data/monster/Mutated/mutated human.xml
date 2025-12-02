@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mutated Human" nameDescription="a mutated human" race="undead" experience="15336" speed="300" manacost="0">
+	<health now="2840" max="2840"/>
+	<look type="323" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="55" poison="300"/>
+		<attack name="death" interval="7000" chance="30" length="8" spread="3" min="-140" max="-200">
+			<attribute key="areaEffect" value="poison"/>
+		</attack> 
+	</attacks>
+	<defenses armor="60" defense="35"/>
+	<voices interval="2500" chance="10">
+		<voice sentence="Take that creature off my back!! I can fell it!"/>
+		<voice sentence="HEEEEEEEELP!"/>
+		<voice sentence="You will be the next infected one... GRAAAAAAAAARRR!"/>
+		<voice sentence="Science... is a curse."/>
+		<voice sentence="Run as fast as you can."/>
+		<voice sentence="Oh by the gods! What is this... aaaaaargh!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="65" chance="43500"/><!-- gold coin -->
+		<item id="2148" countmax="50" chance="41500"/><!-- gold coin -->
+		<item id="2510" chance="1900"/><!-- plate shield -->
+		<item id="2381" chance="1200"/><!-- halberd -->
+		<item id="2796" chance="1300"/><!-- green mushroom -->
+		<item id="2800" chance="800"/><!-- obsidian lance -->
+		<item id="7386" chance="200"/><!-- mercenary sword -->	
+		<item id="2528" chance="330"/><!-- tower shield -->
+		<item id="2195" chance="120"/><!-- boh -->
+		<item id="2486" chance="980"/><!-- noble -->
+	</loot>
+</monster>

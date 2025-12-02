@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Beelzeboss" nameDescription="the fucking Beelzeboss" race="undead" experience="2400000" speed="400" manacost="0">
+  <health now="800000" max="800000"/>
+  <look type="598"/>
+  <targetchange interval="5000" chance="30"/>
+  <strategy attack="0" defense="0"/>
+	<script>
+		<event name="Boss_Blood"/>
+	</script>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="100"/>
+  </flags>
+		<attacks>
+		<attack name="melee" interval="1500" skill="140" attack="130"/>
+		<attack name="fire" interval="2000" chance="60" length="8" spread="0" min="-580" max="-690">
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+		<attack name="Inferno_monsters" interval="6000" chance="70" min="-420" max="-560"/>
+		<attack name="fire" interval="2000" chance="50" radius="4" target="1" min="-650" max="-750">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="50" target="0" radius="3" min="-450" max="-550">
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="90"/>
+</monster>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<monster name="Water Man" nameDescription="a water man" race="undead" experience="4455" speed="280" manacost="0">
+	<health now="550" max="550"/>
+	<look type="286" corpse="18161"/>
+	<targetchange interval="20000" chance="15"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="85"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="20" attack="40"/>
+		<attack name="Water Explosion" target="1" range="3" interval="2000" chance="30" min="-25" max="-50"/>
+	</attacks>
+	<defenses armor="40" defense="30">
+		<defense name="healing" interval="3000" chance="35" min="80" max="120">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="Water Whip Man" interval="300" chance="75" min="-25" max="-50">
+			<attribute key="shootEffect" value="earth"/>
+		</defense>
+		<defense name="Water IceBeam Man" interval="300" chance="30" min="-30" max="-45">
+			<attribute key="shootEffect" value="smallice"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity ice="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Blubb"/>
+		<voice sentence="Splipsh Splash"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="40" chance="22500"/><!-- gold coin -->
+		<item id="2148" countmax="30" chance="22500"/><!-- gold coin -->
+	</loot>
+</monster>

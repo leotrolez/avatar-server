@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bretzecutioner" nameDescription="a bretzecutioner" race="undead" experience="98000" speed="340" manacost="0">
+	<health now="22000" max="22000"/>
+	<look type="236" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="120" attack="115"/>
+		<attack name="physical" interval="1000" chance="35" range="7" min="-220" max="-375">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="35">
+		<defense name="speed" interval="1000" chance="7" speedchange="400" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Destructiooooon!"/>
+		<voice sentence="It's a good day to destroy!"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="70"/><!-- earth stone -->
+		<item id="18102" chance="700"/><!-- earth rune 1 -->
+		<item id="18107" chance="70"/><!-- earth rune 2 -->
+		<item id="18112" chance="7"/><!-- earth rune 3 -->
+		<item id="2148" countmax="93" chance="77500"/><!-- gold coin -->
+		<item id="2148" countmax="96" chance="77500"/><!-- gold coin -->
+		<item id="2666" countmax="10" chance="8000"/><!-- meat -->
+		<item id="2463" chance="17100"/><!-- plate armor -->
+		<item id="6500" chance="7400"/><!-- demonic essence -->
+		<item id="2150" chance="2900"/><!-- small amethyst -->
+		<item id="5944" chance="3100"/><!-- soul orb-->
+		<item id="2393" chance="1720"/><!-- giant sword -->
+		<item id="2489" chance="6600"/><!-- dark armor -->
+		<item id="2645" chance="3050"/><!-- steel boots -->
+		<item id="5741" chance="50"/><!-- skull helmet -->
+		<item id="2475" chance="5000"/><!-- warrior helmet -->		
+		<item id="2430" chance="4000"/><!-- knight axe -->
+		<item id="2476" chance="4000"/><!-- knight armor -->
+	</loot>
+</monster>

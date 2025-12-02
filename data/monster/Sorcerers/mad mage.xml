@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mad Mage" nameDescription="a mad mage" race="undead" experience="268000" speed="320" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="467" head="97" body="0" legs="38" feet="97" addons="1" corpse="18161"/>
+	<targetchange interval="5000" chance="30"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="energy" interval="2000" chance="100" range="7" min="-820" max="-995">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>	
+		<attack name="fire thunderbolt" interval="5237" chance="75" min="-620" max="-700"/>
+		<attack name="fire lightning" interval="3237" chance="65" min="-550" max="-950"/>
+		<attack name="fire thunderstorm" interval="6421" chance="35" min="-450" max="-580"/>
+	</attacks>
+	<defenses armor="100" defense="100">
+		<defense name="healing" interval="3000" chance="25" min="550" max="650">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="0">
+	</voices>
+	<loot>
+		<item id="18121" chance="40"/><!-- energy rune 1 -->
+		<item id="18122" chance="10"/><!-- energy rune 2 -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2492" chance="380"/><!-- dragon scale mail -->
+		<item id="2177" chance="920"/><!-- life crystal -->
+		<item id="12929" chance="300"/><!-- goldensilver shield -->
+		<item id="12869" chance="300"/><!-- umbral fire sword -->
+		<item id="2145" countmax="7" chance="820"/>  <!-- small diamond -->
+		<item id="13893" chance="300"/>  <!-- blindage amulet -->
+		<item id="12946" chance="100"/>  <!-- bender scroll -->
+		<item id="12792" chance="100"/>  <!-- bender scroll -->
+		<item id="2514" chance="180"/>  <!-- bender scroll -->
+		<item id="2498" chance="180"/>  <!-- bender scroll -->
+		<item id="12785" chance="100"/>  <!-- bender scroll -->
+		<item id="12782" chance="100"/>  <!-- bender scroll -->
+	</loot>
+</monster>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<npc name="Toxic" script="appaShipSouth.lua" access="3" walkinterval="0" lookdir="1">
+	<health now="1000" max="1000"/>
+	<look addons="1" type="400" head="59" legs="0" body="120" feet="76" corpse="3128"/>
+</npc>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Demmorlim" nameDescription="the demmorlim" race="undead" experience="13400" speed="300" manacost="650">
+	<health now="3500" max="3500"/>
+	<look type="70" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="800" skill="45" attack="55"/>
+	</attacks>
+	<defenses armor="15" defense="22"/>
+
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item id="5901" chance="20000"/><!-- wood -->
+		<item id="2148" countmax="95" chance="40000"/><!-- gold coin -->
+		<item id="2787" chance="60000"/><!-- white mushroom -->
+		<item id="2643" chance="75000"/><!-- leather boots -->
+		<item id="2673" countmax="7" chance="20000"/><!-- pear -->
+		<item id="2468" chance="14000"/><!-- studded legs -->
+		<item id="2423" chance="3500"/><!-- Clerical Mace -->
+		<item id="2146" chance="2000"/><!-- Small sapphire -->
+		<item id="2387" chance="4500"/><!-- double axe -->
+		<item id="2150" countmax="2" chance="4000"/><!-- small amethyst -->
+		<item id="2481" chance="20000"/><!-- soldier helmet -->
+		<item id="5880" chance="2000"/><!-- Iron Ore -->
+		<item id="2455" chance="34000"/><!-- crossbow -->
+		<item id="2525" chance="15000"/><!-- dwarven shield -->
+	</loot>
+</monster>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Skullfrost" nameDescription="a skullfrost" race="undead" experience="10000000" speed="450" manacost="0">
+	<health now="1000000" max="1000000"/>
+	<look type="485" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="120" attack="120"/>
+		<attack name="water bloodcontrol" interval="3000" chance="60" min="-195" max="-255"/>
+		<attack name="water explosion" interval="2000" chance="70" min="-385" max="-435"/>
+		<attack name="water icebolt" interval="3000" chance="90" min="-1110" max="-1390"/>
+		<attack name="water whip" interval="3000" chance="70" min="-880" max="-990"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="1000" chance="30" min="600" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="checkFrost" interval="1000" chance="100"/>
+	</defenses>
+	<loot>
+		<item id="12688" countmax="2" chance="25000"/><!-- water stone -->
+		<item id="18127" chance="400"/><!-- metal rune 1 -->
+		<item id="18128" chance="100"/><!-- metal rune 2 -->
+		<item id="2160" countmax="20" chance="57500"/><!-- gold coin -->
+		<item id="2177" chance="92000"/><!-- life crystal -->
+		<item id="12929" chance="20000"/><!-- goldensilver shield -->
+		<item id="12869" chance="20000"/><!-- umbral fire sword -->
+		<item id="13305" chance="20000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="70" chance="8200"/>  <!-- small diamond -->
+		<item id="12946" chance="10000"/>  <!-- bender scroll -->
+		<item id="12792" chance="10000"/>  <!-- bender scroll -->
+		<item id="2514" chance="18000"/>  <!-- bender scroll -->
+		<item id="2498" chance="18000"/>  <!-- bender scroll -->
+		<item id="12785" chance="10000"/>  <!-- bender scroll -->
+		<item id="12782" chance="10000"/>  <!-- bender scroll -->
+		<item id="12806" chance="10000"/>  <!-- bender scroll -->
+		<item id="2470" chance="38000"/>  <!-- bender scroll -->
+		<item id="13432" chance="10000"/>  <!-- bender scroll -->
+		<item id="17860" chance="10"/><!-- legendary sword -->
+		<item id="17861" chance="10"/><!-- legendary crossbow -->
+		<item id="17862" chance="10"/><!-- legendary club -->
+		<item id="17863" chance="10"/><!-- legendary axe -->
+		<item id="13401" chance="10"/><!-- moon helmet -->
+		<item id="13402" chance="10"/><!-- moon chest -->
+		<item id="13403" chance="10"/><!-- moon legs -->
+		<item id="13404" chance="10"/><!-- moon boots -->
+		<item id="7888" chance="500"/> <!-- glacier amulet -->
+		<item id="2214" chance="100000"/>  <!-- ring of healing -->
+		<item id="2169" chance="30000"/>  <!-- time ring -->
+	</loot>
+</monster>

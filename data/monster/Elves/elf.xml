@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- balanceado -->
+<monster name="Elf" nameDescription="a elf" race="undead" experience="2544" speed="250" manacost="320">
+	<health now="180" max="180"/>
+	<look type="62" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="30"/>
+		<attack name="physical" interval="1000" chance="12" range="7" min="-18" max="-45">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+	</attacks>
+	<defenses armor="14" defense="31"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ulathil beia Thratha!"/>
+		<voice sentence="Bahaha aka!"/>
+		<voice sentence="You are not welcome here."/>
+		<voice sentence="Flee as long as you can."/>
+		<voice sentence="Death to the defilers!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="30" chance="42000"/><!-- gold coin -->
+		<item id="2544" countmax="6" chance="2250"/><!-- arrow -->
+		<item id="2674" countmax="2" chance="15000"/><!-- red apple -->
+		<item id="2397" chance="5000"/><!-- longsword -->
+		<item id="2643" chance="7500"/><!-- leather boots -->
+		<item id="2510" chance="1800"/><!-- plate shield -->
+		<item id="2484" chance="3000"/><!-- studded armor -->
+		<item id="5921" chance="600"/><!-- heaven blossom -->
+	</loot>
+</monster>

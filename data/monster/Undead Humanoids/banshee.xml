@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Banshee" nameDescription="a banshee" race="undead" experience="12125" speed="220" manacost="0">
+	<health now="2500" max="2500"/>
+	<look type="78" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="50" poison="150"/>
+		<attack name="speed" interval="1000" chance="10" range="7" speedchange="-600" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="25" radius="4" target="0" min="-210" max="-250">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="20">
+		<defense name="healing" interval="2000" chance="25" min="113" max="187">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Are you ready to rock?"/>
+		<voice sentence="That's what I call easy listening!"/>
+		<voice sentence="Let the music play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="IIIIEEEeeeeeehhhHHHHH!" yell="1"/>
+		<voice sentence="Dance for me your dance of death!"/>
+		<voice sentence="Feel my gentle kiss of death."/>
+	</voices>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="60" chance="21250"/><!-- gold coin -->
+		<item id="2148" countmax="40" chance="31250"/><!-- gold coin -->
+		<item id="2144" chance="600"/><!-- black pearl -->
+		<item id="2656" chance="350"/><!-- blue robe -->
+		<item id="10570" chance="50"/><!-- eshena hat -->
+		<item id="13120" chance="50"/><!-- eshena legs -->
+		<item id="12436" countmax="1" chance="620"/><!-- banshee necklace -->
+		<item id="2177" chance="100"/><!-- life crystal -->
+		<item id="2071" chance="533"/><!-- lyre -->
+		<item id="2411" chance="400"/><!-- poison dagger -->
+		<item id="2143" chance="320"/><!-- white pearl -->
+		<item id="7884" chance="110"/><!-- terra mantle -->
+		<item id="2475"  chance="400"/><!-- warrior helmet -->		
+		<item id="2430" chance="400"/><!-- knight axe -->
+		<item id="2476" chance="400"/><!-- knight armor -->
+	</loot>
+</monster>

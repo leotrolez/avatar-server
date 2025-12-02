@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Olaf" nameDescription="Olaf" race="undead" experience="600000" speed="600" manacost="0">
+	<health now="100000" max="100000"/>
+	<look type="1117" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="50"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100"/>
+		<attack name="water punch" interval="4000" chance="40" min="-65" max="-90"/>
+		<attack name="water bloodcontrol" interval="3000" chance="40" min="-55" max="-80"/>
+		<attack name="water bubbles" interval="3000" chance="50" min="-75" max="-105"/>
+		<attack name="water clock" interval="6000" chance="30" min="-150" max="-470"/>
+		<attack name="water blizzard" interval="4000" chance="40" min="-650" max="-770"/>
+		<attack name="water icebolt" interval="4000" chance="50" min="-510" max="-690"/>
+	</attacks>
+	<defenses armor="100" defense="40">
+		<defense name="healing" interval="3000" chance="25" min="700" max="900">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12688" chance="4000"/><!-- water stone -->
+		<item id="18100" chance="60000"/><!-- water rune 1 -->
+		<item id="18105" chance="6000"/><!-- water rune 2 -->
+		<item id="18110" chance="600"/><!-- water rune 3 -->
+		<item id="18131" chance="300"/><!-- water rune 4 -->
+		<item id="18124" chance="6000"/><!-- ice rune 1 -->
+		<item id="18125" chance="600"/><!-- ice rune 2 -->
+		<item id="2152" countmax="99" chance="97500"/><!-- gold coin -->
+		<item id="2152" countmax="99" chance="97500"/><!-- gold coin -->
+		<item id="2160" countmax="5" chance="97500"/><!-- gold coin -->
+		<item id="2177" chance="9200"/><!-- life crystal -->
+		<item id="2145" countmax="15" chance="8200"/>  <!-- small diamond -->
+		<item id="13893" chance="3000"/>  <!-- blindage amulet -->
+		<item id="12946" chance="2000"/>  <!-- bender scroll -->
+		<item id="13432" chance="2000"/>  <!-- bender scroll -->
+		<item id="13830" chance="500"/>  <!-- bender scroll -->
+		<item id="13635" chance="500"/>  <!-- bender scroll -->
+		<item id="13632" chance="500"/>  <!-- bender scroll -->
+		<item id="13902" chance="600"/>
+		<item id="13942" chance="600"/>
+		<item id="13435" chance="500"/>
+		<item id="13751" chance="2000"/>  <!-- seaking boots -->
+		<item id="12872" chance="1000"/><!-- boomerang -->
+		<item id="13852" chance="20"/><!-- helmet -->
+		<item id="11117" chance="20"/><!-- boots -->
+		<item id="13914" chance="20"/><!-- legs -->
+		<item id="12781" chance="20"/><!-- shield -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+		<item id="2166" chance="10000"/>  <!-- distance ring -->
+		<item id="2169" chance="10000"/>  <!-- time ring -->
+	</loot>
+</monster>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gaz'Haragoth" nameDescription="Gaz'Haragoth" race="undead" experience="4105126" speed="400" manacost="0">
+	<health now="1703900" max="1703900"/>
+	<look type="584" head="0" body="94" legs="79" feet="79" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="180" attack="180"/>
+		<attack name="fire lightning" interval="2200" chance="90" min="-820" max="-1015"/>
+		<attack name="fire kick" interval="1900" chance="85" range="5" min="-875" max="-1400"/>
+		<attack name="fire star" interval="4137" chance="75" min="-510" max="-705"/>
+		<attack name="fire thunderstorm" interval="5000" chance="55" min="-810" max="-1270"/>
+	</attacks>
+	<defenses armor="25" defense="55">
+		<defense name="healing" interval="1100" chance="60" min="420" max="810">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12686" chance="800"/><!-- fire stone -->
+		<item id="18099" chance="8000"/><!-- fire rune 1 -->
+		<item id="18104" chance="800"/><!-- fire rune 2 -->
+		<item id="18109" chance="80"/><!-- fire rune 3 -->
+		<item id="2148" countmax="80" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="15" chance="100000"/><!-- gold coin -->
+		<item id="2145" countmax="3" chance="65000"/><!-- small diamonds-->
+		<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+			<item id="2424" chance="30000"/><!-- silver mace -->
+			<item id="8871" chance="40000"/><!-- focus cape -->
+			<item id="7430" chance="30000"/><!-- dragonbone staff -->
+			<item id="2475"  chance="70000"/><!-- warrior helmet -->		
+			<item id="2430" chance="70000"/><!-- knight axe -->
+			<item id="2476" chance="70000"/><!-- knight armor -->
+			<item id="8855" chance="10000"/><!-- composite hornbow -->
+			<item id="2177" chance="30020"/><!-- life crystal -->	
+			<item id="2146" chance="10300"/><!-- small sapphire -->
+			<item id="12929" chance="2000"/><!-- goldensilver shield -->
+			<item id="12869" chance="2000"/><!-- umbral fire sword -->
+			<item id="13305" chance="2000"/><!-- umbral fire robe -->
+			<item id="7402" chance="30700"/><!-- dragon slayer -->
+			<item id="2492" chance="15000"/><!-- dragon scale mail -->
+			<item id="12855" chance="5200"/><!-- lava axe -->
+			<item id="2414" chance="15700"/><!-- dragon lance -->
+			<item id="2195" chance="15000"/><!-- boots of haste -->
+		</inside>
+		</item>
+	</loot>
+</monster>

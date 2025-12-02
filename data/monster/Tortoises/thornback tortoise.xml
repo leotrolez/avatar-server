@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Thornback Tortoise" nameDescription="a thornback tortoise" race="undead" experience="3292" speed="200" manacost="490">
+	<health now="385" max="385"/>
+	<look type="198" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="45" attack="25"/>
+		<attack name="water whip" interval="1000" chance="14" min="-5" max="-30"/>
+	</attacks>
+	<defenses armor="18" defense="18"/>
+	<loot>
+		<item id="2148" countmax="30" chance="48500"/><!-- gold coin -->
+		<item id="10560" countmax="2" chance="900"/><!-- thorn (monster item) -->
+		<item id="2667" chance="9000"/><!-- fish -->
+		<item id="2671" countmax="2" chance="4500"/><!-- ham -->
+		<item id="2789" chance="700"/><!-- brown mushroom -->
+		<item id="2787" chance="700"/><!-- white mushroom -->
+		<item id="2391" chance="300"/><!-- war hammer -->
+	</loot>
+</monster>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gate" nameDescription="a gate" race="UNDEAD" experience="0" speed="0" manacost="0">
+  <health now="1000000" max="1000000"/>
+  <look typeex="1547"/>
+  <strategy attack="100" defense="0"/>
+  <targetchange interval="60000" chance="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag hidename="1"/>
+  </flags>
+
+<attacks>
+
+</attacks>
+
+<defenses armor="1" defense="1">
+  </defenses>
+
+  <immunities>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+  </loot>
+</monster>

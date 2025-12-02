@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Troll Champion" nameDescription="a troll champion" race="undead" experience="950" speed="120" manacost="340">
+	<health now="190" max="190"/>
+	<look type="281" corpse="18161"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="20"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="20" attack="35"/>
+	</attacks>
+	<defenses armor="13" defense="8"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Meee maity!"/>
+		<voice sentence="Grrrr"/>
+		<voice sentence="Whaaaz up!?"/>
+		<voice sentence="Gruntz!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="28" chance="40750"/><!-- gold coin -->
+		<item id="10606" countmax="5" chance="2500"/><!-- monster item -->
+		<item id="2643" chance="2750"/><!-- leather boots -->
+		<item id="5901" chance="3500"/><!-- wood -->
+		<item id="2461" chance="3750"/><!-- leather helmet -->
+		<item id="2666" chance="29750"/><!-- meat -->
+		<item id="2389" chance="3000"/><!-- spear -->
+		<item id="2512" chance="1500"/><!-- wooden shield -->
+	</loot>
+</monster>

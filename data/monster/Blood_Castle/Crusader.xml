@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Blood Crusader" nameDescription="a blood crusader" race="undead" experience="300000" speed="250" manacost="0">
+  <health now="30000" max="30000"/>
+  <look type="438"/>
+  <targetchange interval="5000" chance="30"/>
+  <strategy attack="0" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="100"/>
+  </flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="70"/>
+		<attack name="physical" interval="2000" chance="70" range="7" target="1" radius="1" min="-450" max="-550">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="15" target="0" radius="2" speedchange="-650" duration="15000">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="90">
+		<defense name="healing" interval="2000" chance="10" min="125" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+</monster>

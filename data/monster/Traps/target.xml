@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Target" nameDescription="a target" race="UNDEAD" experience="0" speed="0" manacost="0">
+  <health now="99999999" max="99999999" />
+  <look typeex="18118" />
+  <strategy attack="100" defense="0" />
+  <targetchange interval="60000" chance="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="1" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="0" />
+    <flag canpushcreatures="0" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="500" radius="3" spread="4" skill="10" attack="10" />
+  </attacks>
+  <defenses armor="0" defense="0">
+    <defense name="healing" interval="1000" chance="100" min="1000" max="1000" />
+    <defense name="Regen Monster" interval="5000" chance="100" min="1000" max="1000" />
+  </defenses>
+</monster>

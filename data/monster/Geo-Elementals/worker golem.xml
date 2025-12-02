@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Worker Golem" nameDescription="a worker golem" race="undead" experience="18400" speed="270" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="304" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="65"/>
+		<attack name="physical" interval="4000" chance="30" range="7" min="-200" max="-395">
+			<attribute key="shootEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+		<defense name="healing" interval="1000" chance="20" min="90" max="120">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2500" chance="10">
+		<voice sentence="INTRUDER ALARM!"/>
+		<voice sentence="klonk klonk klonk"/>
+		<voice sentence="Rrrtttarrrttarrrtta"/>
+		<voice sentence="Awaiting orders."/>
+		<voice sentence="Secret objective complete."/>
+	</voices>
+	<loot>
+		<item id="18121" chance="20"/><!-- energy rune 1 -->
+		<item id="18122" chance="5"/><!-- energy rune 2 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2377" chance="1400"/><!-- two handed sword -->
+		<item id="2510" chance="2000"/><!-- plate shield -->
+		<item id="2513" chance="3500"/><!-- battle shield -->
+		<item id="5880" chance="1500"/><!-- iron ore -->
+		<item id="2438" chance="800"/><!-- epee -->
+		<item id="2645" chance="300"/><!-- steel boots -->
+		<item id="9690" countmax="2" chance="500"/><!-- gear wheel -->
+		<item id="7403" chance="200"/><!-- berserker -->
+		<item id="7422" chance="200"/><!-- jade hammer -->
+		<item id="7428" chance="300"/><!-- bonebreaker -->
+		<item id="2177" chance="250"/><!-- life crystal -->
+	</loot>
+</monster>

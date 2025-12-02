@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dead Beat" nameDescription="a dead beat" race="undead" experience="395615" speed="550" manacost="0">
+	<health now="57900" max="57900"/>
+	<look type="1118" corpse="18161"/>
+	<targetchange interval="4000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1000" skill="140" attack="140" poison="85"/>
+		<attack name="earth punch" interval="3300" chance="75" min="-350" max="-410"/>
+		<attack name="earth" interval="2300" chance="75" range="7" radius="3" min="-415" max="-510">
+			<attribute key="areaEffect" value="poison"/>
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="3000" chance="60" radius="5" target="0" min="-420" max="-520"/>
+	</attacks>
+	<defenses armor="70" defense="70">
+		<defense name="healing" interval="1100" chance="25" min="1200" max="1600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="90"/><!-- earth stone -->
+		<item id="18102" chance="900"/><!-- earth rune 1 -->
+		<item id="18107" chance="90"/><!-- earth rune 2 -->
+		<item id="18112" chance="9"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="99750"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="99750"/><!-- gold coin -->
+		<item id="2147" countmax="65" chance="8000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="25" chance="8000"/><!-- giant pearl 2000gp ea -->
+		<item id="2153" chance="30000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="30"/><!-- armas novas -->
+		<item id="12864" chance="30"/><!-- armas novas -->
+		<item id="12861" chance="30"/><!-- armas novas -->
+		<item id="13296" chance="30"/><!-- armas novas -->
+		<item id="13086" chance="30"/><!-- armas novas -->
+		<item id="11262" chance="40"/><!-- armas novas -->
+	</loot>
+</monster>

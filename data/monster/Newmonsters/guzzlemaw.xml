@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Guzzlemaw" nameDescription="a guzzlemaw" race="undead" experience="33840" speed="340" manacost="0">
+	<health now="9200" max="9200"/>
+	<look type="579" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+		<attacks>
+		<attack name="melee" interval="1300" skill="95" attack="75"/>
+		<attack name="air force" interval="4000" chance="25" min="-120" max="-190"/>
+		<attack name="air burst" interval="4000" chance="25" min="-90" max="-170"/>
+		<attack name="air ball" interval="2000" chance="50" min="-120" max="-120"/>
+	</attacks>
+	<defenses armor="75" defense="30">
+		<defense name="healing" interval="2000" chance="15" min="220" max="315">
+			<attribute key="areaEffect" value="greenspark"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="90" chance="57500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="67500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="25500"/><!-- gold coin -->
+		<item id="2789" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="10522" chance="200"/><!-- crown backpack -->
+		<item id="12959" chance="40"/><!-- windy kilt -->
+		<item id="13339" chance="40"/><!-- windy amulet -->
+		<item id="13300" chance="50"/><!-- windy shield -->
+		<item id="13136" chance="30"/><!-- crystalline sword -->
+		<item id="13132" chance="30"/><!-- crystalline axe -->
+		<item id="12862" chance="30"/><!-- crystalline club -->
+		<item id="13120" chance="40"/><!-- eshan legs -->
+		<item id="13119" chance="40"/><!-- eshan armor -->
+		<item id="13118" chance="40"/><!-- eshan cap -->
+	</loot>
+</monster>

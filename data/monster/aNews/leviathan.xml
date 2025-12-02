@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Leviathan" nameDescription="a leviathan" race="undead" experience="440000" speed="500" manacost="0">
+	<health now="90500" max="90500"/>
+	<look type="740" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="150" attack="150" poison="90"/>
+		<attack name="water bubbles" interval="3000" chance="50" min="-290" max="-360"/>
+		<attack name="water wave" interval="4000" chance="100" min="-970" max="-1320"/>
+		<attack name="water clock" interval="4000" chance="5" min="-995" max="-1385"/>
+		<attack name="drown" interval="5000" chance="50" range="4" radius="2" min="-460" max="-625">
+			<attribute key="areaEffect" value="watersplash"/>
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+		<attack name="drowncondition" interval="7000" chance="50" radius="3" target="0" min="-435" max="-565"/>
+	</attacks>
+	<defenses armor="60" defense="40">
+		<defense name="healing" interval="1000" chance="20" min="420" max="810">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12688" chance="50"/><!-- water stone -->
+		<item id="18100" chance="5000"/><!-- water rune 1 -->
+		<item id="18105" chance="50"/><!-- water rune 2 -->
+		<item id="18110" chance="5"/><!-- water rune 3 -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2147" countmax="75" chance="7000"/><!-- small rubbie 250gp ea -->
+		<item id="2145" countmax="15" chance="3200"/>  <!-- small diamond -->
+		<item id="13852" chance="20"/><!-- helmet -->
+		<item id="11117" chance="20"/><!-- boots -->
+		<item id="13914" chance="20"/><!-- legs -->
+		<item id="12781" chance="20"/><!-- shield -->
+		<item id="13751" chance="50"/>  <!-- seaking boots -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+	</loot>
+</monster>

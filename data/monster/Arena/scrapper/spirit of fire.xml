@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spirit of Fire" nameDescription="the spirit of fire" race="undead" experience="9144" speed="220" manacost="0">
+	<health now="2540" max="2540"/>
+	<look type="242" corpse="18161"/>
+	<script>
+
+</script>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="100"/>
+		<attack name="fire clock" interval="10000" chance="100" min="-15" max="-30"/>
+		<attack name="fire wave" interval="2000" chance="20" min="-135" max="-330"/>
+		<attack name="fire blast" interval="2000" range="5" chance="20" min="-135" max="-330">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="20" range="7" min="-150" max="-315">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<voices interval="5000" chance="100">
+		<voice sentence="WHOEVERS PLAYS WITH FIRE JUST BURNED."/>
+		<voice sentence="I AM NOT A PRISONER."/>
+		<voice sentence="FIRE FIRE FIRE, THE BLAME IS YOUR."/>
+	</voices>
+</monster>

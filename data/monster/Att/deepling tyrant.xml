@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deepling Tyrant" nameDescription="a deepling tyrant" race="undead" experience="50530" speed="400" manacost="0">
+	<health now="13900" max="13900"/>
+	<look type="587" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="20"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="85" attack="75"/>
+		<attack name="physical" interval="3000" chance="70" range="7" target="1" min="-170" max="-250">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+		<attack name="drown" interval="3000" chance="70" range="7" target="1" min="-180" max="-275">
+			<attribute key="shootEffect" value="spear"/>
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="75" defense="40"/>
+	<loot>
+		<item id="12688" chance="30"/><!-- water stone -->
+		<item id="18100" chance="300"/><!-- water rune 1 -->
+		<item id="18105" chance="30"/><!-- water rune 2 -->
+		<item id="18110" chance="3"/><!-- water rune 3 -->
+		<item id="2148" countmax="100" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="15500"/><!-- gold coin -->
+		<item id="7368" countmin="5" countmax="7" chance="10000"/><!-- assassin star -->
+		<item id="2795" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="2498" chance="1020"/>  <!-- royal helmet -->
+		<item id="2177" chance="950"/><!-- life crystal -->
+		<item id="2145" countmax="7" chance="1200"/>  <!-- small diamond -->
+		<item id="13893" chance="50"/>  <!-- blindage amulet -->
+		<item id="13637" chance="400"/>
+		<item id="13640" chance="400"/>
+		<item id="13638" chance="400"/>
+	</loot>
+</monster>

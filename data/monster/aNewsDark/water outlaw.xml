@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Water Outlaw" nameDescription="a water outlaw" race="undead" experience="165000" speed="300" manacost="0">
+	<health now="20000" max="20000"/>
+	<look type="251" head="114" body="124" legs="114" feet="124" corpse="18161" addons="2"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="500"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="physical" interval="2000" chance="100" range="5" min="-110" max="-240">
+			<attribute key="shootEffect" value="boomerang"/>
+		</attack>
+		<attack name="water bubbles" interval="3000" chance="70" min="-90" max="-130"/>
+		<attack name="water wave" interval="4000" chance="50" min="-400" max="-500"/>
+		<attack name="water shards" interval="5000" chance="50" min="-70" max="-110"/>
+		<attack name="water cannon" interval="3000" range="2" chance="60" min="-120" max="-140"/>
+	</attacks>
+	<defenses armor="60" defense="30">
+			<defense name="healing" interval="5000" chance="100" min="200" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12688" chance="20"/><!-- water stone -->
+		<item id="18100" chance="2000"/><!-- water rune 1 -->
+		<item id="18105" chance="20"/><!-- water rune 2 -->
+		<item id="18110" chance="2"/><!-- water rune 3 -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2152" countmax="6" chance="15500"/><!-- gold coin -->
+		<item id="2147" countmax="75" chance="2500"/><!-- small rubbie 250gp ea -->
+		<item id="2145" countmax="15" chance="1200"/>  <!-- small diamond -->
+		<item id="10531" countmax="3" chance="800"/>  <!-- midnight shard -->
+		<item id="7897" chance="1000"/> <!-- glacier robe -->
+		<item id="7896" chance="1000"/> <!-- glacier kilt -->
+		<item id="13852" chance="8"/><!-- helmet -->
+		<item id="11117" chance="8"/><!-- boots -->
+		<item id="13914" chance="8"/><!-- legs -->
+		<item id="12781" chance="8"/><!-- shield -->
+		<item id="13751" chance="20"/>  <!-- seaking boots -->
+		<item id="7888" chance="30"/> <!-- glacier amulet -->
+	</loot>
+</monster>

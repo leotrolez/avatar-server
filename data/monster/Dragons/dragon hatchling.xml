@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dragon Hatchling" nameDescription="a dragon hatchling" race="undead" experience="10360" speed="170" manacost="0">
+	<health now="2080" max="2080"/>
+	<look type="271" corpse="18161"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="80"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="65" attack="60"/>
+		<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-90" max="-120">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="14" length="8" spread="3" min="-80" max="-100">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="38">
+		<defense name="healing" interval="1000" chance="13" min="8" max="33">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="50">
+		<voice sentence="Fchu?" yell="0"/>
+		<voice sentence="Rooawwrr"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="22" chance="50500"/><!-- gold coin -->
+		<item id="2148" countmax="34" chance="50500"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="25000"/><!-- dragon ham -->
+		<item id="2146" countmax="2" chance="900"/><!-- small sapphire -->
+		<item id="12657" chance="40"/>  <!-- dragonhunter robe -->
+		<item id="2457" chance="1700"/><!-- steel helmet -->
+		<item id="2392" chance="180"/><!-- fire sword -->
+		<item id="2516" chance="150"/><!-- dragon shield -->
+		<item id="7402" chance="120"/><!-- dragon slayer -->
+		<item id="2647" chance="1300"/><!-- plate legs -->
+		<item id="2413" chance="1350"/><!-- broadsword -->
+		<item id="12755" chance="70"/><!-- firely armor -->
+		<item id="12926" chance="20"/>  <!-- dragonbone shield -->
+	</loot>
+</monster>

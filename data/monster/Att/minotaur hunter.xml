@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minotaur Hunter" nameDescription="a minotaur hunter" race="undead" experience="46695" speed="310" manacost="0">
+	<health now="12850" max="12850"/>
+	<look type="593" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-170" max="-345"/>
+		<attack name="physical" interval="3000" chance="70" range="7" target="1" radius="3" min="-190" max="-245">
+			<attribute key="shootEffect" value="throwingknife"/>
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="40" range="7" radius="2" target="1" min="-175" max="-235">
+			<attribute key="shootEffect" value="explosion"/>
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="40" radius="4" target="0" min="-190" max="-245">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="40">
+		<defense name="healing" interval="2000" chance="30" min="425" max="510">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="15500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="2498" chance="1020"/>  <!-- royal helmet -->
+		<item id="2177" chance="1100"/><!-- life crystal -->
+		<item id="2145" countmax="7" chance="1200"/>  <!-- small diamond -->
+		<item id="13898" chance="30"/>
+		<item id="13858" chance="30"/>
+		<item id="13902" chance="30"/>
+		<item id="13895" chance="40"/>
+		<item id="13859" chance="40"/>
+		<item id="13900" chance="40"/>
+	</loot>
+</monster>

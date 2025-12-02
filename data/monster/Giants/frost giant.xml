@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giant" nameDescription="a frost giant" race="undead" experience="39000" speed="300" manacost="490">
+	<health now="10000" max="10000"/>
+	<look type="257" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="80" attack="70"/>
+		<attack name="ice" interval="2000" chance="10" range="6" radius="4" target="1" min="-190" max="-250">
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+		<attack name="water icespikes" interval="2000" chance="30" min="-280" max="-320"/>
+		<attack name="water icebolt" interval="6000" chance="80" min="-170" max="-220"/>
+	</attacks>
+	<defenses armor="70" defense="70">
+		<defense name="healing" interval="1000" chance="25" min="250" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="So you think you are cool?"/>
+		<voice sentence="I hope it is not too cold for you! HeHeHe."/>
+		<voice sentence="Freeze!"/>
+	</voices>
+	<loot>
+		<item id="12688" chance="20"/><!-- water stone -->
+		<item id="18100" chance="200"/><!-- water rune 1 -->
+		<item id="18105" chance="20"/><!-- water rune 2 -->
+		<item id="18110" chance="2"/><!-- water rune 3 -->
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="2148" countmax="90" chance="94300"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="24300"/><!-- gold coin -->
+		<item id="7441" chance="1300"/><!-- ice cube -->
+		<item id="2796" countmax="23" chance="50550"/><!-- green mushroom -->
+		<item id="2195" chance="90"/><!-- boots of haste -->
+		<item id="2663" chance="350"/><!-- mystic turban -->
+		<item id="7896" chance="200"/><!-- glacier kilt -->
+		<item id="7459" chance="900"/><!-- ear muffs -->
+		<item id="2528" chance="400"/><!-- tower shield -->
+		<item id="12934" chance="60"/><!-- strange boots of haste -->
+		<item id="2498" chance="200"/><!-- rh -->
+		<item id="12872" chance="200"/><!-- boomerang -->
+	</loot>
+</monster>

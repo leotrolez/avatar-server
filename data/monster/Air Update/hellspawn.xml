@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellspawn" nameDescription="a hellspawn" experience="39700" speed="360" race="undead" manacost="0">
+	<health now="11000" max="11000"/>
+	<strategy attack="100" defense="0"/>
+	<targetchange speed="0" chance="8"/>
+	<look type="322" corpse="18161"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="65"/>
+		<attack name="fire bomb" interval="6000" chance="10" min="-160" max="-210"/>
+		<attack name="fire whip" interval="3000" chance="30" min="-180" max="-200"/>
+		<attack name="fire wave" interval="3000" chance="25" min="-160" max="-190"/>
+		<attack name="fire kick" interval="3000" chance="25" min="-70" max="-120"/>
+	</attacks>	
+	<defenses armor="40" defense="35">
+		<defense name="healing" interval="1000" chance="15" min="90" max="160">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices speed="5000" chance="10">		
+		<voice sentence="Your fragile bones are like toothpicks to me." yell="1"/>		
+		<voice sentence="You little weasel will not live to see another day." yell="1"/>		
+		<voice sentence="I'm just a messenger of what's yet to come." yell="1"/>		
+	</voices>	 
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="12686" chance="10"/><!-- fire stone -->
+		<item id="18099" chance="100"/><!-- fire rune 1 -->
+		<item id="18104" chance="10"/><!-- fire rune 2 -->
+		<item id="18109" chance="1"/><!-- fire rune 3 -->
+		<item id="2148" countmax="80" chance="44000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="44000"/><!-- gold coin -->
+		<item id="7368" countmin="2" countmax="4" chance="5000"/><!-- assassin star -->
+		<item id="2413" chance="3000"/><!-- battle shield -->
+		<item id="2231" chance="4000"/><!-- big bone -->
+		<item id="2478" chance="5000"/><!-- brass legs -->
+		<item id="2477" chance="750"/><!-- knight legs -->
+		<item id="2666" countmax="6" chance="7000"/><!-- meat -->
+		<item id="2394" chance="11000"/><!-- morning star -->
+		<item id="6391" chance="89"/><!-- nightmare shield -->
+		<item id="13342" chance="85"/><!-- spawn hammer -->
+		<item id="12936" chance="90"/><!-- spawn legs -->
+		<item id="9970" countmax="4" chance="2250"/><!-- small topaz -->
+		<item id="7452" chance="900"/><!-- spiked squelcher -->
+		<item id="2475" chance="900"/><!-- warrior helmet -->
+		<item id="7421" chance="800"/><!-- onyx fail -->
+	</loot>
+</monster>

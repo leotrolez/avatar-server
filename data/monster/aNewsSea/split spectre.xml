@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spectre" nameDescription="a spectre" race="undead" experience="0" speed="500" manacost="0">
+	<health now="1500" max="1500"/>
+	<look type="235"/>
+	<targetchange interval="3000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="drown" interval="2000" target="1" chance="100" range="5" radius="1" min="-300" max="-400">
+			<attribute key="areaEffect" value="watersplash"/>
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10"/>
+	<immunities>
+	</immunities>
+	<loot>
+
+	</loot>
+</monster>

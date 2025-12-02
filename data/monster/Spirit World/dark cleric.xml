@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Cleric" nameDescription="a dark cleric" race="undead" experience="80000" speed="220" manacost="0" lootPercent="true">
+	<health now="15500" max="15500"/>
+	<look type="468" corpse="18161"/>
+	<targetchange interval="5000" chance="30"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="200"/>
+	</flags>
+	<attacks>
+
+		<attack name="melee" interval="2000" skill="110" attack="110"/>
+
+		<attack name="physical" interval="1000" chance="11" range="7" min="-585" max="-885">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+
+		<attack name="physical" interval="2000" chance="30" radius="6" target="0" min="-200" max="-280">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+
+	</attacks>
+	<defenses armor="25" defense="30">
+		<defense name="healing" interval="1000" chance="15" min="60" max="100">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learn the secret of our magic! YOUR death!"/>
+		<voice sentence="Even a rat is a better mage than you."/>
+		<voice sentence="We don't like intruders!"/>
+	</voices>
+
+	<loot>
+		<item id="2152" countmax="50" chance="99"/><!-- plat coin -->
+		<item id="2145" countmax="15" chance="80"/><!-- small diamond -->
+
+		<item id="12857" chance="2"/><!-- obisidian hammer -->
+		<item id="12613" chance="2"/><!-- twindark axe-->
+		<item id="12874" chance="2"/><!-- anchor mace -->
+		<item id="13405" chance="2"/><!-- cleric shield -->
+		<item id="13404" chance="2"/><!-- cleric boots -->
+		<item id="13403" chance="2"/><!-- cleric legs -->
+		<item id="13402" chance="2"/><!-- cleric armor-->
+		<item id="13401" chance="2"/><!-- cleric helmet -->
+		<item id="2144" countmax="4" chance="70"/><!-- black pearl -->
+		<item id="2383" chance="60"/><!-- spike sword -->
+		<item id="6553" chance="9"/><!-- ruthless axe -->
+		<item id="6391" chance="3"/><!-- nightmare shield -->
+		<item id="7452" chance="30"/><!-- spiked squelcher -->
+		<item id="2498" chance="7"/><!-- royal helmet -->
+		<item id="2645" chance="6"/><!-- steel boots -->
+
+
+	</loot>
+</monster>

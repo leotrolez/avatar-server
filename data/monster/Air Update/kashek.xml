@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kashek" nameDescription="a kashek" race="undead" experience="16620" speed="280" manacost="0">
+	<health now="3700" max="3700"/>
+	<look type="90" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="95" attack="70"/>
+		<attack name="air force" interval="4000" chance="40" range="7" min="-100" max="-150"/>
+
+		<attack name="physical" interval="5000" chance="60" range="7" min="-140" max="-240">
+		<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="35" defense="35">
+		<defense name="speed" interval="1000" chance="7" speedchange="290" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="Ashes to ashes!"/>
+		<voice sentence="Death, Death!"/>
+		<voice sentence="The eternal flame demands its due!"/>
+		<voice sentence="This is why I'm hot."/>
+		<voice sentence="May my flames engulf you!"/>
+	</voices>
+
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="12689" chance="5"/><!-- air stone -->
+		<item id="18101" chance="50"/><!-- air rune 1 -->
+		<item id="18106" chance="5"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2152" countmax="2" chance="40000"/><!-- platinum coin -->
+		<item id="7368" countmin="2" countmax="4" chance="5000"/><!-- assassin star -->
+		<item id="2489" chance="2000"/><!-- dark armor -->
+		<item id="3962" chance="3000"/><!-- beastslayer axe -->
+		<item id="2666" countmax="2" chance="60000"/><!-- meat -->
+		<item id="2524" chance="7000"/><!-- ornamented shield-->
+		<item id="8856" chance="1500"/><!-- yol's bow -->
+		<item id="2491" chance="900"/><!-- crown helmet -->
+		<item id="2487" chance="900"/><!-- crown armor -->
+		<item id="2440" chance="900"/><!-- daramanian waraxe -->
+		<item id="5911" chance="2200"/><!-- red piece of cloth -->
+		<item id="2393" chance="800"/><!-- giant sword (11k)-->
+		<item id="2174" chance="1700"/><!-- strange symbol (6k)-->
+	</loot>
+</monster>

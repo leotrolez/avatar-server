@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spit Nettle" nameDescription="a spit nettle" race="undead" experience="0" speed="0" manacost="0">
+	<health now="1500" max="1500"/>
+	<look type="221" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="3000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="poison" interval="1000" chance="100" range="5" min="-100" max="-200">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="poison" interval="1000" chance="32" radius="3" target="0" min="-400" max="-600">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10"/>
+	<immunities>
+	</immunities>
+	<loot>
+
+	</loot>
+</monster>

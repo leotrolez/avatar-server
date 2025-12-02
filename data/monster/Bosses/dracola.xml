@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dracola" nameDescription="a dracola" race="undead" experience="46449" speed="410" manacost="0">
+	<health now="19850" max="19850"/>
+	<look type="231" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="85" attack="85"/>
+	</attacks>
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="70" min="300" max="600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="DEATH CAN'T STOP MY HUNGER!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="8" chance="20000"/><!-- platinum coin -->
+		<item id="6500" countmax="4" chance="1000"/><!-- demonic essence -->
+		<item id="6546" chance="100000"/><!-- dracola's eye -->
+	</loot>
+</monster>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crystal Golem" nameDescription="a crystal golem" race="undead" experience="67179" speed="470" manacost="0">
+	<health now="18880" max="18880"/>
+	<look type="698" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange speed="20000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="60"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="95" attack="95"/>
+		<attack name="water whip" interval="2000" chance="100" min="-105" max="-235"/>
+		<attack name="water icespikes" interval="6000" chance="50" min="-345" max="-435"/>
+		<attack name="earth smash" interval="6000" chance="50" min="-145" max="-185"/>
+	</attacks>
+	<defenses armor="35" defense="40">
+		<defense name="healing" interval="3000" chance="40" min="125" max="180">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="Screeech!"/>
+	</voices>
+	<loot>
+		<item id="12688" chance="25"/><!-- water stone -->
+		<item id="18100" chance="250"/><!-- water rune 1 -->
+		<item id="18105" chance="25"/><!-- water rune 2 -->
+		<item id="18110" chance="3"/><!-- water rune 3 -->
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="2148" countmax="90" chance="80000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="80000"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="20000"/><!-- gold coin -->
+		<item id="2477" chance="900"/><!-- knight legs -->
+		<item id="2476" chance="900"/><!-- knight armor -->
+		<item id="2171" chance="950"/><!-- platinum amulet -->
+		<item id="2492" chance="470"/><!-- dragon scale mail -->
+		<item id="11118" chance="420"/><!-- dragon scale boots -->
+		<item id="2498" chance="720"/><!-- royal helmet -->
+		<item id="2528" chance="850"/><!-- tower shield -->
+		<item id="13853" chance="10"/>
+		<item id="13830" chance="10"/>
+		<item id="13942" chance="20"/>
+		<item id="13902" chance="20"/>
+		<item id="13435" chance="10"/>
+		<item id="13635" chance="10"/>
+	</loot>
+</monster>

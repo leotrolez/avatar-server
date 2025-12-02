@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Obliverator" nameDescription="a obliverator" race="undead" experience="850000" speed="470" manacost="0">
+	<health now="252800" max="252800"/>
+	<look type="706" corpse="18161"/>
+	<targetchange speed="20000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="60"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1000" skill="105" attack="105"/>
+        <attack name="earth smash" interval="6000" chance="55" min="-200" max="-400"/>
+		<attack name="physical" interval="1000" chance="100" length="1" spread="1" radius="2" min="-155" max="-175">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="35" length="5" spread="3" min="-300" max="-380">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="55">
+		<defense name="healing" interval="3000" chance="50" min="450" max="850">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="You so juicy!"/>
+		<voice sentence="You stop! You lunch!" />
+		<voice sentence="Smash you face in!!" />
+	</voices>
+	<loot>
+		<item id="12687" chance="150"/><!-- earth stone -->
+		<item id="18102" chance="1500"/><!-- earth rune 1 -->
+		<item id="18107" chance="150"/><!-- earth rune 2 -->
+		<item id="18112" chance="15"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="80000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="80000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="80000"/><!-- platinum coin -->
+		<item id="12409" countmax="4" chance="40000"/><!-- broken elmo -->
+		<item id="2381" chance="25000"/><!-- halberd -->
+		<item id="2789" countmax="8" chance="80000"/><!-- brown mushroom -->
+		<item id="2391" chance="81000"/><!-- war hammer -->
+		<item id="2475"  chance="10000"/><!-- warrior helmet -->		
+		<item id="2430" chance="10000"/><!-- knight axe -->
+		<item id="2476" chance="10000"/><!-- knight armor -->
+		<item id="2477" chance="10000"/><!-- knight legs -->
+		<item id="2414" chance="7500"/><!-- dragon lance -->
+		<item id="2195" chance="5000"/><!-- boots of haste -->
+		<item id="13442" chance="200"/><!-- itens ogre -->
+		<item id="13456" chance="200"/><!-- itens ogre -->
+		<item id="13842" chance="200"/><!-- itens ogre -->
+		<item id="13762" chance="200"/><!-- itens ogre -->
+	</loot>
+</monster>

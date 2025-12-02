@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dwarve Gladiator" nameDescription="a dwarve gladiator" race="undead" experience="3150" speed="200" manacost="650">
+	<health now="350" max="350"/>
+	<look type="70" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="50"/>
+	</attacks>
+	<defenses armor="15" defense="22"/>
+
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+	</voices>
+	<loot>
+		<item id="5901" chance="2000"/><!-- wood -->
+		<item id="2148" countmax="35" chance="40000"/><!-- gold coin -->
+		<item id="2787" chance="60000"/><!-- white mushroom -->
+		<item id="2643" chance="7500"/><!-- leather boots -->
+		<item id="2673" countmax="7" chance="2000"/><!-- pear -->
+		<item id="2468" chance="8000"/><!-- studded legs -->
+		<item id="2423" chance="350"/><!-- Clerical Mace -->
+		<item id="2146" chance="200"/><!-- Small sapphire -->
+		<item id="2387" chance="450"/><!-- double axe -->
+		<item id="2150" countmax="2" chance="400"/><!-- small amethyst -->
+		<item id="2481" chance="10000"/><!-- soldier helmet -->
+		<item id="5880" chance="200"/><!-- Iron Ore -->
+		<item id="2455" chance="3400"/><!-- crossbow -->
+		<item id="2525" chance="1500"/><!-- dwarven shield -->
+	</loot>
+</monster>

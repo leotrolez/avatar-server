@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--balanceada -->
+<monster name="Larva" nameDescription="a larva" race="undead" experience="1764" speed="135" manacost="355">
+	<health now="140" max="140"/>
+	<look type="82" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="25" poison="17"/>
+	</attacks>
+	<defenses armor="6" defense="11"/>
+	<immunities>
+		<immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="15" chance="35000"/><!-- gold coin -->
+		<item id="2666" countmax="1" chance="33000"/><!-- meat -->
+		<item id="5922" chance="1000"/><!-- holy orchid -->
+	</loot>
+</monster>

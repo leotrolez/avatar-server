@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drasilla" nameDescription="drasilla" race="undead" experience="21114" speed="170" manacost="0">
+	<health now="6900" max="6900"/>
+	<look type="34" corpse="18161"/>
+	<script>
+
+</script>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="60"/>
+		<attack name="fire" interval="6000" chance="60" min="-100" max="-280" length="8" spread="3">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="3000" range="10" radius="5" target="1" chance="50" min="-70" max="-315">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="32" defense="33">
+		<defense name="healing" interval="6000" chance="65" min="20" max="50">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="FCHHHHHHHH!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+		<voice sentence="DIRTY LITTLE HUMANS"/>
+		<voice sentence="YOU CAN'T KEEP ME HERE FOREVER"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="70" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="50" chance="37500"/><!-- gold coin -->
+		<item id="2546" countmax="12" chance="4000"/><!-- burst arrow -->
+		<item id="2672" countmax="3" chance="15500"/><!-- dragon ham -->
+		<item id="2406" chance="25000"/><!-- short sword -->
+		<item id="2398" chance="21500"/><!-- mace -->
+		<item id="2509" chance="14000"/><!-- steel shield -->
+		<item id="2455" chance="10000"/><!-- crossbow -->
+		<item id="2397" chance="5000"/><!-- longsword -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+		<item id="2457" chance="3000"/><!-- steel helmet -->
+		<item id="2647" chance="2000"/><!-- plate legs -->
+		<item id="2413" chance="1950"/><!-- broadsword -->
+		<item id="2387" chance="1333"/><!-- double axe -->
+		<item id="2434" chance="600"/><!-- dragon hammer -->
+		<item id="11395" chance="100"/><!-- firelywood sword -->
+		<item id="12855" chance="100"/><!-- lava axe -->
+		<item id="12926" chance="100"/><!-- dragonbone shield -->
+		<item id="12657" chance="100"/><!-- dragonhunter robe -->
+		<item id="2145" chance="500"/><!-- small diamond -->
+		<item id="2516" chance="400"/><!-- dragon shield -->
+		<item id="2409" chance="400"/><!-- serpent sword -->
+		<item id="7430" chance="250"/><!-- dragonbone staff -->
+			</inside>
+		</item>
+	</loot>
+</monster>

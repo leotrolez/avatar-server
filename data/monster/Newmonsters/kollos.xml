@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kollos" nameDescription="a kollos" race="undead" experience="1001520" speed="600" manacost="0">
+	<health now="428000" max="428000"/>
+	<look type="552" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="130" attack="130"/>
+		<attack name="earth punch" interval="3000" chance="70" min="-690" max="-860"/>
+		<attack name="earth crush" interval="2000" chance="80" min="-790" max="-950"/>
+		<attack name="earth quake" interval="4500" chance="70" min="-450" max="-650"/>
+		<attack name="physical" interval="3000" chance="70" target="1" range="7" radius="3" min="-650" max="-700">
+			<attribute key="shootEffect" value="explosion"/>
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="45">
+		<defense name="healing" interval="1100" chance="15" min="500" max="1080">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="5000"/><!-- earth stone -->
+		<item id="18102" chance="50000"/><!-- earth rune 1 -->
+		<item id="18107" chance="5000"/><!-- earth rune 2 -->
+		<item id="18112" chance="500"/><!-- earth rune 3 -->
+		<item id="18133" chance="250"/><!-- earth rune 4 -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="1" chance="77500"/><!-- gold coin -->
+		<item id="2147" countmax="45" chance="70000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="10" chance="70000"/><!-- giant pearl 2000gp ea -->
+		<item id="2153" chance="80000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="100"/><!-- armas novas -->
+		<item id="12864" chance="100"/><!-- armas novas -->
+		<item id="12861" chance="100"/><!-- armas novas -->
+		<item id="13296" chance="100"/><!-- armas novas -->
+		<item id="13086" chance="100"/><!-- armas novas -->
+		<item id="10219" chance="200"/><!-- sacred amulet -->
+	</loot>
+</monster>

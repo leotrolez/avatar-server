@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Avatar" nameDescription="the lost avatar" race="undead" experience="702000" speed="350" manacost="0">
+	<health now="300000" max="300000"/>
+	<look addons="0" type="407" head="114" legs="75" body="132" feet="95" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+		<script>
+		<event name="LostAvatar_Quest"/>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="air ball" interval="2000" chance="100" min="-220" max="-390" target="1"/>	
+		<attack name="fire wrath" interval="15000" chance="15" target="1"/>
+		<attack name="earth petrify" interval="14600" chance="15" min="-100" max="-200" target="1"/>
+		<attack name="air suffocation" interval="14300" chance="15" min="-10" max="-20" target="1"/>
+		<attack name="water icebolt" interval="14900" chance="15" min="-630" max="-980" target="1"/>
+		<attack name="air doom" interval="4900" chance="15" min="-30" max="-50"/>
+		<attack name="earth growth" interval="4900" chance="15" min="-30" max="-50"/>
+		<attack name="earth rock" interval="3000" chance="15" target="1" min="-60" max="-80"/>
+		<attack name="fire whip" interval="2237" chance="15" min="-70" max="-100"/>
+		<attack name="water whip" interval="2237" chance="15" min="-70" max="-100"/>
+		<attack name="air burst" interval="2237" chance="15" min="-70" max="-100"/>
+		<attack name="fire wave" interval="2753" chance="15" min="-70" max="-240"/>
+		<attack name="water icespikes" interval="5753" chance="15" min="-70" max="-240"/>
+		<attack name="fire cannon" interval="5257" chance="15" min="-150" max="-200"/>
+		<attack name="fire star" interval="5237" chance="20" min="-160" max="-220"/>
+		<attack name="fire explosion" interval="4421" chance="15" min="-150" max="-200"/>
+		<attack name="air barrier" interval="10000" chance="100" min="-50" max="-100"/>
+		<attack name="air stormcall" interval="10515" chance="15" min="-40" max="-70"/>
+		<attack name="fire striker" interval="10001" chance="100" min="-50" max="-200"/>
+		<attack name="water shards" interval="10002" chance="100" min="-70" max="-110"/>
+	</attacks>
+	<defenses armor="60" defense="60"> 
+	</defenses>
+	<voices interval="50000" chance="0">
+	</voices>
+</monster>

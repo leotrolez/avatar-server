@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Undead Gladiator" nameDescription="a undead gladiator" race="undead" experience="10400" speed="270" manacost="0">
+	<health now="2000" max="2000"/>
+	<look type="306" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skil="60" attack="60"/>
+		<attack name="physical" interval="1000" chance="14" range="7" min="-50" max="-235">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Let's battle it out in a duel!"/>
+		<voice sentence="Bring it!"/>
+		<voice sentence="I'll fight here in eternity and beyond."/>
+		<voice sentence="I will not give up!"/>
+		<voice sentence="Another foolish adventurer who tries to beat me."/>
+	</voices>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="37500"/><!-- gold coin -->
+		<item id="8872" chance="1100"/><!-- belted cape -->
+		<item id="2465" chance="5100"/><!-- brass armor -->
+		<item id="2478" chance="5550"/><!-- brass legs -->
+		<item id="2666" countmax="2" chance="15000"/><!-- meat -->
+		<item id="2419" chance="6750"/><!-- scimitar -->
+		<item id="2399" countmax="18" chance="12000"/><!-- throwing star -->
+		<item id="2647" chance="4444"/><!-- plate legs -->
+		<item id="2463" chance="3333"/><!-- plate armor -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>	
+				<item id="2377" chance="1875"/><!-- two handed sword -->
+				<item id="2490" chance="1750"/><!-- dark helmet -->
+				<item id="2497" chance="500"/><!-- crusader helmet -->
+				<item id="2430" chance="900"/><!-- knight axe -->
+				<item id="3962" chance="500"/><!-- beastslayer axe -->
+				<item id="7389" chance="200"/><!-- mercenary sword -->
+			</inside>
+		</item>
+	</loot>
+</monster>

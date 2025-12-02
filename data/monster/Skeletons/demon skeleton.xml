@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Demon Skeleton" nameDescription="a demon skeleton" race="undead" experience="5040" speed="230" manacost="620">
+	<health now="700" max="700"/>
+	<look type="37" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1800" skill="64" attack="35" fire="3"/>
+		<attack name="lifedrain" interval="2000" chance="10" range="1" min="-40" max="-85"/>
+		<attack name="fire blast" interval="3000" chance="10" range="3" min="-40" max="-65"/>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity drunk="0"/>
+	</immunities>
+	<loot>
+		<item id="12686" chance="5"/><!-- fire stone -->
+		<item id="18099" chance="50"/><!-- fire rune 1 -->
+		<item id="18104" chance="5"/><!-- fire rune 2 -->
+		<item id="18109" chance="1"/><!-- fire rune 3 -->
+		<item id="2148" countmax="50" chance="45500"/><!-- gold coin -->
+		<item id="2459" chance="600"/><!-- iron helmet -->
+		<item id="10564" countmax="1" chance="920"/><!-- demonic skeletal hand -->
+		<item id="12802" chance="140"/><!-- firely elmo -->
+		<item id="12755" chance="140"/><!-- firely armor -->
+		<item id="2178" chance="120"/><!-- mind stone -->
+		<item id="2515" chance="30"/><!-- guardian shield -->
+	</loot>
+</monster>

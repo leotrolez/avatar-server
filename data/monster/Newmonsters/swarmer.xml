@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Swarmer" nameDescription="a swarmer" race="undead" experience="20770" speed="180" manacost="0">
+	<health now="4500" max="4500"/>
+	<look type="553" corpse="18161"/>
+	<targetchange interval="5000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="80" poison="100"/>
+		<attack name="poison" interval="2000" chance="35" min="-150" max="-320"/>
+		<attack name="poison" interval="1000" chance="20" range="7" min="-180" max="-475">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+
+		<attack name="speed" interval="1000" chance="" range="7" speedchange="-700" duration="25000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+
+		<attack name="poisoncondition" interval="3000" chance="20" radius="5" target="0" min="-30" max="-100">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="30"/>
+</monster>

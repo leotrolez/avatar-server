@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sandking" nameDescription="a sandking" race="undead" experience="15000000" speed="400" manacost="0">
+	<health now="1000000" max="1000000"/>
+	<look type="943" corpse="18161"/>
+	<targetchange interval="4000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="135" attack="135"/>
+		<attack name="earth" interval="1500" chance="100" target="1" range="5" min="-1085" max="-1290">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="earth" interval="3000" chance="85" radius="5" min="-1120" max="-1220">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="earth" interval="4000" chance="65" length="7" spread="0" min="-1650" max="-1760">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="100">
+		<defense name="healing" interval="1000" chance="30" min="1500" max="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="checkSand" interval="1000" chance="100"/>
+	</defenses>
+	<loot>
+		<item id="12687" countmax="2" chance="25000"/><!-- earth stone -->
+		<item id="2160" countmax="20" chance="57500"/><!-- gold coin -->
+		<item id="2177" chance="98000"/><!-- life crystal -->
+		<item id="12929" chance="30000"/><!-- goldensilver shield -->
+		<item id="12869" chance="30000"/><!-- umbral fire sword -->
+		<item id="13305" chance="30000"/><!-- umbral fire robe -->
+		<item id="2145" countmax="70" chance="14200"/>  <!-- small diamond -->
+		<item id="12946" chance="15000"/>  <!-- bender scroll -->
+		<item id="12792" chance="15000"/>  <!-- bender scroll -->
+		<item id="2514" chance="24000"/>  <!-- bender scroll -->
+		<item id="2498" chance="24000"/>  <!-- bender scroll -->
+		<item id="12785" chance="15000"/>  <!-- bender scroll -->
+		<item id="12782" chance="15000"/>  <!-- bender scroll -->
+		<item id="12806" chance="15000"/>  <!-- bender scroll -->
+		<item id="2470" chance="54000"/>  <!-- bender scroll -->
+		<item id="13432" chance="15000"/>  <!-- bender scroll -->
+		<item id="17860" chance="15"/><!-- legendary sword -->
+		<item id="17861" chance="15"/><!-- legendary crossbow -->
+		<item id="17862" chance="15"/><!-- legendary club -->
+		<item id="17863" chance="15"/><!-- legendary axe -->
+		<item id="13401" chance="15"/><!-- moon helmet -->
+		<item id="13402" chance="15"/><!-- moon chest -->
+		<item id="13403" chance="15"/><!-- moon legs -->
+		<item id="13404" chance="15"/><!-- moon boots -->
+		<item id="2214" chance="100000"/>  <!-- ring of healing -->
+		<item id="2169" chance="60000"/>  <!-- time ring -->
+		<item id="12649" chance="1000"/><!-- undead power blade -->
+		<item id="8901" chance="1000"/> <!-- spellbook -->
+		<item id="12853" chance="200"/><!-- armas novas -->
+		<item id="12864" chance="200"/><!-- armas novas -->
+		<item id="12861" chance="200"/><!-- armas novas -->
+		<item id="13296" chance="200"/><!-- armas novas -->
+		<item id="13086" chance="200"/><!-- armas novas -->
+		<item id="11262" chance="500"/><!-- armas novas -->
+	</loot>
+</monster>

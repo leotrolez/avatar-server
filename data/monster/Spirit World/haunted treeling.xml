@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Haunted Treeling" nameDescription="a haunted treeling" experience="13310" speed="300" race="undead" manacost="0">
+	<health now="8450" max="8450"/>
+	<look type="310" corpse="18161"/>
+	<targetchange speed="0" chance="8"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100"/>
+		<attack name="earth punch" interval="3000" chance="40" min="-130" max="-220"/>
+		<attack name="speed" interval="3000" chance="20" length="8" spread="0" duration="30000" speedchange="-300">
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack> 
+	</attacks>
+	<defenses armor="50" defense="55"/>
+	<immunities>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="2" chance="350000"/><!-- plat coin -->
+		<item id="7618" chance="7200"/><!-- health potion -->
+		<item id="2790" chance="1000"/><!-- orange mushroom -->
+		<item id="2393" chance="500"/><!-- giant sword (11k)-->
+		<item id="2788" chance="8000"/><!-- red mushroom -->
+		<item id="7884" chance="1000"/><!-- terra mantle -->
+		<item id="7885" chance="1000"/><!-- terra legs -->
+		<item id="4860" chance="50000"/><!-- wooden trash -->
+		<item id="2146" countmax="2" chance="1500"/><!-- small emerald -->
+		<item id="12882" chance="100"/><!-- horned armor -->
+		<item id="7588" chance="1000"/><!-- strong health potion -->
+		<item id="2787" countmax="2" chance="2200"/><!-- white mushroom -->
+	</loot>
+</monster>

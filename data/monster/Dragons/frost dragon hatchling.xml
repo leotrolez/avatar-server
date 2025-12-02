@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Dragon Hatchling" nameDescription="a frost dragon hatchling" race="undead" experience="15160" speed="220" manacost="0">
+	<health now="3100" max="3100"/>
+	<look type="283" corpse="18161"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="80"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="75" attack="65"/>
+		<attack name="ice" interval="2000" chance="20" range="4" radius="4" min="-135" max="-185">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="25" range="7" min="-95" max="-145">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="healing" interval="3000" chance="15" min="40" max="80">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="50">
+		<voice sentence="Rooawwrr" yell="0"/>
+		<voice sentence="Fchu?" yell="0"/>
+	</voices>
+	<loot>
+		<item id="18124" chance="20"/><!-- ice rune 1 -->
+		<item id="18125" chance="5"/><!-- ice rune 2 -->
+		<item id="12688" chance="10"/><!-- water stone -->
+		<item id="18100" chance="100"/><!-- water rune 1 -->
+		<item id="18105" chance="10"/><!-- water rune 2 -->
+		<item id="18110" chance="1"/><!-- water rune 3 -->
+		<item id="2148" countmax="22" chance="50500"/><!-- gold coin -->
+		<item id="2148" countmax="34" chance="50500"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="25000"/><!-- dragon ham -->
+		<item id="2146" countmax="2" chance="900"/><!-- small sapphire -->
+		<item id="2457" chance="1700"/><!-- steel helmet -->
+		<item id="2647" chance="1300"/><!-- plate legs -->
+		<item id="2413" chance="1350"/><!-- broadsword -->
+	</loot>
+</monster>

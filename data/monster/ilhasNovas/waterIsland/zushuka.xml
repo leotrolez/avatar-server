@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zushuka" nameDescription="a zushuka" race="undead" experience="465000" speed="550" manacost="0">
+	<health now="78400" max="78400"/>
+	<look type="988" head="0" body="47" legs="105" feet="105" addons="0" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1500" skill="145" attack="145"/>
+		<attack name="water icespikes" interval="4000" chance="70" min="-550" max="-640"/>
+		<attack name="water whip" interval="2000" chance="60" min="-345" max="-450"/>
+
+		<attack name="ice" interval="5000" chance="70" length="9" spread="3" min="-360" max="-530">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+
+		<attack name="drown" interval="3500" chance="60" radius="4" target="1" min="-715" max="-810">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="60" defense="50">
+		<defense name="healing" interval="2000" chance="25" min="500" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<loot>
+		<item id="12688" chance="40"/><!-- water stone -->
+		<item id="18100" chance="400"/><!-- water rune 1 -->
+		<item id="18105" chance="40"/><!-- water rune 2 -->
+		<item id="18110" chance="4"/><!-- water rune 3 -->
+		<item id="18124" chance="60"/><!-- ice rune 1 -->
+		<item id="18125" chance="20"/><!-- ice rune 2 -->
+		<item id="2148" countmax="90" chance="51000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="42000"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="35000"/><!-- dragon ham -->
+		<item id="2647" chance="3350"/><!-- plate legs -->
+		<item id="2146" countmax="2" chance="1800"/><!-- small saphire -->
+		<item id="2491" chance="2620"/><!-- crown helmet -->
+		<item id="7896" chance="1360"/><!-- glacier kilt -->
+		<item id="7897" chance="1360"/><!-- glacier robe -->
+		<item id="2492" chance="1300"/><!-- dragon scale mail -->
+		<item id="7902" chance="1860"/><!-- glacier mask -->
+		<item id="2498" chance="1950"/><!-- royal helmet -->
+		<item id="2424" chance="2000"/><!-- silver mace -->
+		<item id="8871" chance="2000"/><!-- focus cape -->
+		<item id="7430" chance="2000"/><!-- dragonbone staff -->
+		<item id="2475"  chance="3000"/><!-- warrior helmet -->		
+		<item id="2430" chance="3000"/><!-- knight axe -->
+		<item id="2476" chance="3000"/><!-- knight armor -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+	</loot>
+</monster>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elephant" nameDescription="a elephant" race="undead" experience="3780" speed="240" manacost="0">
+	<health now="420" max="420"/>
+	<look type="211" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="50"/>
+	</attacks>
+	<defenses armor="20" defense="16"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hooooot-Toooooot!"/>
+		<voice sentence="Tooooot."/>
+		<voice sentence="Troooooot!"/>
+	</voices>
+	<loot>
+		<item id="2671" countmax="4" chance="15000"/><!-- ham -->
+		<item id="2666" countmax="3" chance="30000"/><!-- meat -->
+	</loot>
+</monster>

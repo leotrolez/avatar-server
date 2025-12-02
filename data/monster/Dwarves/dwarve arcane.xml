@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dwarve Arcane" nameDescription="a dwarve arcane" race="undead" experience="3600" speed="200" manacost="0">
+	<health now="400" max="400"/>
+	<look type="66" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="150"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="50"/>
+		<attack name="fire" interval="1000" chance="10" range="7" radius="4" target="1" min="-50" max="-120">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="34" range="7" min="-55" max="-105">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="25" range="7" min="-50" max="-80"/>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="1000" chance="50" min="5" max="25">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hail Durin!"/>
+		<voice sentence="Earth is the strongest element."/>
+		<voice sentence="Dust to dust."/>
+	</voices>
+	<loot>
+		<item id="5901" chance="2000"/><!-- wood -->
+		<item id="2148" countmax="35" chance="40000"/><!-- gold coin -->
+		<item id="2787" chance="60000"/><!-- white mushroom -->
+		<item id="2643" chance="7500"/><!-- leather boots -->
+		<item id="2673" countmax="7" chance="2000"/><!-- pear -->
+		<item id="2468" chance="8000"/><!-- studded legs -->
+		<item id="2423" chance="350"/><!-- Clerical Mace -->
+		<item id="2146" chance="200"/><!-- Small sapphire -->
+		<item id="2387" chance="450"/><!-- double axe -->
+		<item id="2150" countmax="2" chance="400"/><!-- small amethyst -->
+		<item id="2481" chance="10000"/><!-- soldier helmet -->
+		<item id="5880" chance="200"/><!-- Iron Ore -->
+		<item id="2455" chance="3400"/><!-- crossbow -->
+		<item id="2525" chance="1500"/><!-- dwarven shield -->
+	</loot>
+</monster>

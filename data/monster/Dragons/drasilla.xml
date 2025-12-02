@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drasilla" nameDescription="a drasilla" race="undead" experience="300000" speed="210" manacost="0">
+	<health now="70000" max="70000"/>
+	<look type="34" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1000" skill="80" attack="75"/>
+
+		<attack name="fire" interval="1000" chance="25" range="7" radius="4" target="1" min="-225" max="-295">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+
+		<attack name="fire wave" interval="1500" chance="15" min="-245" max="-285"/>
+		<attack name="fire bomb" interval="14000" chance="15" min="-500" max="-775"/>
+
+		<attack name="fire" interval="1000" chance="8" length="8" spread="3" min="-290" max="-320">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="1100" chance="35" min="100" max="180">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROOAAARRR" yell="1"/>
+		<voice sentence="FCHHHHH" yell="1"/>
+	</voices>
+	<loot>
+		<item id="12686" chance="100"/><!-- fire stone -->
+		<item id="18099" chance="1000"/><!-- fire rune 1 -->
+		<item id="18104" chance="100"/><!-- fire rune 2 -->
+		<item id="18109" chance="10"/><!-- fire rune 3 -->
+		<item id="2148" countmax="70" chance="87500"/>  <!-- gold coin -->
+		<item id="2148" countmax="50" chance="87500"/>  <!-- gold coin -->
+		<item id="2148" countmax="50" chance="87500"/>  <!-- gold coin -->
+		<item id="2672" countmax="3" chance="15500"/>  <!-- dragon ham -->
+		<item id="2498" chance="3000"/>  <!-- royal helmet -->
+		<item id="11395" chance="600"/>  <!-- firelywood sword -->
+		<item id="12855" chance="600"/>  <!-- lava axe -->
+		<item id="12926" chance="600"/>  <!-- dragonbone shield -->
+		<item id="12657" chance="600"/>  <!-- dragonhunter robe -->
+		<item id="2145" countmax="2" chance="9000"/>  <!-- small diamond -->
+    	<item id="2146" countmax="2" chance="12000"/><!-- small sapphire -->
+		<item id="7430" chance="12500"/>  <!-- dragonbone staff -->
+		<item id="2387" chance="22330"/>  <!-- double axe -->
+		<item id="2434" chance="9000"/>  <!-- dragon hammer -->
+		<item id="11118" chance="3000"/><!-- dragon scale boots -->
+		<item id="2177" chance="4000"/><!-- life crystal -->
+		<item id="2392" chance="9500"/><!-- fire sword -->
+		<item id="2381" chance="20000"/><!-- halberd -->
+		<item id="2477" chance="5000"/><!-- knight legs -->
+		<item id="2414" chance="2700"/><!-- dragon lance -->
+		<item id="2195" chance="2500"/><!-- boots of haste -->
+		<item id="2475"  chance="5000"/><!-- warrior helmet -->		
+		<item id="2430" chance="5000"/><!-- knight axe -->
+		<item id="2476" chance="5000"/><!-- knight armor -->
+	</loot>
+</monster>

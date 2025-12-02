@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sandstone Scorpion" nameDescription="a sandstone scorpion" race="undead" experience="14000" speed="460" manacost="0">
+	<health now="3000" max="3000"/>
+	<look type="590" corpse="18161"/>
+	<targetchange interval="2000" chance="50"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="40"/>
+		<attack name="air ball" interval="3500" chance="50" min="-30" max="-60"/>
+		<attack name="air force" interval="2500" chance="50" min="-50" max="-90"/>
+		<attack name="earth rock" interval="6000" chance="10" min="-100" max="-140"/>
+	</attacks>
+	<defenses armor="100" defense="100">
+		<defense name="healing" interval="3000" chance="25" min="50" max="150">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="10500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="65500"/><!-- fire mushroom -->
+		<item id="2177" chance="90"/><!-- life crystal -->
+		<item id="12929" chance="90"/><!-- goldensilver shield -->
+		<item id="12869" chance="80"/><!-- umbral fire sword -->
+		<item id="13305" chance="80"/><!-- umbral fire robe -->
+		<item id="2145" countmax="4" chance="1000"/>  <!-- small diamond -->
+	</loot>
+</monster>

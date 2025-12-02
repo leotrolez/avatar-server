@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellgorak" nameDescription="a hellgorak" race="undead" experience="245700" speed="500" manacost="0">
+    <health now="250000" max="250000"/>
+    <look type="12" head="19" body="96" legs="21" feet="81" corpse="18161"/>
+        <script>
+
+</script>
+    <targetchange interval="5000" chance="8"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="85"/>
+        <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="2500" skill="200" attack="200"/>
+        <attack name="energy" interval="3000" chance="50" length="8" spread="0" min="-1350" max="-1519">
+            <attribute key="areaEffect" value="purpleenergy"/>
+        </attack>
+        <attack name="manadrain" interval="2000" chance="40" radius="5" target="0" min="-60" max="-110">
+            <attribute key="areaEffect" value="stun"/>
+        </attack>
+        <attack name="fire" interval="1000" chance="50" radius="5" target="1" min="-750" max="-920">
+            <attribute key="areaEffect" value="firearea"/>
+        </attack>
+        <attack name="lifedrain" interval="2000" chance="55" radius="7" target="0" min="-800" max="-1100">
+            <attribute key="areaEffect" value="poff"/>
+        </attack>
+    </attacks>
+    <defenses armor="70" defense="65">
+        <defense name="healing" interval="1000" chance="11" min="400" max="900">
+            <attribute key="areaEffect" value="greenshimmer"/>
+        </defense>
+    </defenses>
+    <voices interval="5000" chance="0">
+        <voice sentence="I'll sacrifice yours souls to seven!"/>
+    </voices>
+    <loot>
+    <item id="2148" countmax="100" chance="45900" /><!-- gold coin -->
+    <item id="2195" chance="1450" /><!-- boots of haste -->
+    <item id="2148" countmax="54" chance="45900" /><!-- gold coin -->
+    <item id="7404" chance="13325" /><!-- assassin dagger -->
+    <item id="1988" chance="100000"><!-- bag -->
+        <inside>
+            <item id="2152" countmax="30" chance="16875" /><!-- platinum coin -->
+            <item id="2396" chance="17175" /><!-- ice rapier -->
+            <item id="2377" chance="18450" /><!-- two handed sword -->
+            <item id="7386" chance="10750" /><!-- mercenary sword -->
+            <item id="7449" chance="12050" /><!-- crystal sword -->
+            <item id="7407" chance="9475" /><!-- haunted blade -->
+            <item id="2498" chance="20925" /><!-- royal helmet -->
+            <item id="7383" chance="8200" /><!-- relic sword -->
+            <item id="7418" chance="1775" /><!-- nightmare blade -->
+        </inside>
+    </item>
+</loot>
+</monster>

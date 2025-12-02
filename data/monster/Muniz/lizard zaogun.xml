@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Zaogun" nameDescription="a lizard zaogun" race="undead" experience="15506" speed="350" manacost="0">
+	<health now="3455" max="3455"/>
+	<look type="343" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="75" attack="55"/>
+		<attack name="poison" interval="3000" chance="20" range="7" length="4" radius="4" min="-220" max="-275">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="30">
+		<defense name="healing" interval="2000" chance="10" min="175" max="275">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="32000" /><!-- gold coin -->
+		<item id="2148" countmax="60" chance="32000" /><!-- gold coin -->
+		<item id="2528" chance="770" /><!-- tower shield -->
+		<item id="11332" chance="840" /><!-- high guard flag -->
+		<item id="11303" chance="650" /><!-- zaoan shoes -->
+		<item id="5876" chance="890" /><!-- lizard leather -->
+		<item id="5881" chance="1170" /><!-- lizard scale -->
+		<item id="11325" chance="920" /><!-- spiked iron ball -->
+		<item id="2149" countmax="4" chance="920" /><!-- small emerald -->
+		<item id="11245" chance="1150" /><!-- bunch of ripe rice -->
+		<item id="11206" chance="1120" /><!-- red lantern -->
+		<item id="11304" chance="520"/><!-- zaoan legs -->
+		<item id="11301" chance="140"/><!-- zaoan armor -->
+	</loot>
+</monster>

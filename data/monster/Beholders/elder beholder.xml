@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elder Beholder" nameDescription="a elder beholder" race="undead" experience="22606" speed="180" manacost="0">
+	<health now="5100" max="5100"/>
+	<look type="108" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="60" />
+		<attack name="fire" interval="2000" chance="25" length="5" spread="2" min="-150" max="-250">
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="20" target="0" radius="4" min="-150" max="-420">
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="10" radius="2" target="0" spread="0" speedchange="-150" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="40" range="7" radius="5" target="1" min="-145" max="-235">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="10"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Let me take a look at you!"/>
+		<voice sentence="Inferior creatures, bow before my power!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="63750"/><!-- gold coin -->
+		<item id="2672" countmax="5" chance="11500"/><!-- dragon ham -->
+		<item id="2392" chance="950"/><!-- fire sword -->
+		<item id="2796" chance="8000"/><!-- green mushroom -->
+		<item id="2177" chance="620"/><!-- life crystal -->	
+		<item id="2498" chance="320"/><!-- royal helmet -->
+		<item id="2146" chance="2300"/><!-- small sapphire -->
+		<item id="12929" chance="40"/><!-- goldensilver shield -->
+		<item id="12869" chance="40"/><!-- umbral fire sword -->
+		<item id="13305" chance="40"/><!-- umbral fire robe -->
+		<item id="2479" chance="1150"/><!-- strange helmet -->
+		<item id="2528" chance="1000"/><!-- tower shield -->
+		<item id="7402" chance="670"/><!-- dragon slayer -->
+		<item id="2492" chance="300"/><!-- dragon scale mail -->
+		<item id="13944" chance="20"/>
+		<item id="12855" chance="120"/>  <!-- lava axe -->
+		<item id="2414" chance="370"/><!-- dragon lance -->
+		<item id="2195" chance="300"/><!-- boots of haste -->
+	</loot>
+</monster>

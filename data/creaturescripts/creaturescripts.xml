@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	<!-- Base -->
+	<event type="login" name="PlayerLogin" script="login.lua" />
+	<event type="logout" name="PlayerLogout" script="logout.lua" />
+	<event type="login" name="FirstItems" script="firstitems.lua" />
+	<event type="login" name="RegenerateStamina" script="regeneratestamina.lua" />
+	<event type="death" name="PlayerDeath" script="playerdeath.lua" />
+	<event type="death" name="DropLoot" script="droploot.lua" />
+	<!-- <event type="extendedopcode" name="ExtendedOpcode" script="extendedopcode.lua" /> -->
+	
+	<!-- OLD -->
+
+	<!-- death -->
+	<event type="death" name="Rarods_Quest" script="old/rarodsQuest.lua"/>
+	<event type="death" name="Insects_Quest" script="old/insects.lua"/>
+	<event type="death" name="Demon_Quest" script="old/demonSource.lua"/>
+	<event type="death" name="Seacrest_Quest" script="old/seacrest.lua"/>
+	<event type="death" name="Zuko_Quest" script="old/zuko.lua"/>
+	<event type="death" name="LostAvatar_Quest" script="old/lostavatar.lua"/>
+	<event type="death" name="Guarda_Blood" script="old/bloodcastle/guard.lua"/>
+	<event type="death" name="Boss_Blood" script="old/bloodcastle/boss.lua"/>
+	<event type="death" name="morrerblood" script="old/bloodcastle/player.lua"/>
+	<event type="death" name="loginblood" script="old/bloodcastle/player.lua"/>
+	<event type="death" name="Rarod_kill" script="old/rarodKill.lua"/>
+	<event type="death" name="deathChecks" script="old/deathChecks.lua"/>
+	<!-- kill -->
+	<event type="kill" name="bloodKill" script="old/bloodcastle/bloodKill.lua"/>
+	<event type="kill" name="warKill" script="old/warKill.lua"/>
+	<event type="kill" name="Inquisition" script="old/inquisition.lua"/>
+	<event type="kill" name="loot" script="old/loot.lua"/>
+	<!-- statschange -->
+	<event type="healthchange" name="reflect" script="old/reflect.lua"/>
+	<event type="healthchange" name="hasImuneable" script="old/imuneable.lua"/>
+	<!-- login -->
+	<event type="login" name="PlayerLogin_old" script="old/loginLogout/login.lua"/>
+	<!-- logout -->
+	<event type="logout" name="PlayerLogout_old" script="old/loginLogout/logout.lua"/>
+	<event type="logout" name="logoutGamesCheck" script="old/games/logoutCheck.lua"/>
+	<!-- channelrequest 
+	<event type="channelrequest" name="Ban_Type" script="old/ban/type.lua"/>
+	<event type="channelrequest" name="Ban_Action" script="old/ban/action.lua"/>
+	-->
+	<!-- textedit
+	<event type="textedit" name="Ban_Finish" script="old/ban/finish.lua"/>
+	<event type="textedit" name="onTextEdit" script="old/exivaPlayer.lua"/>
+	 -->
+	<!-- channeljoin
+	<event type="channeljoin" name="GuildEvents" script="old/guild.lua"/>
+	 -->
+	<!-- mailreceive 
+	<event type="mailreceive" name="Mail" script="old/mail.lua"/>
+	-->
+	<!-- reportbug 
+	<event type="reportbug" name="ReportBug" script="old/reportbug.lua"/>
+	-->
+	<!-- think -->
+	<event type="think" name="flySystem" script="old/flyAndSurf/onThink.lua"/>
+	-->
+	<!-- advance -->
+	<event type="advance" name="onAdvancePoint" script="old/onAdvance.lua"/>
+	<!--look TODO: move to events
+	<event type="look" name="onSee" script="old/seeLook/onSee.lua"/>
+	-->
+	<!-- attack TODO: move to events
+	<event type="attack" name="onAttackCritical" script="old/criticalOnAttack.lua"/>
+	<event type="attack" name="onAttackAvatar" script="old/avatarAttack.lua"/>
+	-->
+	<!-- preparedeath -->
+	<event type="preparedeath" name="deathGamesCheck" script="old/games/deathCheck.lua"/>
+	<event type="preparedeath" name="prepareCheck" script="old/prepareCheck.lua"/>
+	<!-- extendedopcode -->
+	<event type="extendedopcode" name="ExtendedOpcode" script="old/opcode.lua"/>
+</creaturescripts>

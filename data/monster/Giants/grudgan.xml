@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grudgan" nameDescription="the grudgan" race="undead" experience="18400" speed="220" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="277" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1050" skill="55" attack="40"/>
+		<attack name="earth punch" interval="3000" chance="50" min="-66" max="-84"/>
+		<attack name="physical" interval="1500" chance="30" range="7" min="-106" max="-114">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="10"/>
+	</attacks>
+	<defenses armor="50" defense="60"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Outis emoi g' onoma."/>
+		<voice sentence="Whack da humy!"/>
+		<voice sentence="Ai humy phary ty kaynon"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2671" countmax="4" chance="45000"/><!-- ham -->
+		<item id="2666" countmax="3" chance="40000"/><!-- meat -->
+		<item id="2513" chance="9000"/><!-- battle shield -->
+		<item id="5898" chance="11000"/><!-- cyclops eye -->
+		<item id="2394" chance="11000"/><!-- morning star -->
+		<item id="2490" chance="9000"/><!-- dark helmet-->
+		<item id="10574" chance="12000"/><!-- cyclops toe -->
+		<item id="2129" chance="2000"/><!-- wolf tooth chain -->
+		<item id="2381" chance="3000"/><!-- halberd -->
+		<item id="2489" chance="2500"/><!-- dark armor -->	
+		<item id="7452" chance="1500"/><!-- spiked squelcher -->
+	</loot>
+</monster>

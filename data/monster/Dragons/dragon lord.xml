@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dragon Lord" nameDescription="a dragon lord" race="undead" experience="48450" speed="270" manacost="0">
+	<health now="13500" max="13500"/>
+	<look type="39" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1800" skill="90" attack="75"/>
+		<attack name="fire" interval="3000" chance="25" range="7" radius="4" target="1" min="-245" max="-365">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire wave" interval="4000" chance="15" min="-245" max="-365"/>
+		<attack name="fire bomb" interval="14000" chance="15" min="-250" max="-375"/>
+		<attack name="fire" interval="4000" chance="8" length="8" spread="3" min="-320" max="-350">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+
+	<defenses armor="25" defense="45">
+		<defense name="healing" interval="1100" chance="15" min="100" max="280">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="ZCHHHHH" yell="1"/>
+		<voice sentence="YOU WILL BURN!" yell="1"/>
+	</voices>
+
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="12686" chance="20"/><!-- fire stone -->
+		<item id="18099" chance="200"/><!-- fire rune 1 -->
+		<item id="18104" chance="20"/><!-- fire rune 2 -->
+		<item id="18109" chance="2"/><!-- fire rune 3 -->
+		<item id="2148" countmax="90" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="63750"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="63750"/><!-- gold coin -->
+		<item id="2672" countmax="5" chance="11500"/><!-- dragon ham -->
+		<item id="2392" chance="950"/><!-- fire sword -->
+		<item id="2796" chance="8000"/><!-- green mushroom -->
+		<item id="2177" chance="620"/><!-- life crystal -->	
+		<item id="2498" chance="320"/><!-- royal helmet -->
+		<item id="2145" countmax="2" chance="900"/>  <!-- small diamond -->
+    	<item id="2146" countmax="2" chance="1200"/><!-- small sapphire -->
+    	<item id="12657" chance="100"/>  <!-- dragonhunter robe -->
+		<item id="12929" chance="40"/><!-- goldensilver shield -->
+		<item id="12869" chance="40"/><!-- umbral fire sword -->
+		<item id="13305" chance="40"/><!-- umbral fire robe -->
+		<item id="2479" chance="1150"/><!-- strange helmet -->
+		<item id="2528" chance="1000"/><!-- tower shield -->
+		<item id="7402" chance="670"/><!-- dragon slayer -->
+		<item id="2492" chance="300"/><!-- dragon scale mail -->
+		<item id="12855" chance="120"/>  <!-- lava axe -->
+		<item id="2414" chance="370"/><!-- dragon lance -->
+		<item id="2195" chance="300"/><!-- boots of haste -->
+		<item id="12926" chance="100"/>  <!-- dragonbone shield -->
+	</loot>
+</monster>

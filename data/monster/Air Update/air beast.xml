@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Air Beast" nameDescription="an air beast" race="undead" experience="22294" speed="245" manacost="0">
+	<health now="4900" max="4900"/>
+	<look type="307" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" skill="75" attack="70" poison="300"/>
+		<attack name="air icywind" interval="2000" chance="15" min="-145" max="-365"/>
+		<attack name="air gust" interval="8000" chance="10" min="-100" max="-120"/>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<voices interval="2500" chance="10">
+	</voices>
+	<loot>
+		<item id="12689" chance="5"/><!-- air stone -->
+		<item id="18101" chance="50"/><!-- air rune 1 -->
+		<item id="18106" chance="5"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="60" chance="43500"/><!-- gold coin -->
+		<item id="5894" countmax="2" chance="4000"/><!-- bat wing -->
+		<item id="11195" countmax="2" chance="1300"/><!-- stone wing -->
+		<item id="10579" countmax="2" chance="800"/><!-- bat ear -->
+		<item id="2517" chance="100"/><!-- shield of honour -->
+		<item id="8927" chance="50"/><!-- dark trinity mace -->
+		<item id="2513" chance="4300"/><!-- battle shield -->
+		<item id="2144" countmax="3" chance="1000"/><!-- black pearl -->
+		<item id="2529" chance="4300"/><!-- black shield -->
+		<item id="2425" chance="1900"/><!-- obsidian lance -->
+		<item id="2150" countmax="2" chance="200"/><!-- small amethyst -->
+		<item id="7386" chance="100"/><!-- mercenary sword -->		
+	</loot>
+</monster>

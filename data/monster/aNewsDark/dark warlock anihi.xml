@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Warlock" nameDescription="a dark warlock" race="undead" experience="130000" speed="400" manacost="0">
+	<health now="85000" max="85000"/>
+	<look addons="3" type="130" head="0" legs="114" body="114" feet="94" corpse="18161"/>
+	<targetchange interval="5000" chance="30"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="physical" interval="2000" chance="100" range="7" min="-545" max="-775">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+
+		<attack name="fire bomb" interval="10000" chance="50" range="5" min="-510" max="-725"/>
+
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="healing" interval="1000" chance="25" min="600" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learn the secret of our magic! YOUR death!"/>
+		<voice sentence="We don't like intruders!"/>
+	</voices>
+
+</monster>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Abadeer" nameDescription="a abadeer" race="undead" experience="34920" speed="370" manacost="0">
+	<health now="9600" max="9600"/>
+	<look type="287" corpse="18161"/>
+	<targetchange interval="5000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="65"/>
+		<attack name="lifedrain" interval="2000" chance="9" target="0" radius="4" min="-170" max="-300">
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="fire wave" interval="3000" chance="7" min="-250" max="-300"/>
+		<attack name="fire blast" interval="3000" range="3" chance="20" min="-300" max="-400"/>
+		<attack name="fire kick" interval="2000" chance="7" min="-150" max="-200"/>
+
+
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="1000" chance="25" min="100" max="195">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="2">
+		<summon name="Vampire" interval="2000" chance="50"/>
+	</summons>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="12686" chance="10"/><!-- fire stone -->
+		<item id="18099" chance="100"/><!-- fire rune 1 -->
+		<item id="18104" chance="10"/><!-- fire rune 2 -->
+		<item id="18109" chance="1"/><!-- fire rune 3 -->
+		<item id="2148" countmax="100" chance="50111"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="50111"/><!-- gold coin -->
+		<item id="2144" chance="1620"/><!-- black pearl -->
+		<item id="5894" countmax="3" chance="4000"/><!-- bat wing -->
+		<item id="10602" countmax="1" chance="1000"/><!-- vampire teeth -->
+		<item id="2229" chance="11500"/><!-- skull -->
+		<item id="2383" chance="1222"/><!-- spike sword -->
+		<item id="2479" chance="3140"/><!-- strange helmet -->
+		<item id="9955" chance="1000"/><!-- item reset quest -->
+
+		<item id="12607" chance="90"/><!-- vampire coat -->
+		<item id="12852" chance="30"/><!-- vampire chopper -->	
+
+		<item id="2534" chance="300"/><!-- vampire shield -->	
+		<item id="12789" chance="300"/><!-- vampire helmet -->	
+		<item id="2195" chance="200"/><!-- boots of haste -->
+	</loot>
+</monster>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Basher" nameDescription="a lost basher" race="undead" experience="52541" speed="330" manacost="0">
+	<health now="12300" max="12300"/>
+	<look type="573" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1000" skill="75" attack="75"/>
+		<attack name="physical" interval="2000" chance="40" range="7" target="1" radius="1" min="-135" max="-205">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="15" target="0" radius="2" speedchange="-350" duration="15000">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="30">
+		<defense name="healing" interval="6000" chance="10" min="250" max="500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="15500"/><!-- gold coin -->
+		<item id="2789" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="11241" chance="140"/><!-- miner backpack -->
+		<item id="2498" chance="180"/><!-- moon backpack -->
+		<item id="12792" chance="20"/><!-- heavy armor -->
+		<item id="12785" chance="20"/><!-- heavy legs -->
+		<item id="12946" chance="20"/><!-- heavy helmet -->
+		<item id="12863" chance="20"/><!-- heavy blade -->
+		<item id="13340" chance="20"/><!-- heavy hammer -->
+		<item id="13458" chance="20"/><!-- heavy axe -->
+	</loot>
+</monster>

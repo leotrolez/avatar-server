@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minotaur Amazon" nameDescription="a minotaur amazon" race="undead" experience="45020" speed="300" manacost="0">
+	<health now="12600" max="12600"/>
+	<look type="592" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-270" max="-345"/>
+		<attack name="lifedrain" interval="4000" chance="60" target="1" radius="4" min="-190" max="-235">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="50" range="7" min="-205" max="-235">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="40">
+	</defenses>
+	<loot>
+		<item id="2148" countmax="70" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="15500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="2498" chance="1020"/>  <!-- royal helmet -->
+		<item id="2177" chance="1000"/><!-- life crystal -->
+		<item id="2145" countmax="7" chance="1200"/>  <!-- small diamond -->
+		<item id="13898" chance="20"/>
+		<item id="13858" chance="20"/>
+		<item id="13895" chance="30"/>
+		<item id="13859" chance="30"/>
+		<item id="13900" chance="30"/>
+	</loot>
+</monster>

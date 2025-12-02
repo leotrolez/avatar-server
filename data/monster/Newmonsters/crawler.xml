@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crawler" nameDescription="a crawler" race="undead" experience="25720" speed="230" manacost="0">
+	<health now="6500" max="6500"/>
+	<look type="550" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="350"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="120"/>
+		<attack name="poison" interval="2000" chance="25" length="8" spread="3" min="-360" max="-500">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="25" length="8" spread="3" min="-690" max="-850">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>	
+		<attack name="earth" interval="2000" chance="20" range="7" min="-80" max="-150">
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+	</attacks>
+	
+	<defenses armor="65" defense="35">
+		<defense name="speed" interval="2000" chance="15" speedchange="260" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="10"/><!-- earth stone -->
+		<item id="18102" chance="100"/><!-- earth rune 1 -->
+		<item id="18107" chance="10"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+	</loot>
+</monster>

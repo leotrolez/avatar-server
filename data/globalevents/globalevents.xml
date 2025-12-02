@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<!-- general -->
+	<globalevent type="startup" name="server startup" script="startup.lua" />
+	<globalevent type="record" name="player record" script="record.lua" />
+	<globalevent name="server save" time="10:30:00" script="serversave.lua" />
+
+	<!-- old -->
+	<globalevent name="inactive_houses" interval="5850000" script="old/inactive_houses.lua"/> 
+	<globalevent name="blood_castle_1" time="17:50" script="old/blood_castle.lua"/>
+	<globalevent name="blood_castle_2" time="21:50" script="old/blood_castle.lua"/>
+	<globalevent name="war_ground_1" time="17:50" script="old/war_ground.lua"/>
+	<globalevent name="war_ground_2" time="21:50" script="old/war_ground.lua"/>
+	<globalevent name="castle_war" time="20:50" script="old/castle_war.lua"/>
+	<globalevent name="invasion_1" time="12:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_2" time="14:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_3" time="17:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_4" time="20:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_5" time="17:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_6" time="23:00" script="old/invasion.lua"/>
+	<globalevent name="invasion_7" time="22:00" script="old/invasion.lua"/>
+	<globalevent name="avatar_1" time="05:00" script="old/avatar.lua"/>
+	<globalevent name="avatar_2" time="09:00" script="old/avatar.lua"/>
+	<globalevent name="avatar_3" time="13:00" script="old/avatar.lua"/>
+	<globalevent name="avatar_4" time="18:00" script="old/avatar.lua"/>
+	<globalevent name="avatar_5" time="21:00" script="old/avatar.lua"/>
+	<globalevent name="avatar_6" time="23:00" script="old/avatar.lua"/> 
+	<globalevent name="avatar_off" interval="180000" value="old/avatar_off.lua"/> 
+</globalevents>

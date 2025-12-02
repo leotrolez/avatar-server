@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--terceiro dos aquaticos-->
+<monster name="Quara Pincher" nameDescription="a quara pincher" race="undead" experience="8303" speed="350" manacost="0">
+	<health now="2050" max="2050"/>
+	<look type="77" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2500" skill="70" attack="65"/>
+		<attack name="speed" interval="1000" chance="12" range="7" speedchange="-550" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="18" defense="35"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Clank clank!"/>
+		<voice sentence="Clap!"/>
+		<voice sentence="Crrrk! Crrrk!"/>
+	</voices>
+	<loot>
+		<item id="12688" chance="5"/><!-- water stone -->
+		<item id="18100" chance="50"/><!-- water rune 1 -->
+		<item id="18105" chance="5"/><!-- water rune 2 -->
+		<item id="18110" chance="1"/><!-- water rune 3 -->
+		<item id="2148" countmax="85" chance="90000"/><!-- gold coin -->
+		<item id="2398" chance="5000"/><!-- mace -->
+		<item id="2381" chance="800"/><!-- halberd -->
+		<item id="2195" chance="90"/><!-- boots of haste -->
+		<item id="12872" chance="50"/><!-- boomerang -->
+		<item id="11189" countmax="4" chance="3000"/><!-- crab pincers -->
+		<item id="10550" countmax="2" chance="1000"/><!-- bloody pincer -->
+		<item id="2670" countmax="5" chance="6000"/><!-- shrimp -->
+		<item id="2475" chance="600"/><!-- warrior helmet -->
+		<item id="2487" chance="400"/><!-- crown armor -->
+		<item id="7897" chance="350"/><!-- glacier robe -->
+	</loot>
+</monster>

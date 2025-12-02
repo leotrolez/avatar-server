@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Marsh Prince" nameDescription="a marsh prince" race="undead" experience="1401520" speed="800" manacost="0">
+	<health now="1903900" max="1903900"/>
+	<look type="1110" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="180" attack="180"/>
+		<attack name="earth fists" interval="2000" chance="90" min="-1380" max="-1575"/>
+		<attack name="earth collapse" interval="3000" chance="75" min="-1590" max="-1710"/>
+		<attack name="earth punch" interval="3000" chance="75" min="-1170" max="-1360"/>
+		<attack name="earth ingrain" interval="5000" chance="10" min="1170" max="1360"/>
+	</attacks>
+	<defenses armor="65" defense="75">
+	</defenses>
+	<loot>
+		<item id="12687" chance="5000"/><!-- earth stone -->
+		<item id="18102" chance="50000"/><!-- earth rune 1 -->
+		<item id="18107" chance="5000"/><!-- earth rune 2 -->
+		<item id="18112" chance="500"/><!-- earth rune 3 -->
+		<item id="18133" chance="250"/><!-- earth rune 4 -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="1" chance="77500"/><!-- gold coin -->
+		<item id="2147" countmax="45" chance="70000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="10" chance="70000"/><!-- giant pearl 2000gp ea -->
+		<item id="12929" chance="2000"/><!-- goldensilver shield -->
+		<item id="12869" chance="2000"/><!-- umbral fire sword -->
+		<item id="13305" chance="2000"/><!-- umbral fire robe -->
+		<item id="7402" chance="30700"/><!-- dragon slayer -->
+		<item id="2492" chance="15000"/><!-- dragon scale mail -->
+		<item id="12855" chance="5200"/>  <!-- lava axe -->
+		<item id="2414" chance="15700"/><!-- dragon lance -->
+		<item id="2195" chance="15000"/><!-- boots of haste -->
+		<item id="2153" chance="80000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="100"/><!-- armas novas -->
+		<item id="12864" chance="100"/><!-- armas novas -->
+		<item id="12861" chance="100"/><!-- armas novas -->
+		<item id="13296" chance="100"/><!-- armas novas -->
+		<item id="13086" chance="100"/><!-- armas novas -->
+		<item id="10219" chance="200"/><!-- sacred amulet -->
+	</loot>
+</monster>

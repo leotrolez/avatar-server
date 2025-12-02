@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- balanceado -->
+<monster name="Zuko's Disciple" nameDescription="a Zuko's disciple" race="undead" experience="2907" speed="215" manacost="420">
+	<health now="340" max="340"/>
+	<look addons="0" type="732" head="95" legs="75" body="132" feet="95" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="25"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="18"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="35" attack="40" fire="10" />
+		<attack name="Fire Whip" interval="2500" chance="45" min="-10" max="-25"/>
+		<attack name="Fire Wave" interval="3000" chance="15" min="-35" max="-45"/>
+	</attacks>
+	<defenses armor="10" defense="13"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zuko is most stronger than all fire benders!"/>
+		<voice sentence="ZUKO! ZUKO! ZUKO!"/>
+		<voice sentence="One day I will be like a Zuko!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="51" chance="50250"/><!-- gold coin -->
+		<item id="2666" countmax="2" chance="36500"/><!-- meat -->
+		<item id="2386" chance="5000"/><!-- axe -->
+		<item id="2511" chance="5000"/><!-- brass shield -->
+		<item id="2649" chance="3750"/><!-- leather legs -->
+		<item id="2398" chance="3500"/><!-- mace -->
+		<item id="2458" chance="1500"/><!-- chain helmet -->
+		<item id="2465" chance="1500"/><!-- brass armor -->
+		<item id="2509" chance="950"/><!-- steel shield -->
+		<item id="2459" chance="200"/><!-- iron helmet -->
+		<item id="11307" chance="30"/><!-- drakinata -->
+		<item id="11305" chance="30"/><!-- zuko sword -->
+	</loot>
+</monster>

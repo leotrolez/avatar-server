@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spidris" nameDescription="a spidris" race="undead" experience="315686" speed="500" manacost="0">
+	<health now="43900" max="43900"/>
+	<look type="551" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1000" skill="130" attack="130" poison="80"/>
+		<attack name="earth punch" interval="3300" chance="75" min="-360" max="-410"/>
+		<attack name="earth" interval="2300" chance="75" range="7" radius="3" min="-385" max="-495">
+			<attribute key="areaEffect" value="poison"/>
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="3000" chance="60" radius="5" target="0" min="-460" max="-530"/>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="healing" interval="1100" chance="10" min="500" max="1080">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12687" chance="70"/><!-- earth stone -->
+		<item id="18102" chance="700"/><!-- earth rune 1 -->
+		<item id="18107" chance="70"/><!-- earth rune 2 -->
+		<item id="18112" chance="7"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2147" countmax="45" chance="8000"/><!-- small rubbie 250gp ea -->
+		<item id="7632" countmax="10" chance="8000"/><!-- giant pearl 2000gp ea -->
+		<item id="2153" chance="30000"/><!-- violet gem 10000gp ea -->
+		<item id="12853" chance="15"/><!-- armas novas -->
+		<item id="12864" chance="15"/><!-- armas novas -->
+		<item id="12861" chance="15"/><!-- armas novas -->
+		<item id="13296" chance="15"/><!-- armas novas -->
+		<item id="13086" chance="15"/><!-- armas novas -->
+	</loot>
+</monster>

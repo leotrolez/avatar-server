@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ushuriel" nameDescription="ushuriel" race="undead" experience="140400" speed="440" manacost="0">
+	<health now="220000" max="220000"/>
+	<look type="12" head="0" body="95" legs="19" feet="112" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2500" skill="170" attack="165"/>
+		<attack name="physical" interval="2000" chance="30" range="7" target="1" radius="1" min="-510" max="-950">
+			<attribute key="shootEffect" value="throwingstar"/>
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="15" target="0" length="8" spread="3" min="420" max="-930">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>		
+		<attack name="death" interval="2000" chance="10" radius="4" target="1" min="-340" max="-560">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="death"/>
+		</attack>	
+		<attack name="energycondition" interval="2000" chance="25" radius="4" target="0" min="-450" max="-950">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>	
+		<attack name="poison" interval="2000" chance="10" length="8" spread="0" min="-220" max="-385">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="45">
+		<defense name="healing" interval="2000" chance="20" min="300" max="700">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+    <item id="2148" countmax="100" chance="52200" /><!-- gold coin -->
+    <item id="2148" countmax="91" chance="52200" /><!-- gold coin -->
+    <item id="2789" countmax="30" chance="55500" /><!-- brown mushroom -->
+    <item id="7417" chance="11925" /><!-- runed sword -->
+    <item id="2498" chance="20925" /><!-- royal helmet -->
+    <item id="1988" chance="100000"><!-- bag -->
+        <inside>
+            <item id="2392" chance="18850" /><!-- fire sword -->
+            <item id="5741" chance="16075" /><!-- skull helmet -->
+            <item id="7402" chance="10525" /><!-- dragon slayer -->
+            <item id="2152" countmax="30" chance="9725" /><!-- platinum coin -->
+            <item id="2475" chance="21250" /><!-- warrior helmet -->
+            <item id="2479" chance="9850" /><!-- strange helmet -->
+            <item id="7385" chance="9850" /><!-- crimson sword -->
+            <item id="2383" chance="14350" /><!-- spike sword -->
+            <item id="2491" chance="11575" /><!-- crown helmet -->
+            <item id="2393" chance="11925" /><!-- giant sword -->
+        </inside>
+    </item>
+</loot>
+</monster>

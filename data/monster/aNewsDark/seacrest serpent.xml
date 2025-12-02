@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Seacrest Serpent" nameDescription="a seacrest serpent" race="undead" experience="0" speed="400" manacost="0">
+	<health now="400000" max="400000"/>
+	<look type="710"/>
+	<targetchange interval="4000" chance="10"/>
+	<script>
+		<event name="Seacrest_Quest"/>
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="125" attack="125"/>
+		<attack name="water wave" interval="7000" chance="60" min="-970" max="-1185"/>
+		<attack name="water punch" interval="10000" chance="60" min="-215" max="-245"/>
+		<attack name="water bubbles" interval="11000" chance="60" min="-195" max="-235"/>
+		<attack name="water icebolt" interval="5000" chance="50" min="-460" max="-590"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="5000" chance="40" min="600" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+	</loot>
+</monster>

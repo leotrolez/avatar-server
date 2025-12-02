@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Magma Crawler" nameDescription="a magma crawler" race="undead" experience="30550" speed="220" manacost="0">
+	<health now="8500" max="8500"/>
+	<look type="561" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="60" />
+		<attack name="fire" interval="2000" chance="15" length="3" spread="2" min="-150" max="-300">
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="15" target="0" radius="3" min="-150" max="-350">
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="10" radius="2" target="0" spread="0" speedchange="-800" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="25" range="7" radius="4" target="1" min="-145" max="-365">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="healing" interval="1100" chance="15" min="100" max="280">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Crrroak!"/>
+	</voices>
+	<loot>
+		<item id="12686" chance="15"/><!-- fire stone -->
+		<item id="18099" chance="150"/><!-- fire rune 1 -->
+		<item id="18104" chance="15"/><!-- fire rune 2 -->
+		<item id="18109" chance="2"/><!-- fire rune 3 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="31500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="11243" chance="140"/><!-- magma backpack -->
+		<item id="12890" chance="30"/><!--  magma armor-->
+		<item id="12914" chance="30"/><!--  magma legs-->
+		<item id="13379" chance="30"/><!--  magma amulet-->
+		<item id="11356" chance="30"/><!--  magma robe-->
+		<item id="13345" chance="30"/><!--  magma axe-->
+		<item id="13341" chance="30"/><!--  firely sword-->
+		<item id="13437" chance="30"/><!--  club of dragobreath-->
+		<item id="2498" chance="220"/>  <!-- royal helmet -->
+		<item id="11395" chance="70"/>  <!-- firelywood sword -->
+		<item id="12855" chance="90"/>  <!-- lava axe -->
+		<item id="2177" chance="400"/><!-- life crystal -->
+		<item id="2145" countmax="2" chance="600"/>  <!-- small diamond -->
+	</loot>
+</monster>

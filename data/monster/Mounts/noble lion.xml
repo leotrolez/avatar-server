@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Noble Lion" nameDescription="a noble lion" race="undead" experience="1100" speed="260" manacost="0">
+	<health now="350" max="350" />
+	<look type="41" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="50" attack="40"/>
+	</attacks>
+	<defenses armor="5" defense="15">
+		<defense name="speed" interval="1000" chance="12" speedchange="567" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="7">
+		<voice sentence="Groarrrr! Rwarrrr!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="62" chance="100000" /> <!-- gold coin -->
+		<item id="2666" countmax="4" chance="25500" /> <!-- meat -->
+		<item id="2671" countmax="2" chance="23500" /> <!-- ham -->
+	</loot>
+</monster>

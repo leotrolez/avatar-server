@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Evil Zuko" nameDescription="the evil zuko" race="undead" experience="468000" speed="350" manacost="0">
+	<health now="200000" max="200000"/>
+	<look addons="0" type="380" head="114" legs="75" body="132" feet="95" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+		<script>
+		<event name="Zuko_Quest"/>
+		
+	</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="110"/>		
+		<attack name="fire wrath" interval="10000" chance="70" target="1"/>
+		<attack name="fire whip" interval="2237" chance="95" min="-70" max="-100"/>
+		<attack name="fire wave" interval="2753" chance="85" min="-70" max="-240"/>
+		<attack name="fire cannon" interval="5257" chance="75" min="-150" max="-200"/>
+		<attack name="fire striker" interval="15237" chance="75" min="-50" max="-70"/>
+		<attack name="fire star" interval="10237" chance="50" min="-220" max="-280"/>
+		<attack name="fire explosion" interval="4421" chance="25" min="-150" max="-200"/>
+	</attacks>
+	<defenses armor="30" defense="25"> 
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="For the fire benders!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="11307" chance="100000"/><!-- zuko sword -->
+</loot>
+</monster>

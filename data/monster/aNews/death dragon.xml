@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death Dragon" nameDescription="a death dragon" race="undead" experience="340926" speed="470" manacost="0">
+	<health now="123900" max="123900"/>
+	<look type="751" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" skill="135" attack="135"/>
+		<attack name="fire lightning" interval="2000" chance="85" radius="3" min="-750" max="-935"/>
+		<attack name="fire kick" interval="1500" chance="85" range="5" min="-585" max="-670"/>
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="1100" chance="5" min="360" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="GRRR!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+	</voices>
+	<loot>
+		<item id="12686" chance="40"/><!-- fire stone -->
+		<item id="18099" chance="400"/><!-- fire rune 1 -->
+		<item id="18104" chance="40"/><!-- fire rune 2 -->
+		<item id="18109" chance="4"/><!-- fire rune 3 -->
+		<item id="18121" chance="40"/><!-- energy rune 1 -->
+		<item id="18122" chance="10"/><!-- energy rune 2 -->
+		<item id="2148" countmax="80" chance="76000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="65000"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="15000"/><!-- dragon ham -->
+		<item id="2145" countmax="3" chance="6500"/><!-- small diamonds-->
+		<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+			<item id="13683" chance="30"/><!-- alloy -->
+			<item id="13682" chance="30"/><!-- alloy -->
+			<item id="2424" chance="3000"/><!-- silver mace -->
+			<item id="8871" chance="4000"/><!-- focus cape -->
+			<item id="7430" chance="3000"/><!-- dragonbone staff -->
+			<item id="2475"  chance="7000"/><!-- warrior helmet -->		
+			<item id="2430" chance="7000"/><!-- knight axe -->
+			<item id="2476" chance="7000"/><!-- knight armor -->
+			<item id="8855" chance="1000"/><!-- composite hornbow -->
+			<item id="2177" chance="3020"/><!-- life crystal -->	
+			<item id="2498" chance="1520"/><!-- royal helmet -->
+			<item id="2146" chance="10300"/><!-- small sapphire -->
+			<item id="12929" chance="200"/><!-- goldensilver shield -->
+			<item id="12869" chance="200"/><!-- umbral fire sword -->
+			<item id="13305" chance="200"/><!-- umbral fire robe -->
+			<item id="2479" chance="5150"/><!-- strange helmet -->
+			<item id="2528" chance="5000"/><!-- tower shield -->
+			<item id="7402" chance="3070"/><!-- dragon slayer -->
+			<item id="2492" chance="1500"/><!-- dragon scale mail -->
+			<item id="12855" chance="520"/>  <!-- lava axe -->
+			<item id="2414" chance="1570"/><!-- dragon lance -->
+			<item id="2195" chance="1500"/><!-- boots of haste -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+		</inside>
+		</item>
+	</loot>
+</monster>

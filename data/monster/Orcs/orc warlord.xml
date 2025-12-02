@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Warlord" nameDescription="a orc warlord" race="undead" experience="5130" speed="290" manacost="0">
+	<health now="950" max="950"/>
+	<look type="2" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="40"/>
+		<attack name="physical" interval="3000" chance="25" range="7" min="-100" max="-120">
+			<attribute key="shootEffect" value="throwingstar"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="35"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ranat Ulderek!"/>
+		<voice sentence="Orc buta bana!"/>
+		<voice sentence="Ikem rambo zambo!"/>
+		<voice sentence="Futchi maruk buta!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="50" chance="35000"/><!-- gold coin -->
+		<item id="12435" countmax="4" chance="19500"/><!-- monster item -->
+		<item id="12409" countmax="2" chance="700"/><!-- monster item -->
+		<item id="2419" chance="7500"/><!-- scimitar -->
+		<item id="2666" countmax="2" chance="9000"/><!-- meat -->
+		<item id="2463" chance="1200"/><!-- plate armor -->
+		<item id="2647" chance="1200"/><!-- plate legs -->		
+		<item id="2490" chance="1400"/><!-- dark helmet -->
+		<item id="2377" chance="2000"/><!-- two-handed sword -->
+		<item id="2434" chance="400"/><!-- dragon hammer -->
+		<item id="2497" chance="350"/><!-- crusader helmet -->
+		<item id="7891" chance="30"/><!-- magma boots -->
+	</loot>
+</monster>

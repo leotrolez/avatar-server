@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Stabilizing Dread Intruder" nameDescription="an stabilizing dread intruder" race="undead" experience="0" speed="370" manacost="0">
+	<health now="32000" max="32000"/>
+	<look type="937"/>
+	<targetchange interval="20000" chance="45"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="110"/>
+		<attack name="fire thunderbolt" interval="5000" chance="40" min="-570" max="-725"/>
+		<attack name="energy" interval="2000" chance="80" range="6" min="-560" max="-715">
+						<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="50">
+		<defense name="healing" interval="1000" chance="50" min="600" max="900">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+</monster>

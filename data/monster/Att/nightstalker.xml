@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nightstalker" nameDescription="a nightstalker" experience="180000" speed="460" race="undead">
+        <health now="9200" max="9200"/>
+        <look type="320" corpse="18161"/>
+        <script>
+
+</script>
+        <targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="125" attack="105"/>
+		<attack name="energy" interval="3000" chance="45" radius="3" min="-270" max="-470">
+			<attribute key="areaEffect" value="yellowenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="35">
+		<defense name="healing" interval="3000" chance="50" min="325" max="575">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+        <loot>
+		<item id="18127" chance="40"/><!-- metal rune 1 -->
+		<item id="18128" chance="10"/><!-- metal rune 2 -->
+		<item id="2148" countmax="100" chance="93750"/><!-- gold coin -->
+		<item id="2152" countmax="6" chance="15500"/><!-- gold coin -->
+		<item id="2147" countmax="20" chance="10000"/><!-- soul orb 235gp ea -->
+		<item id="6500" countmax="10" chance="4000"/><!-- demonic essence -->
+		<item id="12929" chance="300"/><!-- goldensilver shield -->
+		<item id="12869" chance="300"/><!-- umbral fire sword -->
+		<item id="13305" chance="300"/><!-- umbral fire robe -->
+		<item id="2147" countmax="2" chance="3500"/><!-- small rubies -->
+		<item id="2146" chance="2300"/><!-- small sapphire -->
+		<item id="2136" chance="2500"/><!-- demonbone amulet 2k ea -->
+		<item id="2177" chance="520"/><!-- life crystal -->	
+		<item id="2195" chance="1000"/><!-- boots of haste -->
+		<item id="12649" chance="500"/><!-- undead power blade -->
+		<item id="8901" chance="200"/> <!-- spellbook -->
+        </loot>
+</monster>

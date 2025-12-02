@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ghoul" nameDescription="a ghoul" race="undead" experience="1782" speed="144" manacost="450">
+	<health now="165" max="165"/>
+	<look type="18" corpse="18161"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+		<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="40" attack="30"/>
+		<attack name="lifedrain" interval="1000" chance="20" range="1" min="-15" max="-25"/>
+	</attacks>
+	<defenses armor="8" defense="17">
+		<defense name="healing" interval="1000" chance="20" min="10" max="30">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="2148" countmax="30" chance="34750"/><!-- gold coin -->
+		<item id="2460" chance="9250"/><!-- brass helmet -->
+		<item id="5913" chance="600"/><!-- brown piece of cloth -->
+		<item id="2398" chance="1200"/><!-- mace -->
+		<item id="2227" chance="1400"/><!-- rotten meat -->
+		<item id="2483" chance="1600"/><!-- scale armor -->
+		<item id="2229" countmax="2" chance="1100"/><!-- skull -->
+		<item id="12423" countmax="2" chance="3100"/><!-- ghoul snack -->
+	</loot>
+</monster>

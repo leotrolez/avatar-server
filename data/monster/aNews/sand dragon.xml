@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sand Dragon" nameDescription="a sand dragon" race="undead" experience="72426" speed="470" manacost="0">
+	<health now="23900" max="23900"/>
+	<look type="754" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" skill="125" attack="75"/>
+		<attack name="air ball" interval="1900" chance="75" range="5" min="-155" max="-265"/>
+		<attack name="air force" interval="4900" chance="80" range="5" min="-225" max="-395"/>
+		<attack name="air gust" interval="11302" chance="70" range="4" min="-125" max="-285"/>
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="2100" chance="5" min="360" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="GRRR!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+	</voices>
+	<loot>
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="80" chance="76000"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="1500"/><!-- dragon ham -->
+		<item id="2145" countmax="3" chance="650"/><!-- small diamonds-->
+		<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+			<item id="13683" chance="5"/><!-- alloy -->
+			<item id="13682" chance="5"/><!-- alloy -->
+			<item id="2424" chance="300"/><!-- silver mace -->
+			<item id="8871" chance="400"/><!-- focus cape -->
+			<item id="7430" chance="300"/><!-- dragonbone staff -->
+			<item id="2475"  chance="700"/><!-- warrior helmet -->		
+			<item id="2430" chance="700"/><!-- knight axe -->
+			<item id="2476" chance="700"/><!-- knight armor -->
+			<item id="8855" chance="100"/><!-- composite hornbow -->
+			<item id="2177" chance="302"/><!-- life crystal -->	
+			<item id="2498" chance="152"/><!-- royal helmet -->
+			<item id="2146" chance="1030"/><!-- small sapphire -->
+			<item id="12929" chance="20"/><!-- goldensilver shield -->
+			<item id="12869" chance="20"/><!-- umbral fire sword -->
+			<item id="13305" chance="20"/><!-- umbral fire robe -->
+			<item id="2479" chance="515"/><!-- strange helmet -->
+			<item id="2528" chance="500"/><!-- tower shield -->
+			<item id="7402" chance="307"/><!-- dragon slayer -->
+			<item id="2492" chance="150"/><!-- dragon scale mail -->
+			<item id="12855" chance="52"/>  <!-- lava axe -->
+			<item id="2414" chance="157"/><!-- dragon lance -->
+			<item id="2195" chance="150"/><!-- boots of haste -->
+		</inside>
+		</item>
+	</loot>
+</monster>

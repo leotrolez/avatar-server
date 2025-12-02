@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orewalker" nameDescription="a orewalker" race="undead" experience="33380" speed="250" manacost="0">
+	<health now="9400" max="9400"/>
+	<look type="559" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="55" />
+		<attack name="physical" interval="2000" chance="25" length="6" spread="0" target="0" min="-200" max="-450">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="25" radius="2" target="0" spread="0" speedchange="-800" duration="20000">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>		
+		<attack name="fire wave" interval="2000" chance="30" min="-300" max="-350"/>
+		<attack name="fire bomb" interval="15000" chance="7" min="-250" max="-375"/>
+	</attacks>
+	<defenses armor="130" defense="30"/>
+	<loot>
+		<item id="12686" chance="15"/><!-- fire stone -->
+		<item id="18099" chance="150"/><!-- fire rune 1 -->
+		<item id="18104" chance="15"/><!-- fire rune 2 -->
+		<item id="18109" chance="2"/><!-- fire rune 3 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="31500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="11243" chance="140"/><!-- magma backpack -->
+		<item id="12890" chance="30"/><!--  magma armor-->
+		<item id="12914" chance="30"/><!--  magma legs-->
+		<item id="13379" chance="30"/><!--  magma amulet-->
+		<item id="11356" chance="30"/><!--  magma robe-->
+		<item id="13345" chance="30"/><!--  magma axe-->
+		<item id="13341" chance="30"/><!--  firely sword-->
+		<item id="13437" chance="30"/><!--  club of dragobreath-->
+		<item id="2498" chance="220"/>  <!-- royal helmet -->
+		<item id="11395" chance="70"/>  <!-- firelywood sword -->
+		<item id="12855" chance="90"/>  <!-- lava axe -->
+		<item id="2177" chance="400"/><!-- life crystal -->
+		<item id="2145" countmax="2" chance="600"/>  <!-- small diamond -->
+	</loot>
+</monster>

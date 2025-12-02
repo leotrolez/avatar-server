@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Son of Water" nameDescription="a son of water" race="undead" experience="5796" speed="450" manacost="0">
+	<health now="920" max="920"/>
+	<look type="286" head="95" body="95" legs="95" feet="95" addons="3" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="75" attack="30"/>
+        <attack name="water wave" interval="1000" chance="14" min="-41" max="-107"/>
+        <attack name="water icespikes" interval="3000" chance="25" min="-71" max="-104"/>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FOR THE WATER BENDERS!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="12688" chance="5"/><!-- water stone -->
+		<item id="18100" chance="50"/><!-- water rune 1 -->
+		<item id="18105" chance="5"/><!-- water rune 2 -->
+		<item id="18110" chance="1"/><!-- water rune 3 -->
+		<item id="2148" countmax="80" chance="40500"/><!-- gold coin -->
+		<item id="2148" countmax="44" chance="40500"/><!-- gold coin -->
+		<item id="2667" countmax="6" chance="40500"/><!-- fish -->
+		<item id="2381" chance="1000"/><!-- halberd -->
+		<item id="2463" chance="1200"/><!-- plate armor -->
+		<item id="2377" chance="1200"/><!-- two handed sword -->
+		<item id="2475" chance="380"/><!-- warrior helmet -->		
+		<item id="2656" chance="300"/><!-- blue robe -->	
+		<item id="7896" chance="200"/><!-- glacier kilt -->
+		<item id="2440" chance="200"/><!-- daramanian waraxe-->
+	</loot>
+</monster>

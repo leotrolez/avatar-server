@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cyclops" nameDescription="a cyclops" race="undead" experience="2695" speed="200" manacost="490">
+	<health now="385" max="385"/>
+	<look type="22" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1750" skill="55" attack="35"/>
+	</attacks>
+	<defenses armor="30" defense="40"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Il lorstok human!"/>
+		<voice sentence="Toks utat."/>
+		<voice sentence="Human, uh whil dyh!"/>
+		<voice sentence="Youh ah trak!"/>
+		<voice sentence="Let da mashing begin!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="49" chance="50000"/><!-- gold coin -->
+		<item id="2671" countmax="4" chance="45000"/><!-- ham -->
+		<item id="2666" countmax="3" chance="40000"/><!-- meat -->
+		<item id="2513" chance="900"/><!-- battle shield -->
+		<item id="5898" chance="1100"/><!-- cyclops eye -->
+		<item id="2394" chance="1100"/><!-- morning star -->
+		<item id="2490" chance="900"/><!-- dark helmet-->
+		<item id="10574" chance="1200"/><!-- cyclops toe -->
+		<item id="2129" chance="200"/><!-- wolf tooth chain -->
+		<item id="2381" chance="300"/><!-- halberd -->
+		<item id="2489" chance="250"/><!-- dark armor -->	
+		<item id="7452" chance="150"/><!-- spiked squelcher -->
+	</loot>
+</monster>

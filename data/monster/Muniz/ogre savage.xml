@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ogre Savage" nameDescription="a ogre savage" race="undead" experience="71560" speed="480" manacost="0">
+	<health now="20280" max="20280"/>
+	<look type="707" corpse="18161"/>
+	<targetchange speed="20000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="60"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="800" skill="105" attack="85"/>
+		<attack name="physical" interval="2500" chance="100" target="0" length="0" spread="1" radius="3" min="-105" max="-375">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="55">
+		<defense name="healing" interval="3000" chance="50" min="450" max="750">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="Must! Chop! Food! Raahh!"/>
+		<voice sentence="You tasty!!"/>
+		<voice sentence="UGGA UGGA!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="15"/><!-- earth stone -->
+		<item id="18102" chance="150"/><!-- earth rune 1 -->
+		<item id="18107" chance="15"/><!-- earth rune 2 -->
+		<item id="18112" chance="2"/><!-- earth rune 3 -->
+		<item id="2148" countmax="100" chance="80000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="80000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="20000"/><!-- platinum coin -->
+		<item id="12409" countmax="4" chance="5000"/><!-- broken elmo -->
+		<item id="2381" chance="2500"/><!-- halberd -->
+		<item id="2789" countmax="8" chance="8000"/><!-- brown mushroom -->
+		<item id="2391" chance="8100"/><!-- war hammer -->
+		<item id="2475"  chance="1000"/><!-- warrior helmet -->		
+		<item id="2430" chance="1000"/><!-- knight axe -->
+		<item id="2476" chance="1000"/><!-- knight armor -->
+		<item id="2477" chance="1000"/><!-- knight legs -->
+		<item id="2414" chance="750"/><!-- dragon lance -->
+		<item id="2195" chance="500"/><!-- boots of haste -->
+		<item id="13442" chance="20"/><!-- itens ogre -->
+		<item id="13456" chance="20"/><!-- itens ogre -->
+		<item id="13842" chance="20"/><!-- itens ogre -->
+		<item id="13762" chance="20"/><!-- itens ogre -->
+	</loot>
+</monster>

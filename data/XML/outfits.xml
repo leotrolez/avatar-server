@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outfits>
+	<!-- Female outfits -->
+	<outfit type="0" looktype="1020" name="Fire Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1021" name="Fire Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1022" name="Fire Masked Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1023" name="Fire General" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1024" name="Fire Assassin" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1030" name="Fire Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1094" name="Fire Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1135" name="Fire Royalty Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1137" name="Fire Elite Gladiator" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1139" name="Fire Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1153" name="Fire Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="0" looktype="1040" name="Water Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1041" name="Southern Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1042" name="Northern Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1043" name="Royalty Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1044" name="Water Hunter" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1050" name="Water Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1096" name="Water Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1141" name="Masked Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1143" name="Water Adventurer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1145" name="Water Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1155" name="Water Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="0" looktype="1060" name="Air Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1061" name="Air Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1062" name="Air Master" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1063" name="Ancient of the Air" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1064" name="Air Adventurer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1070" name="Air Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1098" name="Air Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1123" name="Trained Air Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1125" name="Air Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1127" name="Air Hood Killer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1149" name="Air Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="0" looktype="1080" name="Earth Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1081" name="Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1082" name="Heavy Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1083" name="Royalty Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1084" name="Earth Slayer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1090" name="Earth Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1100" name="Earth Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1129" name="Earth Tribe Bender" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1131" name="Earth Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1133" name="Trained Earth Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1151" name="Earth Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+
+	<!-- Male outfits -->
+	<outfit type="1" looktype="1025" name="Fire Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1026" name="Fire Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1027" name="Fire Masked Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1028" name="Fire General" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1029" name="Fire Assassin" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1031" name="Fire Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1095" name="Fire Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1136" name="Fire Royalty Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1138" name="Fire Elite Gladiator" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1140" name="Fire Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1154" name="Fire Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="1" looktype="1045" name="Water Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1046" name="Southern Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1047" name="Northern Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1048" name="Royalty Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1049" name="Water Hunter" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1051" name="Water Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1097" name="Water Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1142" name="Masked Water Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1144" name="Water Adventurer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1146" name="Water Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1156" name="Water Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="1" looktype="1065" name="Air Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1066" name="Air Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1067" name="Air Master" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1068" name="Ancient of the Air" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1069" name="Air Adventurer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1071" name="Air Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1099" name="Air Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1124" name="Trained Air Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1126" name="Air Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1128" name="Air Hood Killer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1150" name="Air Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+	<outfit type="1" looktype="1085" name="Earth Apprentice" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1086" name="Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1087" name="Heavy Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1088" name="Royalty Earth Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1089" name="Earth Slayer" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1091" name="Earth Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1101" name="Earth Ultimate" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1130" name="Earth Tribe Bender" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1132" name="Earth Diamond" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1134" name="Trained Earth Republican" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1152" name="Earth Prestige" premium="yes" unlocked="yes" enabled="yes" />
+
+
+
+
+
+</outfits>

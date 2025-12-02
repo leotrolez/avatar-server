@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fire Overlord" nameDescription="a fire overlord" race="undead" experience="12800" speed="300" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="243" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="100" fire="650"/>
+		<attack name="fire" interval="1000" chance="15" length="1" min="-300" max="-900">
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="13" target="1" radius="4" min="-200" max="-350">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25"/>
+	<loot>
+		<item id="2148" countmax="100" chance="10000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="1000"/><!-- platinum coin -->
+		<item id="8877" chance="900"/><!-- lavos armor -->
+		<item id="7899" chance="1250"/><!-- magma coat -->
+		<item id="8304" chance="100000"/><!-- eternal flames -->
+	</loot>
+</monster>

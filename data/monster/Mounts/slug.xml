@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Slug" nameDescription="a slug" race="undead" experience="6820" speed="210" manacost="0">
+	<health now="690" max="690"/>
+	<look type="790" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="70" attack="60"/>
+		<attack name="melee" interval="3000" chance="20" range="7" radius="3" target="0" min="-85" max="-135">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="30"/>
+	<loot>
+		<item id="2148" countmax="37" chance="43000"/><!-- gold coin -->
+		<item id="2666" countmax="2" chance="36500"/><!-- meat -->
+		<item id="2671" countmax="2" chance="20000"/><!-- ham -->
+		<item id="2792" chance="2000"/><!-- dark mushroom -->
+	</loot>
+</monster>

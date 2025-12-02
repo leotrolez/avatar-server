@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Draken Abomination" nameDescription="a draken abomination" race="undead" experience="278425" speed="530" manacost="0">
+	<health now="76250" max="76250"/>
+	<look type="357" corpse="18161"/>
+	<targetchange interval="4000" chance="20"/>
+	<flags>
+        <flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="110" attack="70"/>
+		<attack name="fire wrath" interval="8000" chance="30" range="4" target="1" min="0" max="0"/>
+		<attack name="fire striker" interval="30000" chance="50" min="-50" max="-100"/>
+		<attack name="fire bomb" interval="5000" target="1" range="5" chance="50" min="-200" max="-500"/>
+		<attack name="earth petrify" interval="20000" target="1" range="5" chance="30"/>
+		<attack name="drunk" interval="2000" chance="15" range="7" radius="4" target="0" duration="3000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="earth arena" interval="20000" chance="30" target="0"/>
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="2000" chance="35" min="650" max="700">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="3">
+		<summon name="draken elite" interval="6000" chance="10" max="1"/>
+		<summon name="draken spellweaver" interval="6000" chance="10" max="1"/>
+		<summon name="draken warmaster" interval="6000" chance="10" max="1"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ugggh!"/>
+		<voice sentence="Gll"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="47000" /><!-- gold coin -->
+		<item id="2152" countmax="4" chance="2300" /><!-- gold coin -->
+		<item id="7368" countmin="2" countmax="4" chance="15000"/><!-- assassin star -->
+		<item id="2666" chance="30175" /><!-- meat -->
+		<item id="2145" countmax="4" chance="2440" /><!-- small diamond -->
+		<item id="5904" chance="1000" /><!-- magic sulphur -->
+		<item id="2528" chance="3335" /><!-- tower shield -->
+		<item id="7404" chance="3280" /><!-- assassin dagger -->
+		<item id="11302" chance="1710"/><!-- zaoan helmet -->
+		<item id="11304" chance="1920"/><!-- zaoan legs -->
+		<item id="11301" chance="1890"/><!-- zaoan armor -->
+		<item id="12607" chance="180" /><!-- elite draken mail -->
+		<item id="11356" chance="200" /><!-- zaoan robe-->
+		<item id="8871" chance="2750" /><!-- focus cape -->
+		<item id="2155" chance="1370" /><!-- green gem -->
+	</loot>
+</monster>

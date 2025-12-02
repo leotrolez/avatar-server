@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="King Scorpianus" nameDescription="the king scorpianus" race="undead" experience="600000" speed="460" manacost="0">
+	<health now="100000" max="100000"/>
+	<look type="590" corpse="18161"/>
+	<targetchange interval="2000" chance="50"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="air force" interval="1500" chance="100" min="-250" max="-290"/>
+		<attack name="air windstorm" interval="5000" chance="40" min="-195" max="-285"/>
+		<attack name="air burst" interval="4000" chance="40" min="-230" max="-270"/>
+		<attack name="air windblast" interval="4000" chance="45" min="-170" max="-290"/>
+		<attack name="air jail" interval="4000" chance="30" min="0" max="0"/>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="3000" chance="25" min="550" max="650">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12689" chance="4000"/><!-- air stone -->
+		<item id="18101" chance="60000"/><!-- air rune 1 -->
+		<item id="18106" chance="6000"/><!-- air rune 2 -->
+		<item id="18111" chance="600"/><!-- air rune 3 -->
+		<item id="18132" chance="300"/><!-- air rune 4 -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2152" countmax="80" chance="77500"/><!-- gold coin -->
+		<item id="2160" countmax="2" chance="57500"/><!-- gold coin -->
+		<item id="2795" countmax="5" chance="65500"/><!-- fire mushroom -->
+		<item id="2492" chance="3800"/><!-- dragon scale mail -->
+		<item id="2177" chance="9200"/><!-- life crystal -->
+		<item id="12929" chance="3000"/><!-- goldensilver shield -->
+		<item id="12869" chance="3000"/><!-- umbral fire sword -->
+		<item id="2145" countmax="7" chance="8200"/>  <!-- small diamond -->
+		<item id="13893" chance="3000"/>  <!-- blindage amulet -->
+		<item id="12946" chance="1000"/>  <!-- bender scroll -->
+		<item id="12792" chance="1000"/>  <!-- bender scroll -->
+		<item id="2514" chance="1800"/>  <!-- bender scroll -->
+		<item id="2498" chance="1800"/>  <!-- bender scroll -->
+		<item id="12785" chance="1000"/>  <!-- bender scroll -->
+		<item id="12782" chance="1000"/>  <!-- bender scroll -->
+		<item id="17860" chance="2"/><!-- legendary sword -->
+		<item id="17861" chance="2"/><!-- legendary crossbow -->
+		<item id="17862" chance="2"/><!-- legendary club -->
+		<item id="17863" chance="2"/><!-- legendary axe -->
+		<item id="13401" chance="2"/><!-- moon helmet -->
+		<item id="13402" chance="2"/><!-- moon chest -->
+		<item id="13403" chance="2"/><!-- moon legs -->
+		<item id="13404" chance="2"/><!-- moon boots -->
+		<item id="2166" chance="10000"/>  <!-- distance ring -->
+		<item id="2169" chance="10000"/>  <!-- time ring -->
+	</loot>
+</monster>

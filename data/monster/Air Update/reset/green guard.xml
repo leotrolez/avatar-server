@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Green Guard" nameDescription="a green guard" race="undead" experience="0" speed="270" manacost="0">
+	<health now="3550" max="3550"/>
+	<look type="103" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="2000" skill="35" attack="80"/>
+		<attack name="air ball" interval="2000" chance="35" min="-160" max="-230"/>
+		<attack name="earth rock" interval="3000" min="-260" max="-430"/>
+	</attacks>
+
+	<defenses armor="15" defense="20">
+		<defense name="healing" interval="1000" chance="15" min="50" max="80">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="I grant you a deathwish!"/>
+		<voice sentence="Good wishes are for fairytales"/>
+	</voices>
+</monster>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mutated Rat" nameDescription="a mutated rat" race="undead" experience="16200" speed="150" manacost="0">
+	<health now="3000" max="3000"/>
+	<look type="305" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="50" poison="300"/>
+		<attack name="earth" interval="4000" chance="50" range="7" min="-120" max="-140">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="40"/>
+	<loot>
+		<item id="2148" countmax="65" chance="43500"/><!-- gold coin -->
+		<item id="2148" countmax="50" chance="41500"/><!-- gold coin -->
+		<item id="2510" chance="1900"/><!-- plate shield -->
+		<item id="2381" chance="1200"/><!-- halberd -->
+		<item id="2796" chance="1300"/><!-- green mushroom -->
+		<item id="2800" chance="800"/><!-- obsidian lance -->
+		<item id="7386" chance="200"/><!-- mercenary sword -->	
+		<item id="2528" chance="330"/><!-- tower shield -->
+		<item id="2195" chance="120"/><!-- boh -->
+		<item id="2486" chance="980"/><!-- noble -->
+		<item id="2498" chance="120"/><!-- rh -->
+	</loot>
+</monster>

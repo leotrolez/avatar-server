@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werewolf" nameDescription="a werewolf" experience="27000" speed="300" race="undead" manacost="0">
+	<health now="10000" max="10000"/>
+	<strategy attack="100" defense="0"/>
+	<targetchange speed="0" chance="8"/>
+	<look type="308" corpse="18161"/>
+			<script>
+
+</script>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="95" attack="95"/>
+		<attack name="earth petrify" interval="5000" chance="50" range="7" min="-20" max="-40"/>
+		<attack name="earth pull" interval="1500" chance="100" range="8" min="-80" max="-110"/>
+	</attacks>
+	<defenses armor="90" defense="90"/>
+	<loot>
+		<item id="2148" countmax="100" chance="40000"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="5000"/><!-- gold coin -->
+		<item id="2510" chance="4000"/><!-- plate shield -->
+		<item id="2381" chance="3000"/><!-- halberd -->
+		<item id="2796" countmax="4" chance="20000"/><!-- green mushroom -->
+		<item id="2800" chance="800"/><!-- obsidian lance -->
+		<item id="7386" chance="900"/><!-- mercenary sword -->	
+		<item id="2528" chance="800"/><!-- tower shield -->
+		<item id="2195" chance="700"/><!-- boh -->
+		<item id="2486" chance="2000"/><!-- noble -->
+		<item id="12934" chance="300"/><!-- strange boots of haste -->
+		<item id="2498" chance="700"/><!-- rh -->
+	</loot>
+</monster>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ancient Scarab" nameDescription="an ancient scarab" race="undead" experience="11250" speed="330" manacost="0">
+	<health now="2500" max="2500"/>
+	<look type="79" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="40" attack="105" poison="100"/>
+		<attack name="poison" interval="2000" chance="30" min="-40" max="-120"/>
+
+		<attack name="poison" interval="1000" chance="12" range="7" min="-55" max="-175">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+
+		<attack name="speed" interval="1000" chance="13" range="7" speedchange="-700" duration="25000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+
+		<attack name="poisoncondition" interval="3000" chance="17" radius="5" target="0" min="-30" max="-100">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+
+	</attacks>
+	<defenses armor="25" defense="20">
+		<defense name="speed" interval="1000" chance="8" speedchange="350" duration="9000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<summons maxSummons="4">
+		<summon name="Larva" interval="1000" chance="50" max="3"/>
+	<summon name="Scarab" interval="1000" chance="10" max="1"/>
+	</summons>
+		<voices interval="5000" chance="100">
+		<voice sentence="SHHHHH!"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="80" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="49000"/><!-- gold coin -->
+		<item id="2443" chance="100"/><!-- ancient axe -->
+		<item id="2444" chance="90"/><!-- ancient hammer of wrath -->
+		<item id="2491" chance="650"/><!-- crown helmet -->
+		<item id="2487" chance="550"/><!-- crown armor -->
+		<item id="2377" chance="1350"/><!-- two handed sword -->
+		<item id="5922" chance="1200"/><!-- holy orchid -->
+		<item id="2159" countmax="4" chance="455"/><!-- scarab coin -->
+		<item id="2149" countmax="3" chance="300"/><!-- small emerald -->
+		<item id="2150" countmax="4" chance="300"/><!-- small amethyst -->
+		<item id="2440" chance="200"/><!-- daramanian waraxe -->
+		<item id="2540"  chance="300"/><!-- scarab shield -->
+	</loot>
+</monster>

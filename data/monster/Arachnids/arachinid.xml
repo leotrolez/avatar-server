@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Arachinid" nameDescription="an arachinid" race="undead" experience="27000" speed="280" manacost="0">
+	<health now="9000" max="9000"/>
+	<look type="439" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="100" poison="25"/>
+		<attack name="Earth Rock" interval="1000" chance="25" range="7" min="-125" max="-145"/>
+		<attack name="Earth Petrify" interval="12000" chance="10" range="1" min="-25" max="-145"/>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="1000" chance="6" speedchange="310" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="2148" countmax="57" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="28" chance="23000"/><!-- gold coin -->
+		<item id="2477" chance="600"/><!-- knight legs -->
+		<item id="2463" chance="1600"/><!-- plate armor -->
+		<item id="8859" countmax="2" chance="2000"/><!-- spider fang -->
+		<item id="11328" countmax="3" chance="2000"/><!-- widow mandibles -->
+		<item id="2504" chance="100"/><!-- dwarven legs -->
+		<item id="2519" chance="200"/><!-- crown shield -->
+		<item id="7383" chance="300"/><!-- relic sword -->
+		<item id="2454" chance="200"/><!-- waraxe -->
+		<item id="2452" chance="70"/><!-- heavy mace -->
+		<item id="5879" chance="1300"/><!-- giant spider silk -->
+		<item id="2457" chance="1100"/><!-- steel helmet -->	
+		<item id="2476" chance="700"/><!-- knight armor -->		
+		<item id="2171" chance="400"/><!-- platinum amulet -->	
+	</loot>
+</monster>

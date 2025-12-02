@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<quest name="Easy Quests">
+		<mission name="Rotworm Queen Quest" storageid="questChests25455" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Cyclops Quest" storageid="questChests25456" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Tannyl Quest" storageid="questChests25473" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Zuko's Disciple Quest" storageid="questChests25477" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Spirit of Water Quest" storageid="questChests25478" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Dwarve Arcane Quest" storageid="questChests25479" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Demmorlim Quest" storageid="questChests25468" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Crypt Shambler Quest" storageid="questChests25475" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Demon Skeleton Quest" storageid="questChests25476" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Black Knight Quest" storageid="questChests25458" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Orc Warlord Quest" storageid="questChests25470" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Blood Knight Quest" storageid="questChests25471" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Devil Skeleton Quest" storageid="taskInCourse8" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Ethern Quest" storageid="questChests25462" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Barbarian Headsplitter Quest" storageid="questChests25487" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Marcelline Quest" storageid="questChests25480" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Vampire Quest" storageid="questChests25463" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Wailing Widow Quest" storageid="questChests25494" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Hydra Quest" storageid="questChests25457" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Quara Pincher Quest" storageid="questChests25472" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Bretzecutioner Quest" storageid="destroyersQuest" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Zero Quest" storageid="questChests25469" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Frost Giant Quest" storageid="questChests25482" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Bulmohr Quest" storageid="questChests25474" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Werewolf Quest" storageid="questChests25481" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Snake God Essence Quest" storageid="questChests25483" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Moohtant Quest" storageid="questChests25459" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Cliff Strider Quest" storageid="questChests25461" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Guzzlemaw Quest" storageid="questChests25460" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Frost Dragon Medium Quest" storageid="questChests25489" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Muffled Snowman Quest" storageid="questChests25490" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Crustacea Gigantica Quest" storageid="questChests25496" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Frost Giantess Quest" storageid="questChests25484" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Draken Abomination Quest" storageid="questChests25491" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Crystal Golem Quest" storageid="questChests25485" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Frost Dragon Hard Quest" storageid="hasDoIceQuestExp" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Crystal Crusher Quest" storageid="questChests25486" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Ancient Snowman Quest" storageid="questChests25488" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Munrah Quest" storageid="questChests25497" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Dragon Lord Quest" storageid="questChests25495" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Zushuka Quest" storageid="questChests25498" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Deepling Warrior Quest" storageid="hasDoWaterQuestExp" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Braindeath Quest" storageid="questChests25493" startvalue="-1" endvalue="1">
+		</mission>
+	</quest>
+	<quest name="Hard Quests">
+		<mission name="Four Elements Quest" storageid="90500" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Survival Quest" storageid="905018730" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Profaned Quest" storageid="90502" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Spark of Destruction Quest" storageid="90503" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Lost Avatar Quest" storageid="90504" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Medreth Quest" storageid="90505" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Rarods Quest" storageid="90506" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Spectre Quest" storageid="90507" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Zorvorax Quest" storageid="90508" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Evil Zuko Quest" storageid="90509" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="The Baron From Below Quest" storageid="90510" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Kollos Quest" storageid="90511" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Mad Mage Quest" storageid="90512" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Outlaws Secret Weapon Quest" storageid="90513" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Promotion Quest" storageid="90514" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Kelpie Quest" storageid="90515" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Tyrn Quest" storageid="90516" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Arachnophobica Quest" storageid="90522" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="The Dark Four Elements Quest" storageid="90517" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="The Source of Power Quest" storageid="90518" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Marsh Prince Quest" storageid="90523" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Evil Avatar Quest" storageid="90519" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Draptor Quest" storageid="90526i1" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Escargot Quest" storageid="90527" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Orclops Quest" storageid="90528" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Forest Quest" storageid="90529" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="The Duke Of The Depths Quest" storageid="90524" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="The Bosses Quest" storageid="90520" startvalue="-1" endvalue="1">
+		</mission>
+		<mission name="Spirit World Quest" storageid="90521" startvalue="-1" endvalue="1">
+		</mission>
+	</quest>
+</quests>

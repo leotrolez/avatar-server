@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wyrm" nameDescription="a wyrm" race="undead" experience="27360" speed="250" manacost="0">
+	<health now="6000" max="6000"/>
+	<look type="291" corpse="18161"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="90"/>
+		<attack name="energy" interval="5000" chance="60" radius="3" min="-150" max="-265">
+			<attribute key="areaEffect" value="yellowenergy"/>
+		</attack>
+		<attack name="air force" interval="1900" chance="35" range="5" min="-75" max="-95"/>
+	</attacks>
+	<defenses armor="30" defense="31">
+		<defense name="healing" interval="3000" chance="40" min="110" max="175">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="5">
+		<voice sentence="GRRR!"/>
+		<voice sentence="GROOOOAAAAAAAAR!"/>
+	</voices>
+	<loot>
+		<item id="18121" chance="20"/><!-- energy rune 1 -->
+		<item id="18122" chance="5"/><!-- energy rune 2 -->
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="80" chance="76000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="15000"/><!-- gold coin -->
+		<item id="2672" countmax="3" chance="15000"/><!-- dragon ham -->
+		<item id="2647" chance="1250"/><!-- plate legs -->
+		<item id="11355" chance="90"/><!-- wyrmhunter robe -->
+		<item id="2424" chance="200"/><!-- silver mace -->
+		<item id="10582" countmax="2" chance="1050"/><!-- wyrm scale-->
+		<item id="11223" countmax="1" chance="850"/><!-- essence of a bad dream-->
+		<item id="2145" countmax="3" chance="450"/><!-- small diamonds-->
+		<item id="2457" chance="7500"/><!-- steel helmet -->
+		<item id="8871" chance="300"/><!-- focus cape -->
+		<item id="7430" chance="200"/><!-- dragonbone staff -->
+		<item id="2475"  chance="500"/><!-- warrior helmet -->		
+		<item id="2430" chance="500"/><!-- knight axe -->
+		<item id="2476" chance="500"/><!-- knight armor -->
+		<item id="8855" chance="100"/><!-- composite hornbow -->
+	</loot>
+</monster>

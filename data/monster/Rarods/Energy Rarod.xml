@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Energy Rarod" nameDescription="an energy rarod" race="undead" experience="80000" speed="300" manacost="0" lootPercent="true">
+	<health now="25000" max="25000"/>
+	<look type="484" body="85" legs="114" feet="94" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+
+	<attacks>
+		<attack name="melee" interval="1500" skill="105" attack="105"/>
+
+		<attack name="energy" interval="1000" chance="11" length="8" spread="0" min="-380" max="-590">
+			<attribute key="areaEffect" value="teleport"/>
+		</attack>
+
+		<attack name="energy" interval="3000" chance="30" radius="6" target="0" min="-1000" max="-1000">
+			<attribute key="areaEffect" value="teleport"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="25" defense="65">
+		<defense name="healing" interval="1000" chance="11" min="30" max="120">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	
+	<voices interval="5000" chance="0">
+		<voice sentence="SPARK SPARK SPARK!"/>
+		<voice sentence="I'm bad news for you mortals!"/>
+		<voice sentence="No man can defeat me!"/>
+		<voice sentence="GRRRRRRRRRROAAAAAAAAAAAAAR!"/>
+		<voice sentence="I smell your fear."/>
+		<voice sentence="SPAAAAAAAAAAAARK!"/>
+	</voices>
+	
+	<!--esta no novo formato lootPercent=true (1~~100%) -->
+	<loot>
+		<item id="2152" countmax="30" chance="99"/><!-- plat coin -->
+		<item id="2146" countmax="5" chance="80"/><!-- small saphire -->
+		<item id="13124" chance="2"/><!-- energyc armor -->
+		<item id="13125" chance="3"/><!-- prisma legs -->
+		<item id="13126" chance="3"/><!-- prisma boots -->
+		<item id="13128" chance="4"/><!-- golden-blue shield -->
+	</loot>
+</monster>

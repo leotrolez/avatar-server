@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- novo formato AVATAR, monstro com dificuldade facil, lv 3 -->
+<monster name="Clawed Rotworm" nameDescription="a clawed rotworm" race="undead" experience="1450" speed="200" manacost="380">
+	<health now="145" max="145"/>
+	<look type="192" corpse="18161"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="25"/>
+	</attacks>
+	<defenses armor="8" defense="11"/>
+	<loot>
+		<item id="2148" countmax="30" chance="40000"/><!-- gold coin -->
+		<item id="10609" countmax="5" chance="60000"/><!-- lump of dirty -->
+		<item id="11192" countmax="2" chance="15000"/><!-- carrion worm fang -->
+		<item id="2666" countmax="6" chance="50000"/><!-- meat -->
+		<item id="2671" countmax="4" chance="50000"/><!-- ham -->
+	</loot>
+</monster>

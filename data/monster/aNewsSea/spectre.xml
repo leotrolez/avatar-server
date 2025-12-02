@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spectre" nameDescription="a spectre" race="undead" experience="300000" speed="600" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="235" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="130" attack="130"/>
+		<attack name="water wave" interval="4000" chance="50" min="-400" max="-500"/>
+		<attack name="water punch" interval="4000" chance="60" min="-55" max="-70"/>
+		<attack name="water dragon" interval="7000" chance="60" min="-150" max="-225"/>
+		<attack name="water bloodcontrol" interval="3000" chance="60" min="-50" max="-60"/>
+		<attack name="water bubbles" interval="3000" chance="60" min="-75" max="-105"/>
+		<attack name="water clock" interval="6000" chance="50" min="-350" max="-400"/>
+		<attack name="water icebolt" interval="4000" chance="50" min="-360" max="-490"/>
+		<attack name="lifedrain" interval="2000" chance="100" radius="8" length="8" target="0" min="-210" max="-250">
+			<attribute key="areaEffect" value="bluenote"/>
+		</attack>
+		<attack name="drown" interval="4000" target="1" chance="100" range="8" radius="4" min="-500" max="-600">
+			<attribute key="areaEffect" value="watersplash"/>
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="50">
+		<defense name="healing" interval="3000" chance="25" min="550" max="650">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	
+	<summons maxSummons="2">
+		<summon name="Split Spectre" interval="5000" chance="40" max="2"/>
+	</summons>
+	<voices interval="5000" chance="30">
+		<voice sentence="Get out!"/>
+		<voice sentence="Dance for me your dance of death!"/>
+	</voices>
+	<loot>
+		<item id="18127" chance="400"/><!-- metal rune 1 -->
+		<item id="18128" chance="100"/><!-- metal rune 2 -->
+		<item id="12688" chance="80"/><!-- water stone -->
+		<item id="18100" chance="8000"/><!-- water rune 1 -->
+		<item id="18105" chance="80"/><!-- water rune 2 -->
+		<item id="18110" chance="8"/><!-- water rune 3 -->
+		<item id="2152" countmax="40" chance="77500"/><!-- gold coin -->
+		<item id="2147" countmax="75" chance="5000"/><!-- small rubbie 250gp ea -->
+		<item id="2145" countmax="15" chance="2400"/>  <!-- small diamond -->
+		<item id="13852" chance="10"/><!-- helmet -->
+		<item id="11117" chance="10"/><!-- boots -->
+		<item id="13914" chance="10"/><!-- legs -->
+		<item id="12781" chance="10"/><!-- shield -->
+		<item id="13751" chance="30"/>  <!-- seaking boots -->		
+		<item id="7888" chance="100"/> <!-- glacier amulet -->
+	</loot>
+</monster>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<npc name="Eliot" script="resetStats.lua" access="3" walkinterval="0" lookdir="2">
+	<health now="1000" max="1000"/>
+	<look type="391" head="95" legs="370" body="380" feet="0" corpse="0" />
+</npc>

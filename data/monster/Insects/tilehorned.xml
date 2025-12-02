@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tilehorned" nameDescription="a tile horned" race="undead" experience="10350" speed="300" manacost="0">
+	<health now="2300" max="2300"/>
+	<look type="352" corpse="18161"/>
+		<script>
+
+</script>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="15"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="70" attack="50" poison="400"/>
+		<attack name="earth" interval="2000" chance="15" radius="6" target="0" min="-130" max="-175">
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+		<attack name="earth" interval="3000" chance="30" length="6" spread="0" min="-40" max="-90">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="poison" interval="3000" chance="45" length="8" spread="3" min="-60" max="-100">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="15">
+		<defense name="speed" interval="10000" chance="40" speedchange="310" duration="20000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="healing" interval="5000" chance="60" min="50" max="80">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Chrrr!"/>
+	</voices>
+	<loot>
+		<item id="12687" chance="5"/><!-- earth stone -->
+		<item id="18102" chance="50"/><!-- earth rune 1 -->
+		<item id="18107" chance="5"/><!-- earth rune 2 -->
+		<item id="18112" chance="1"/><!-- earth rune 3 -->
+		<item id="2148" countmax="48" chance="28000"/><!-- plat coin -->
+		<item id="2148" countmax="54" chance="77000"/><!-- gold coin -->
+		<item id="5922" chance="1000"/><!-- holy orchid -->
+		<item id="2146" chance="600"/><!-- small sapphire -->
+		<item id="2475" chance="300"/><!-- warrior helmet -->
+		<item id="2476" chance="300"/><!-- knight armor -->
+		<item id="7884" chance="70"/><!-- terra mantle -->
+		<item id="7885" chance="70"/><!-- terra legs -->
+		<item id="8872" chance="200"/><!-- belted cape -->
+		<item id="2536" chance="130"/><!-- medusa shield -->
+	</loot>
+</monster>

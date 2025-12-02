@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Choking Fear" nameDescription="a choking fear" race="undead" experience="35650" speed="320" manacost="0">
+	<health now="9500" max="9500"/>
+	<look type="581" corpse="18161"/>
+	<targetchange interval="4000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+		<attacks>
+		<attack name="melee" interval="1500" skill="95" attack="75"/>
+		<attack name="air icywind" interval="3000" chance="20" />
+		<attack name="physical" interval="2000" chance="30" length="5" spread="0" target="1" min="-170" max="-220">
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="40">
+		<defense name="healing" interval="2000" chance="15" min="250" max="425">
+			<attribute key="areaEffect" value="greenspark"/>
+		</defense>
+	</defenses>
+	<loot>
+		<item id="12689" chance="10"/><!-- air stone -->
+		<item id="18101" chance="100"/><!-- air rune 1 -->
+		<item id="18106" chance="10"/><!-- air rune 2 -->
+		<item id="18111" chance="1"/><!-- air rune 3 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2789" countmax="5" chance="15500"/><!-- fire mushroom -->
+		<item id="10522" chance="150"/><!-- crown backpack -->
+		<item id="12959" chance="40"/><!-- windy kilt -->
+		<item id="13339" chance="40"/><!-- windy amulet -->
+		<item id="13300" chance="70"/><!-- windy shield -->
+	</loot>
+</monster>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Diabolic Imp" nameDescription="a diabolic imp" race="undead" experience="9275" speed="360" manacost="0">
+	<health now="1750" max="1750"/>
+	<look type="237" corpse="18161"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="400"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="2000" skill="10" attack="35" fire="3"/>
+
+		<attack name="fire" interval="3500" chance="25" range="5" radius="4" target="1" min="-50" max="-120">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+
+		<attack name="fire" interval="2000" chance="55" range="5" radius="2" target="1" min="-60" max="-130">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+
+		<attack name="fire bomb" interval="7000" chance="10" range="5" target="1" min="-100" max="-150"/>
+	</attacks>
+
+	<defenses armor="15" defense="15">
+		<defense name="healing" interval="1000" chance="50" min="10" max="25">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+
+		<defense name="speed" interval="1000" chance="40" speedchange="450" duration="40000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="Muahaha!"/>
+		<voice sentence="He he he!"/>
+	</voices>
+
+	<loot>
+		<item id="12686" chance="7"/><!-- fire stone -->
+		<item id="18099" chance="70"/><!-- fire rune 1 -->
+		<item id="18104" chance="7"/><!-- fire rune 2 -->
+		<item id="18109" chance="1"/><!-- fire rune 3 -->
+		<item id="2148" countmax="69" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="58" chance="30000"/><!-- gold coin -->
+		<item id="6500" countmax="2" chance="4000"/><!-- demonic essence -->
+		<item id="7900" chance="500"/><!-- magma monocle -->
+		<item id="7899" chance="400"/><!-- magma coat-->
+		<item id="2515" chance="800"/><!-- guardian shield -->
+		<item id="2150" countmax="2" chance="3000"/><!-- small amethyst -->
+		<item id="5944" chance="1000"/><!-- soul orb -->
+		<item id="11322" chance="800"/><!-- platinum coin -->
+	</loot>
+</monster>

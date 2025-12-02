@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vicious Manbat" nameDescription="a vicious manbat" race="undead" experience="35997" speed="320" manacost="0">
+	<health now="12300" max="12300"/>
+	<look type="575" corpse="18161"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+
+</script>
+	<attacks>
+		<attack name="melee" interval="1500" skill="100" attack="85"/>
+		<attack name="physical" interval="3000" chance="25" range="7" min="-190" max="-245">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+	</attacks>
+	<defenses armor="85" defense="35"/>
+	<loot>
+		<item id="18127" chance="20"/><!-- metal rune 1 -->
+		<item id="18128" chance="5"/><!-- metal rune 2 -->
+		<item id="2148" countmax="90" chance="37500"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="37500"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="25500"/><!-- gold coin -->
+		<item id="10521" chance="140"/><!-- moon backpack -->
+		<item id="2498" chance="220"/><!-- moon backpack -->
+		<item id="12810" chance="80"/><!-- haringer -->
+		<item id="2534" chance="40"/><!-- vamp shield -->
+		<item id="12789" chance="40"/><!-- vamp helmet -->
+		<item id="12607" chance="40"/><!-- vamp coat -->
+		<item id="10602" chance="550"/><!-- vamp teeth -->
+		<item id="12921" chance="40"/><!-- dl shield -->
+		<item id="8266" chance="40"/><!-- dl amulet -->
+	</loot>
+</monster>

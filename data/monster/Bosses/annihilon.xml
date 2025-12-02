@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Annihilon" nameDescription="annihilon" race="undead" experience="163800" speed="350" manacost="0">
+	<health now="270000" max="270000"/>
+	<look type="12" head="3" body="9" legs="96" feet="96" corpse="18161"/>
+	<script>
+
+</script>
+	<targetchange interval="5000" chance="8"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="85"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2500" skill="190" attack="190"/>
+		<attack name="physical" interval="2000" chance="20" radius="5" target="1" min="-510" max="-700">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="25" radius="3" target="1" min="-510" max="-940">
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="poisoncondition" interval="2000" chance="20" range="5" min="-540" max="-800">
+			<attribute key="shooteffect" value="poison"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="25" radius="5" target="0" min="-60" max="-115">
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="20" length="8" spread="0" min="-520" max="-910">
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="25" radius="5" target="1" speedchange="-800" duration="7000">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="55"> 
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="Annihilation!" yell="1"/>
+	</voices>
+	<loot>
+    <item id="2152" countmax="24" chance="10775" /><!-- platinum coin -->
+    <item id="2148" countmax="97" chance="58950" /><!-- gold coin -->
+    <item id="1988" chance="100000"><!-- bag -->
+        <inside>
+            <item id="2381" chance="28500" /><!-- halberd -->
+            <item id="2528" chance="15175" /><!-- tower shield -->
+            <item id="2452" chance="36500" /><!-- heavy mace -->
+            <item id="2427" chance="17825" /><!-- guardian halberd -->
+            <item id="7368" countmax="50" chance="8450" /><!-- assassin star -->
+            <item id="2547" countmax="82" chance="8950" /><!-- power bolt -->
+            <item id="8889" chance="1825" /><!-- skullcracker armor -->
+            <item id="2520" chance="7175" /><!-- demon shield -->
+            <item id="2514" chance="4500" /><!-- mastermind shield -->
+            <item id="2519" chance="8500" /><!-- crown shield -->
+        </inside>
+    </item>
+</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>
