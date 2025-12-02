@@ -1,3 +1,6 @@
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
 set(tfs_SRC
 	${CMAKE_CURRENT_LIST_DIR}/otpch.cpp
 	${CMAKE_CURRENT_LIST_DIR}/actions.cpp

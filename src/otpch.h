@@ -38,7 +38,21 @@
 #include <thread>
 #include <unordered_map>
 #include <vector>
-
+#include <fmt/ostream.h>
 #include <boost/asio.hpp>
 
 #include <pugixml.hpp>
+
+// --- Add this to the end of src/otpch.h ---
+
+#include <fmt/format.h>
+#include <type_traits>
+
+// Custom formatter to automatically handle Enums (fixes static_assert error)
+template <typename T>
+struct fmt::formatter<T, std::enable_if_t<std::is_enum_v<T>, char>>
+    : fmt::formatter<int, char> {
+    auto format(const T& e, fmt::format_context& ctx) const {
+        return fmt::formatter<int, char>::format(static_cast<int>(e), ctx);
+    }
+};

@@ -20,6 +20,7 @@
 #ifndef FS_CONTAINER_H_5590165FD8A2451B98D71F13CD3ED8DC
 #define FS_CONTAINER_H_5590165FD8A2451B98D71F13CD3ED8DC
 
+#include <fmt/format.h>
 #include <queue>
 
 #include "cylinder.h"
@@ -163,6 +164,16 @@ class Container : public Item, public Cylinder
 
 		friend class ContainerIterator;
 		friend class IOMapSerialize;
+};
+
+// Add this formatter specialization for Container
+template <>
+struct fmt::formatter<Container> : fmt::formatter<std::string> {
+    template <typename FormatContext>
+    auto format(const Container& c, FormatContext& ctx) const {
+        // Use getContentDescription or getName for string representation
+        return fmt::formatter<std::string>::format(c.getContentDescription(), ctx);
+    }
 };
 
 #endif
