@@ -21245,4 +21245,6 @@
    <item id="20042" name="health potion" />
    <item id="20043" name="spirit potion" />
    <item id="20047" name="mana potion" />
+   <item id="1359" name="rubble">
+    <attribute key="decayTo" value="1285" /> <attribute key="duration" value="60" /> </item>
 </items>

@@ -16,3 +16,7 @@ dofile('data/lib/core/position.lua')
 dofile('data/lib/core/teleport.lua')
 dofile('data/lib/core/tile.lua')
 dofile('data/lib/core/vocation.lua')
+-- Custom Systems
+dofile('data/lib/core/mining_system.lua')
+dofile('data/lib/core/mining_tree.lua')
+

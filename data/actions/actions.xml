@@ -373,4 +373,12 @@
    <action itemid="7735" script="old/other/spellwand.lua" />
    <action itemid="7537;7585" script="old/other/spideregg.lua" />
    <action itemid="6561;12424" script="old/other/blessings.lua" />
+
+
+
+   <!-- MINERAÇÃO -->
+   <action itemid="2553" script="custom/mining.lua" />
+   <action itemid="2422" script="custom/mining.lua" />
+   <action itemid="2420" script="custom/mining.lua" />
 </actions>
+

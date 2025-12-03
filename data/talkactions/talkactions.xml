@@ -69,4 +69,6 @@
 	<talkaction words="!loot;/loot" event="script" script="old/loot.lua"/>
 	<talkaction words="/pacote;!pacote" separator=" " event="script" script="old/pacote.lua"/>
 	<talkaction words="/blood-start" event="script" script="old/blood_start.lua"/>
+	<!-- mining -->
+	<talkaction words="/hotm" separator=" " script="hotm.lua" />
 </talkactions>
